@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Edit Lifafa :: Lifafa Screens</title>
+
+    
+    <link rel="manifest" href="/manifest.json">
+    
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta property="og:url"  content=""/>
+    <meta property="og:type" content="" />
+    <meta property="og:title"  content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <link rel="shortcut icon" href="/frontend/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/frontend/images/favicon.ico" type="image/x-icon">
+
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://ajency.github.io/lifafa_html/css/mobilestyle.css" rel="stylesheet">
+    <link href="https://ajency.github.io/lifafa_html/css/custom.css" rel="stylesheet">
+
+  </head>
+  <body class="custom_scrollbar mdl-mobile ">
+    
+    
+    
+	
+
+		<div class="padding_20">
+
+			<label for="" class="mb10 font16 d-block">Select an Occasion</label>
+
+
+
+				<div class="event_select_wrapper">
+					<div class="create_lifafa_bg_wrap">
+					<div class="">
+						
+						<span class="name_error mdl-textfield__error"></span>
+						<div class="category_event pb30">
+									<div class="select_event_bg color_wedding  rounded-circle selected d-flex align-items-center justify-content-center">
+										
+									</div>
+									<div class="select_event_bg color_farewell  rounded-circle d-flex align-items-center justify-content-center">
+											
+										
+									</div>
+									<div class="select_event_bg color_babyshower  rounded-circle d-flex align-items-center justify-content-center">
+											
+									</div>
+
+									<div class="select_event_bg color_honeymoon  rounded-circle d-flex align-items-center justify-content-center">
+											
+									</div>
+
+									<div class="select_event_bg color_custom  rounded-circle d-flex align-items-center justify-content-center">
+											
+									</div>
+
+									<div class="select_event_bg color_birthday  rounded-circle d-flex align-items-center justify-content-center">
+											
+									</div>
+
+									<div class="select_event_bg color_anniversary  rounded-circle d-flex align-items-center justify-content-center">
+											
+									</div>
+
+									<div class="select_event_bg color_housewarming rounded-circle d-flex align-items-center justify-content-center">
+											
+									</div>
+																		<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<form method="POST" action="https://www.lifafa.com/lifafa/edit/jonnn" accept-charset="UTF-8" id="edit_lifafa_second_form"  rel="external">
+				<input name="_token" type="hidden" value="8SoTQXDOVnQOsYbPiyD8N4MS7DwNUlRozLIX79jT">
+				<div class="ui-content" role="main">
+					<div class="form_group">
+						<span id="is_success_msg" class="snackbar"></span>
+
+						<div class="unique_title">
+							<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label is-upgraded width_100">
+								<label for="" class="mb10 font16 d-block">Lifafa title</label>
+								<input class="mdl-textfield__input font_weight_normal" type="text" name="title" id="sample3" ng-model="lifafa_name" value="" data-role="none" placeholder="Eg Big Fat wedding">
+								
+								<span class="mdl-textfield__error title_error"></span>
+							</div>
+						</div>
+
+						<div class="me_details_form_mobile mb15">
+							<div class="form_group width_100">
+								<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label info_width has-placeholder is-upgraded width_100">
+									<label for="" class="mb10 font16 d-block">Ocassion date</label>
+									<input type="text" class="datepicker-here mdl-textfield__input font_weight_normal" name="event_occasion_date" data-role="none" id="event_occasion_date" value="19-04-2018" placeholder="Set Date">
+									<label for="event_occasion_date" class="event_date primary_text_color">
+											<i class="li li_calendar"></i>
+									</label>
+									<span class="mdl-textfield__error event_occasion_date_error"></span>
+								</div>
+							</div>
+						</div>
+						
+						
+
+						<div class="mb30">
+							
+							<label for="" class="mb10 font16 d-block">About my ocassion</label>
+							<div class="edit_content_wrap">
+								<div class="edit_content_text bg-white">
+									<p contenteditable="true" id="note_edit_des" class="font_size14 light_color_text">It’s my big day! My fiance and I are very excited to invite you to our wedding. Your presence will be the biggest gift for us. We are so blessed to have everything we need to start our new life. So, we thought we would create a little Lifafa instead of accepting gifts. You can use it to contribute to our future and help us in realizing our dreams. We look forward to seeing you on our big day!</p>
+								</div>
+								<input type="hidden" value="It’s my big day! My fiance and I are very excited to invite you to our wedding. Your presence will be the biggest gift for us. We are so blessed to have everything we need to start our new life. So, we thought we would create a little Lifafa instead of accepting gifts. You can use it to contribute to our future and help us in realizing our dreams. We look forward to seeing you on our big day!" name="note" id="note_edit" data-role="none">
+			          			<span id="note_error" class="note_error mdl-textfield__error"></span>
+							</div>
+						</div>
+
+						<div class="video_paste_wrap width_100 mb30">
+							<span class="video_paste_text font16 d-block mb10">Upload video (optional)</span>
+							<div class="paste_videolink_wrap">
+								<input type="text" name="url" placeholder="Enter YouTube link" value="" class="video_paste mdl-textfield__input font_weight_normal " data-role="none">
+								
+							</div>
+							<span class="url_error mdl-textfield__error"></span>
+						</div>
+					
+						<div class="mb30">
+							<div class="upload_pic_container">
+								<span class="video_paste_text font16 d-block mb10">Upload your own images</span>
+								<div class=" upload--section file-uploader">
+									<div class="upload_section">
+										<div class="upload_image_bg text_align_center">
+											<span class="upload_cancel" style="display: none;"><i class="li li_close_fill"></i></span>
+																				<label class="fileContainer" id="">
+												
+												<div>Upload Images</div>
+																				<input type="file" name="upload[]" id="upload1" class="other_image" data-role="none">
+											</label>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+							<span class="file_error mdl-textfield__error"></span>
+						</div>
+
+						
+						<div class="your_lifafa_wrap mb30">
+							<div class="width_100 white_bg">
+								<div class="spending_lifafa_wrap">
+									
+									<label for="" class="mb10 font16 d-block">The Lifafa will be redeemed for</label>
+									
+									<label for=""></label>
+									<div class="checkbox-btn-group">
+										<div class="dream_gift_wrap checkbox-btn">
+					                        <div class="category_list">
+					                        	<div class="categorycheckbox--">
+						                          <input type="checkbox" data-role="none" name="selected_category[1]" class="filled_in category_selection styled_checkbox categorycheckbox" id="category_check_1" value="travel" />
+						                          <label for="category_check_1">Travel</label>
+					                      		</div>
+					                          
+					                        </div>
+					                    </div>
+
+					                    <div class="dream_gift_wrap checkbox-btn">
+					                        <div class="category_list">
+					                        	<div class="categorycheckbox--">
+						                          <input type="checkbox" data-role="none" name="selected_category[2]" class="filled_in category_selection styled_checkbox categorycheckbox" id="category_check_2" value="experiences" />
+						                          <label for="category_check_2">Experiences</label>
+					                      		</div>
+					                          
+					                        </div>
+					                    </div>
+
+					                    <div class="dream_gift_wrap checkbox-btn">
+					                        <div class="category_list">
+					                        	<div class="categorycheckbox--">
+						                          <input type="checkbox" data-role="none" name="selected_category[3]" class="filled_in category_selection styled_checkbox categorycheckbox" id="category_check_3" value="products" />
+						                          <label for="category_check_3">Buy Products</label>
+					                      		</div>
+					                          
+					                        </div>
+					                    </div>
+
+					                    <div class="dream_gift_wrap checkbox-btn">
+					                        <div class="category_list">
+					                        	<div class="categorycheckbox--">
+						                          <input type="checkbox" data-role="none" name="selected_category[12]" class="filled_in category_selection styled_checkbox categorycheckbox" id="category_check_12" value="charity" />
+						                          <label for="category_check_12">Give to Charity</label>
+					                      		</div>
+					                          
+					                        </div>
+					                    </div>
+
+					                    <div class="dream_gift_wrap checkbox-btn">
+					                        <div class=" category_list ">
+					                        	<div class="categorycheckbox--">
+						                          <input type="checkbox" data-role="none" name="selected_category[13]" class="filled_in category_selection styled_checkbox categorycheckbox" id="category_check_13" value="others" />
+						                          <label for="category_check_13">I haven't decided</label>
+					                      		</div>
+					                          
+					                        </div>
+					                    </div>
+					                    <span class="selected_category_error mdl-textfield__error"></span>
+									</div>
+
+									<p class="font14 font_weight_normal">(*You can change your mind later)</p>
+							
+								</div>
+							</div>
+						</div>
+						
+
+						
+						<div class="mb30">
+							
+							<label for="" class="mb10 font16 d-block">The Lifafa is for</label>
+							<div class="radio-btn-group mb-3">
+								<div class="radio-btn">
+								<input id="Radio1" name="Radios" type="radio" value="Option 1" checked="checked">
+								<label for="Radio1">Yourself</label>
+								</div>
+
+								<div class="radio-btn">
+								<input id="Radio2" name="Radios" type="radio" value="Option 2" >
+								<label for="Radio2">Someone else</label>
+								</div>
+							</div>
+						</div>
+						
+
+						<div class="form_group mb30">
+							<label for="" class="mb10 font16 d-block">How much would you like to collect?</label>
+							<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label rupee_symbol is-upgraded width_100 pt0 pb0 left-addon">
+								<input class="mdl-textfield__input font_weight_normal font_size24" data-role="none" type="tel" name="lifafa_amount" id="lifafa_amount" value="50000" onkeypress="return isNumber(event)">
+								
+								<span class="lifafa_amount_error mdl-textfield__error"></span>
+							</div>
+						</div>
+						
+						<div class="mb30">
+							<label class = "mdl-checkbox mdl-js-checkbox" for = "checkbox11">
+				              <input type = "checkbox" id = "checkbox11" 
+				                 class = "mdl-checkbox__input" >
+				              <span class = "mdl-checkbox__label font_weight_normal font14">No specific amount, happy to see it soar!</span>
+				           </label>
+				           <p class="font_weight_normal font14">(* the Lifaf goal amount will be displayed to all contributors)</p>
+						</div>
+						
+						
+						
+						<div class="me_details_form_mobile mb30">
+							<div class="form_group width_100">
+								<label for="" class="mb10 font16 d-block">Lifafa expires on</label>
+								<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label info_width has-placeholder is-upgraded width_100 pt0">
+									<input type="text" class="datepicker-here mdl-textfield__input font_weight_normal" name="event_end_date" data-role="none" id="event_date" value="26-04-2018" placeholder="Select event end date">
+									<label for="event_date" class="event_date primary_text_color">
+											<i class="li li_calendar"></i>
+									</label>
+									<span class="mdl-textfield__error event_end_date_error"></span>
+								</div>
+							</div>
+							
+						</div>
+
+						
+						<form method="POST" action="https://www.lifafa.com/lifafa-publish/jonnn" accept-charset="UTF-8" rel="external" data-ajax="false">
+							<input name="_token" type="hidden" value="8SoTQXDOVnQOsYbPiyD8N4MS7DwNUlRozLIX79jT">				
+							<button data-role="none" value="withoutadhar" name="submit" class="mdl-button mdl-js-button mdl-button--raised width_100 primary_color">Update Lifafa</button>
+						</form>
+						
+
+					</div>
+				</div>
+			</form>
+		</div>
+
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  </body>
+</html>

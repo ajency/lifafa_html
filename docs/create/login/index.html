@@ -24,613 +24,99 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://ajency.github.io/lifafa_html/css/mobilestyle.css" rel="stylesheet">
     <link href="https://ajency.github.io/lifafa_html/css/custom.css" rel="stylesheet">
 
   </head>
-  <body class="custom_scrollbar lifafa-ui">
+  <body class="custom_scrollbar mdl-mobile ">
     
     
     
-	      	<div data-role="page" class="login_slide">
-			<header class="mdl-shadow--2dp white_bg mobile_header" data-role="header" data-position="fixed" data-tap-toggle="false">
-				<a href="https://www.lifafa.com" data-role="none" class="back_btn" data-transition="slidefade">
-					<i class="li li_left_arrow"></i>
-				</a>
-				<span class="header_text">Login</span>
-			</header>
-			<div class="body_content ui-content" data-role="main">
-				<div class="login_sign_wrap">
-					<div class="login_bg login_img"></div>
-					<div class="social_circle_wrap">
-						<a href="https://www.lifafa.com/facebook/login" rel="external" data-role="none" data-ajax="false">
-							<button class="social_circle fb_color" data-role="none">
-								<i class="li li_facebook white_color font_size24"></i>
-							</button>
-						</a>
-						<a href="https://www.lifafa.com/google/login" rel="external" data-role="none" data-ajax="false">
-							<button class="social_circle google_plus_bg" data-role="none">
-								<i class="li li_google-plus white_color font_size24"></i>
-							</button>
-						</a>
-					</div>
+	<div class="padding_20 ml20 mr20 bg-white d-flex align-items-center h-100">
+
+		<div class="w-100">
+			<p class="black_color text_align_center font_weight_semi font_size16 mb30">Choose your signup option</p>
+			<div class="social_circle_wrap mb30">
+				<div class="mb15">
+					<a href="https://www.lifafa.com/facebook/login" rel="external" data-role="none" data-ajax="false">
+						<button class="social_circle fb_color w-100 text-white font14" data-role="none">
+							<div class="d-flex">
+								<i class="li li_facebook white_color font14"></i> <span class="flex-1">Login with facebook</span>
+							</div>
+							
+						</button>
+					</a>
 				</div>
-				<div class="padding_20">
-					<div class="form_mobile_wrapper">
-						<form method="POST" action="https://www.lifafa.com/login" accept-charset="UTF-8" id="form_data" ><input name="_token" type="hidden" value="F49mUtVcMt2m0P5eZjEOV1nOo9mZntSXN4UxdjDB">						<input type="hidden" name="_token" value="F49mUtVcMt2m0P5eZjEOV1nOo9mZntSXN4UxdjDB">
-							<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label width_100">
-								
-								<input class="mdl-textfield__input" id="login" data-role="none" name="login" type="text">							<label class="mdl-textfield__label" for="login_email_mobile">Email Id / Mobile Number</label>
-								<span id="login_error" class="mdl-textfield__error"></span>
-							</div>
-							<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label width_100">
-								<input class="mdl-textfield__input " type="password" id="password" name="password" data-role="none">
-								<label class="mdl-textfield__label" for="login_password">Enter password</label>
-								<span id="password_error" class="mdl-textfield__error"></span>
-							</div>
-							<div class="display_flex justify_content">
-								<div class="width_50">
-									<input class="styled_checkbox" name="name" id="rememberme" type="checkbox" data-role="none">
-									<label for="rememberme">Stay signed in</label>
-								</div>
-								<div class="width_50 text_align_right">
-									<a href="" data-role="none" class="forget_pass primary_text_color" data-modal-open="forgetModal_entermobile_open">Forgot password?</a>
-								</div>
-							</div>
-
-							<div class="margin_top_30">
-								<button id="login_btn" type="submit" data-role="none" data-ajax="false" rel="external" class="mdl-button mdl-js-button mdl-button--raised primary_color width_100">Login</button>
-								<span id="invalid_login" class="invalid_login_error red_invalid"></span>
-							</div>
-						</form>				</div>
-
-					<div class="bottom_login_sign">
-						<p class="black_color text_align_center font_weight_semi font_size16">New to Lifafa?</p>
-						<div class="padding_top_20">
-							<a href="https://www.lifafa.com/signup" rel="external" data-ajax="false" data-role="none" class="mdl-button mdl-js-button mdl-button--raised width_100" data-transition="slidefade">Sign Up</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="snackbar thaks_message"></div>
-			<div class="overlay"></div>
-			
-			<div class="slide_modal_wrap animated slideInUpReverse" id="forgetModal_entermobile_open" data-modal="forgetModal_entermobile_open">
-				<div class="modal_content white_bg">
-					<header class="padding_20">
-						<span class="primary_text_color font_size16">Forgot password</span>
-						<span class="text_align_right floatR close" data-modal-close="forgetModal_entermobile_open">
-							<i class="li li_cancel"></i>
-						</span>
-					</header>
-					<div class="padding_leftright20">
-						<p class="font_size14 black_color">To retrieve your password please enter your mobile number.</p>
-						<form method="POST" action="https://www.lifafa.com/login" accept-charset="UTF-8" id="form_data_forget" data-role="none" rel="external" data-ajax="false"><input name="_token" type="hidden" value="F49mUtVcMt2m0P5eZjEOV1nOo9mZntSXN4UxdjDB">						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label width_100">
-								<input class="mdl-textfield__input mobile1" data-role="none" id="mobile" maxlength="10" type="tel" name="mobile">							<label class="mdl-textfield__label" for="mobile">Enter Mobile No</label>
-								<span id="mobile_error" class="mdl-textfield__error"></span>
-							</div>
-						</form>				</div>
-					<footer>
-						<button id="forgot_btn" data-role="none" class="mdl-button mdl-js-button mdl-button--raised width_100 primary_color">Next</button>
-					</footer>
-				</div>
-			</div>
-			
-			<div class="slide_modal_wrap slideInUpReverse animated" id="forgetModal_enterotp_open" data-modal="forgetModal_enterotp_open">
-				<div class="modal_content white_bg">
-					<header class="padding_20">
-						<span class="primary_text_color font_size16">Forgot password</span>
-						<span class="text_align_right floatR close" data-modal-close="forgetModal_enterotp_open">
-							<i class="li li_cancel"></i>
-						</span>
-					</header>
-					<div class="padding_20">
-						<span class="is_success" id="foregt_sucess_resend"></span>
-						<p class="font_size14 black_color	">To create your new password. Please enter your OTP</p>
-						<form method="POST" action="https://www.lifafa.com/login" accept-charset="UTF-8" id="verify_forget_form" rel="external" data-ajax="false"><input name="_token" type="hidden" value="F49mUtVcMt2m0P5eZjEOV1nOo9mZntSXN4UxdjDB">						<input type="hidden" name="mobile" id="forget_mobile" value="">
-							<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label width_100">
-								<input class="mdl-textfield__input" type="password" id="mobile_otp_verify" value="" name="mobile_otp" maxlength="6" data-role="none">
-								<label class="mdl-textfield__label" for="mobile_otp_verify">Please enter your OTP and set your new password</label>
-		            <span id="mobile_otp_error" class="mdl-textfield__error"></span>
-							</div>
-							<button id="forgot_btn_reset" data-role="none" class="font_weight_semi padding_0 primary_text_color">Resend OTP</button>
-						</form>				</div>
-					<footer>
-						<button id="verify_forget" data-role="none" class="mdl-button mdl-js-button mdl-button--raised width_100 primary_color">Next</button>
-					</footer>
-				</div>
-			</div>
-
-			
-			<div class="slide_modal_wrap slideInUpReverse animated" id="forgetModal_enterpass_open" data-modal="forgetModal_enterpass_open">
-				<div class="modal_content white_bg">
-					<header class="padding_20">
-						<span class="primary_text_color font_size16">Forgot password</span>
-						<span class="text_align_right floatR close" data-modal-close="forgetModal_enterpass_open">
-							<i class="li li_cancel"></i>
-						</span>
-					</header>
-					<div class="padding_20">
-						<p class="font_size14 black_color">Please enter your new password</p>
-						<form method="POST" action="https://www.lifafa.com/login" accept-charset="UTF-8" id="reset_password_form" rel="external" data-ajax="false"><input name="_token" type="hidden" value="F49mUtVcMt2m0P5eZjEOV1nOo9mZntSXN4UxdjDB">						<input type="hidden" name="mobile" id="rcv_mobile" value="" data-role="none">
-							<input type="hidden" name="mobile_otp" id="mobile_otp" value="" data-role="none">
-							<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label width_100">
-								<input data-role="none" class="mdl-textfield__input forgot_pwa_pass" type="password" id="password" name="change_password" onfocus="this.removeAttribute('readonly');">
-	          		<label class="mdl-textfield__label" for="mobile_otp_verify">Enter New Password</label>
-								<span id="password_error_display" class="mdl-textfield__error"></span>
-								 <span class="" id="reset_forgt_pass_status"></span>
-							</div>
-						</form>				</div>
-					<footer>
-						<button id="reset_password" data-role="none" class="mdl-button mdl-js-button mdl-button--raised width_100 primary_color">Submit</button>
-					</footer>
-				</div>
-			</div>
-		</div>
-		<div class="slide_modal_wrap animated white_bg slideInUpReverse" id="social_login_verify" data-modal="social_login_verify">
-				<div class="modal_content">
-					<header class="padding_20">
-						<span class="primary_text_color font_size16">Add and verify your mobile no</span>
-						<span class="text_align_right floatR close" data-modal-close="social_login_verify">
-							<i class="li li_cancel"></i>
-						</span>
-					</header>
-					<div class="padding_20">
-						<p class="font_size14 black_color">Thank you for signing in. Please share your details to create your account.</p>
-						<form method="POST" action="https://www.lifafa.com/login" accept-charset="UTF-8" id="form_social_verify" rel="external" data-ajax="false"><input name="_token" type="hidden" value="F49mUtVcMt2m0P5eZjEOV1nOo9mZntSXN4UxdjDB">						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label width_100">
-								<input class="mdl-textfield__input" data-role="none" type="tel" id="mobile_no_social" name="mobile_no_social" maxlength="10">
-								<input type="hidden" id="verify_mobile1" name="verify_mobile1" data-role="none">
-								<label class="mdl-textfield__label" for="mobile_no">Enter Mobile No</label>
-								<span id="mobile_no_social_error" class="mdl-textfield__error"></span>
-								 <span class="is_success" id="otp_message"></span>
-							</div>
-							<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label width_100 email_social">
-								<input class="mdl-textfield__input" data-role="none" type="text" id="social_email" value="" name="social_email">
-								<label class="mdl-textfield__label" for="social_email">Enter Email</label>
-								<span id="social_email_error" class="mdl-textfield__error"></span>
-							</div>
-							<button data-role="none" class="mdl-button mdl-js-button mdl-js-ripple-effect width_45 floatL resend_otp margin_bottom_20" id="social_verify">Send OTP</button>
-						</form>				</div>
-				</div>
-		</div>
-		<div class="slide_modal_wrap animated slideInUpReverse" id="social_login_verify_check" data-modal="social_login_verify_check">
-				<div class="modal_content white_bg">
-					<header class="padding_20">
-						<span class="primary_text_color font_size16">Add and verify your mobile no</span>
-						<span class="text_align_right floatR close" data-modal-close="social_login_verify_check">
-							<i class="li li_cancel"></i>
-						</span>
-						<span id="otp_msg" class="is_success"></span>
-					</header>
-					<div class="padding_20">
-						<p class="font_size14 black_color">Thank you for signing in. Please share your details to create your account.</p>
-						<form method="POST" action="https://www.lifafa.com/login" accept-charset="UTF-8" id="otp_check" style="display:none" rel="external" data-ajax="false"><input name="_token" type="hidden" value="F49mUtVcMt2m0P5eZjEOV1nOo9mZntSXN4UxdjDB">			<div class="floatL valid_tick mdl-textfield input__field mdl-js-textfield mdl-textfield--floating-label form-otp is-dirty is-focused">
-	                <input class="mdl-textfield__input " data-role="none"  type="text" id="social_mobile_no" readonly name="social_password">
-	                <label class="mdl-textfield__label" for="mobile_otp_verify">Mobile No.</label>
-	            </div>
-	            <div class="floatL valid_tick mdl-textfield input__field mdl-js-textfield mdl-textfield--floating-label form-otp width_100">
-	                <input class="mdl-textfield__input social_password_format" data-role="none"  type="password" id="social_password" name="social_password">
-	                <label class="mdl-textfield__label" for="mobile_otp_verify">Create a password for your Lifafa account</label>
-	                <span class="" id="social_password_status"></span>
-	                <span id="social_password_error" class="mdl-textfield__error"></span>
-	            </div>
-	            <div class="valid_tick mdl-textfield input__field floatL mdl-js-textfield mdl-textfield--floating-label form-otp width_100">
-	                <input class="mdl-textfield__input otp_mask" data-role="none" type="tel" id="mobile_otp_verify" name="mobile_otp_verify" maxlength="6">
-	                <label class="mdl-textfield__label" for="mobile_otp_verify">Enter OTP</label>
-	                <span id="mobile_otp_verify_error" class="mdl-textfield__error"></span>
-	            </div>
-	            <div class="resetPassword_btn floatL display_flex width_100">
-	                <button id="social_verify_otp" data-role="none" class="mdl-button primary_color mdl-js-button mdl-js-ripple-effect">Verify</button>
-	                 <button id="social_resend_otp" data-role="none" class="primary_text_color font_weight_bold">Resend OTP</button>
-	            	<button id="change_mobile_no" data-role="none" class="primary_text_color font_weight_bold">Change Mobile</button>
-	            </div>
-	        </form>    		<div class="clearfix"></div>
-					</div>
-				</div>
-		</div>
-
-	    <script src="https://www.lifafa.com/frontend/modernizr.js"></script>
-	    <script src="https://www.lifafa.com/frontend/mobile/dist/js/mobileapp.js"></script>
-
-	    <script src="https://www.lifafa.com/frontend/desktop/dist/js/cropper.js"></script>
-	    <script src="https://www.lifafa.com/frontend/desktop/dist/js/jquery.Jcrop.min.js"></script>
-	    <script src="https://www.lifafa.com/frontend/desktop/dist/js/colorbox.js"></script>
-	    <script src="https://www.lifafa.com/frontend/desktop/dist/js/jquery.form.min.js"></script>
-	    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
-
-	    	<script type="text/javascript">
-		var token ="F49mUtVcMt2m0P5eZjEOV1nOo9mZntSXN4UxdjDB";
-		 $('#invalid_login').hide();
-		 $('#login_btn').bind("click",function() {
-				        $('#form_data').ajaxSubmit({
-		            url: "https://www.lifafa.com/login",
-		            type: 'post',
-		            data: { "_token" : token },
-		            dataType: 'json',
-		            beforeSubmit : function()
-		            {
-		                $("[id$='_error']").empty();
-		                
-		                $('#invalid_login').hide();
-		            },
-		            success : function(resp)
-		            {
-		                if (resp.success == true) {
-		                    if(resp.url != "")
-		                    {
-		                       window.location.href = resp.url;
-		                    }
-		                    else
-		                    {
-		                     
-		                       window.location.href = "https://www.lifafa.com";
-		                    }
-		                }else{
-		                    $('#invalid_login').show();
-		                    if (resp.is_active_check == 0) {
-		                        $('#invalid_login').text("Your account has been deactivated. Kindly write to support@lifafa.com to reactivate the same.");
-		                    }else if(resp.is_block_check == 1)
-	                    	{
-	                        	$('#invalid_login').text("Your account has been blocked. Kindly write to support@lifafa.com to unblocked the same.");
-	                    	}
-	                    	else if((resp.is_active_check == 0) && (resp.is_block_check == 1))
-	                    	{
-	                        	$('#invalid_login').text("Your account has been deactivated or blocked. Kindly write to support@lifafa.com to reactivate or unblocked the same.");
-	                    	}else if((resp.limit != '')&&(resp.login_attempt==6))
-		                    {
-		                        $('#invalid_login').text(resp.limit);
-		                    }
-	                    	else{
-		                        $('#invalid_login').text("Username and password don't match.");
-		                    };
-		                }
-		            },
-		            error : function(respObj){
-		                $('#wait').hide();
-		                $('.mdl-textfield__error').css('visibility','visible');
-		                $.each(respObj.responseJSON, function(k,v){
-		                    $('#'+k+'_error').text(v);
-		                });
-		            }
-		        });
-		        return false;
-		});
-
-		$('#forgot_btn').click(function() {
-	        forget_pwd();
-	       	return false;
-	    });
-
-		$('#forgot_btn_reset').click(function(){
 				
+				<div class="mb15">
+					<a href="https://www.lifafa.com/google/login" rel="external" data-role="none" data-ajax="false" class="mb15">
+						<button class="social_circle google_plus_bg w-100 text-white font14" data-role="none">
+							<div class="d-flex">
+								<i class="li li_google-plus white_color font14"></i> <span class="flex-1">Login with Google</span>
+							</div>
+						</button>
+					</a>
+				</div>
+			</div>
 
-	        var forget_mobile_value = $('#mobile').val();
+			<div class="text-divider mb20">or</div>
 
-	        $.ajax({
-	            url: "https://www.lifafa.com/forget-resend-otp",
-	            type: 'post',
-	            data: { "_token" : token , mobile_no : forget_mobile_value},
-	            dataType: 'json',
-	            beforeSubmit : function()
-	            {
-	                $("[id$='_error']").empty();
-	                $('.overlay').show();
-	            },
-	            success : function(resp)
-	            {
-	                if (resp.success == true) {
-	                    $('.thaks_message').addClass('show').text('OTP sent successfully');
-	                    setTimeout(function() {
-	                        $('.thaks_message').removeClass('show').text('');
-	                    }, 3000);
-	                };
-	            },
-	            error : function(respObj){
-	                $.each(respObj.responseJSON, function(k,v){
-	                    $('#'+k+'_error').text(v);
-	                });
-	            }
-	        });
-	        return false;
-	    });
+			<a href="javascript:void(0);" class="collapsible primary_text_color ui-link text_align_center as-block font14 mb15 font_weight_normal">Sign up using your email ID</a>
+			<div class="collapsible-content">
+				  <div class="form_mobile_wrapper">
+					<form method="POST" action="https://www.lifafa.com/signup" accept-charset="UTF-8" id="signup_form" rel="external" data-ajax="false"><input name="_token" type="hidden" value="JB6ukLfGfniNGVWbmVSAscqJ8b6AFbOGyD16QM2Q">					<input type="hidden" name="_token" value="JB6ukLfGfniNGVWbmVSAscqJ8b6AFbOGyD16QM2Q">
 
-		function forget_pwd(){
-			$('#form_data_forget').ajaxSubmit({
-	            url: "https://www.lifafa.com/forgot-password",
-	            type: 'post',
-	            data: { "_token" : token },
-	            dataType: 'json',
-	            beforeSubmit : function()
-	            {
-	                $("[id$='_error']").empty();
-	                $('.overlay').show();
-	            },
-	            success : function(resp)
-	            {
-	                if (resp.success == true) {
-						$('#forgot').hide();
-	                    $('#head_title').text('Verify Number');
-	                    $('#msg').text('Verify your number and reset your password');
-	                    $('#forget_mobile').val(resp.mobile);
-	                    $('#forgetModal_enterotp_open').addClass('slideInUp').show();
-											$('.thaks_message').addClass('show').text('OTP sent successfully');
-	                    setTimeout(function() {
-	                        $('.thaks_message').removeClass('show').text('');
-	                    }, 3000);
-	                    $('#forgetModal_entermobile_open').hide();
-	                }
-	                else
-	                {
-	                    $('#mobile_error').text('There is no account with this mobile number');
-	                }
-	            },
-	            error : function(respObj){
-	                $.each(respObj.responseJSON, function(k,v){
-	                    $('#'+k+'_error').text(v);
-		                $('.mdl-textfield__error').css('visibility','visible');
-	                });
-	            }
-	        });
-		}
-	    $('#verify_forget').click(function() {
-	        $('#verify_forget_form').ajaxSubmit({
-	            url: "https://www.lifafa.com/forgot-password/verify",
-	            type: 'post',
-	            data: { "_token" : token },
-	            dataType: 'json',
-	            beforeSubmit : function()
-	            {
-	                $("[id$='_error']").empty();
-	                $('.overlay').show();
-	            },
-	            success : function(resp)
-	            {
-	                if (resp.success == true) {
-	                    $('#rcv_mobile').val(resp.data.mobile);
-	                    $('#mobile_otp').val(resp.data.mobile_otp);
-	                    $('#reset_password_form').show();
-	                    $('#head_title').text('Reset Password');
-	                    $('#msg').text('Your Mobile is verified now reset your password');
-	                    $('#verify_forget_form').hide();
-	                    $('#forgetModal_enterpass_open').addClass('slideInUp').show();
-	                    $('#forgetModal_enterotp_open').hide();
-	                }
-	                else
-	                {
-	                    $('#mobile_otp_error').text(resp.message);
-	                }
-	            },
-	            error : function(respObj){
-	                $.each(respObj.responseJSON, function(k,v){
-	                    $('#'+k+'_error').text(v);
-		                $('.mdl-textfield__error').css('visibility','visible');
-	                });
-	            }
-	        });
-	        return false;
-	    });
-	    $('#reset_password').click(function() {
-	        $('#reset_password_form').ajaxSubmit({
-	            url: "https://www.lifafa.com/forgot-password/reset",
-	            type: 'post',
-	            data: { "_token" : token },
-	            dataType: 'json',
-	            beforeSubmit : function()
-	            {
-	                $("[id$='_error']").empty();
-	                $('.overlay').show();
-	            },
-	            success : function(resp)
-	            {
-	                if (resp.success == true) {
-	                    window.location.href = resp.url;
-	                }
-	                else
-	                {
-	                    $('#verify_forget_form').show();
-	                    $('#reset_password_form')[0].reset();
-	                    $('#reset_password_form').hide();
-	                    $('#forgetModal_enterotp_open').addClass('slideInUp').show();
-	                    $('#forgetModal_enterpass_open').hide();
-	                    $('#mobile_otp_verify').val('');
-	                    $('#reset_forgt_pass_status').text('');
-	                    $('#mobile_otp_error').text('Enter valid OTP');
-	                }
-	            },
-	            error : function(respObj){
+						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label width_100">
+							<input class="mdl-textfield__input" data-role="none" id="email" name="email" type="text">						<label class="mdl-textfield__label" for="sign_email">Email ID</label>
+							<span id="email_signup_error" class="mdl-textfield__error"></span>
+						</div>
 
-	                $.each(respObj.responseJSON, function(k,v){
-	                    $('#password_error_display').text(v);
-	                });
-	            }
-	        });
-	        return false;
-	    });
-		</script>
+						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label width_100">
+							<input class="mdl-textfield__input reg_password" type="password" data-role= "none" id="password" name="password">
+							<label class="mdl-textfield__label" for="login_password">Set a password</label>
+							<span id="password_signup_error" class="mdl-textfield__error"></span>
+							<span class="" id="password_status"></span>
+						</div>
 
-	<script>
-		$('#social_resend_otp').click(function(e,ele) {
-	        $.ajax({
-	            url: "https://www.lifafa.com/social-resend-otp",
-	            type: 'post',
-	            data: { "_token" : token , mobile_no : $('#mobile_no_social').val()},
-	            dataType: 'json',
-	            beforeSubmit : function()
-	            {
-	                $("[id$='_error']").empty();
-	                $('.overlay').show();
-	            },
-	            success : function(resp)
-	            {
-	                if (resp.success == true) {
-										$('.thaks_message').addClass('show').text('OTP sent successfully');
-										setTimeout(function() {
-												$('.thaks_message').removeClass('show').text('');
-										}, 3000);
-	                };
-	            },
-	            error : function(respObj){
-					$('.mdl-textfield__error').css('visibility','visible');
-	                $.each(respObj.responseJSON, function(k,v){
-	                    $('#'+k+'_error').text(v);
-	                });
-	            }
-	        });
-	        return false;
-	    });
-	    </script>
-	
-	<script type="text/javascript">
-	    $(document).ready(function() {
-	        $('.forgot_pwa_pass').keyup(function() {
-	        	$('#reset_forgt_pass_status').html(checkStrength($('.forgot_pwa_pass').val()))
-	        })
+						<div class="padding_top_20">
+							<button id="signup_form_submit" type="submit" class="mdl-button mdl-js-button mdl-button--raised primary_color width_100">Continue</button>
+						</div>
 
-	        $('.social_password_format').keyup(function(){
-	            $('#social_password_status').html(checkStrength($('.social_password_format').val()))
-	        })
-	        function checkStrength(password) {
-	            var strength = 0
-	            if (password.length < 6 && password.length != 0) {
-	                $('#reset_forgt_pass_status').removeClass('passwordStrength_medium')
-	                $('#reset_forgt_pass_status').removeClass('passwordStrength_great')
-	                $('#reset_forgt_pass_status').addClass('passwordStrength_weak')
+					</form>
+				</div>
+			</div>
 
-	                $('#social_password_status').removeClass('passwordStrength_medium')
-	                $('#social_password_status').removeClass('passwordStrength_great')
-	                $('#social_password_status').addClass('passwordStrength_weak')
-
-	                return 'Too short'
-	            }
-	            if (password.length > 5) strength += 1
-	            
-	            if (password.match(/([a-z].*[A-Z])|([A-Z].*[a-z])/)) strength += 1
-	            
-	            if (password.match(/([a-zA-Z])/) && password.match(/([0-9])/)) strength += 1
-	            
-	            if (password.match(/([!,%,&,@,#,$,^,*,?,_,~])/)) strength += 1
-	            
-	            if (password.match(/(.*[!,%,&,@,#,$,^,*,?,_,~].*[!,%,&,@,#,$,^,*,?,_,~])/)) strength += 1
-	            
-	            
-	            if (strength < 2 && password.length != 0) {
-	                $('#reset_forgt_pass_status').removeClass('passwordStrength_weak')
-	                $('#reset_forgt_pass_status').removeClass('passwordStrength_medium')
-	                $('#reset_forgt_pass_status').removeClass('passwordStrength_great')
-	                $('#reset_forgt_pass_status').addClass('passwordStrength_weak')
+			
+		</div>
 
 
-	                $('#social_password_status').removeClass('passwordStrength_weak')
-	                $('#social_password_status').removeClass('passwordStrength_medium')
-	                $('#social_password_status').removeClass('passwordStrength_great')
-	                $('#social_password_status').addClass('passwordStrength_weak')
 
-	                return 'Weak'
-	            } else if (strength == 2 && password.length != 0) {
-	                $('#reset_forgt_pass_status').removeClass('passwordStrength_weak')
-	                $('#reset_forgt_pass_status').removeClass('passwordStrength_great')
-	                $('#reset_forgt_pass_status').addClass('passwordStrength_medium')
+		
+	</div>
+ 	
+ 	
 
-	                $('#social_password_status').removeClass('passwordStrength_weak')
-	                $('#social_password_status').removeClass('passwordStrength_great')
-	                $('#social_password_status').addClass('passwordStrength_medium')
+ 	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 
-	                return 'Medium'
-	            }else if(strength >= 4 && password.length != 0){
-	                $('#reset_forgt_pass_status').removeClass('passwordStrength_weak')
-	                $('#reset_forgt_pass_status').removeClass('passwordStrength_medium')
-	                $('#reset_forgt_pass_status').addClass('passwordStrength_great')
+ 	<script>
+	var coll = document.getElementsByClassName("collapsible");
+	var i;
 
-	                $('#social_password_status').removeClass('passwordStrength_weak')
-	                $('#social_password_status').removeClass('passwordStrength_medium')
-	                $('#social_password_status').addClass('passwordStrength_great')
-
-	                return 'Strong'
-	            }
-	            else if(password.length == 0){
-	                $('#password_status').removeClass('passwordStrength_weak')
-	                $('#password_status').removeClass('passwordStrength_medium')
-	                $('#password_status').removeClass('passwordStrength_great')
-
-	                $('#social_password_status').removeClass('passwordStrength_weak')
-	                $('#social_password_status').removeClass('passwordStrength_medium')
-	                $('#social_password_status').removeClass('passwordStrength_great')
-
-	                return '';
-	            }
-	            else
-	            {
-	            	$('#reset_forgt_pass_status').removeClass('passwordStrength_weak')
-	                $('#reset_forgt_pass_status').removeClass('passwordStrength_great')
-	                $('#reset_forgt_pass_status').addClass('passwordStrength_medium')
-
-	                $('#social_password_status').removeClass('passwordStrength_weak')
-	                $('#social_password_status').removeClass('passwordStrength_great')
-	                $('#social_password_status').addClass('passwordStrength_medium')
-
-	                return 'Medium'
-	            }
+	for (i = 0; i < coll.length; i++) {
+	    coll[i].addEventListener("click", function() {
+	        this.classList.toggle("active");
+	        var content = this.nextElementSibling;
+	        if (content.style.display === "block") {
+	            content.style.display = "none";
+	        } else {
+	            content.style.display = "block";
 	        }
 	    });
+	}
 	</script>
-	    <script type="text/javascript">
 
-	        var url = "https://www.lifafa.com/create-lifafa";
-	        var login_url = 'https://www.lifafa.com/login';
-	        var token = 'F49mUtVcMt2m0P5eZjEOV1nOo9mZntSXN4UxdjDB';
-
-	        
-	        
-	        
-	        
-	        
-	        
-	        
-	        
-	        
-	        
-	        
-	        
-	        
-	        
-	        
-	        
-	        $(document).ready(function(){
-	            loaderHide();
-	        })
-	    </script>
-	    <script type="text/javascript">
-	        $(document).ready(function(){
-	            var token = 'F49mUtVcMt2m0P5eZjEOV1nOo9mZntSXN4UxdjDB';
-
-	            $("#search_lifafa").keyup(function(){
-	                var query_string = $(this).val()
-	                var select_html = $('.search_lifafa_data');
-	                    $.ajax({
-	                        url:"https://www.lifafa.com/lifafasearch",
-	                        type:'get',
-	                        dataType:'json',
-	                        data: { '_token':token,'query-string':query_string},
-	                        success: function (respObj) {
-	                            select_html.html(respObj.html);
-	                        }
-	                    });
-	            });
-	            $('.close_model').click(function(){
-	                location.reload();
-	            });
-
-	        });
-
-	        function loaderShow(){
-	            $('.loaderlifafa').show();
-	        }
-
-	        function loaderHide(){
-	            $('.loaderlifafa').hide();
-	        }
-	    </script>
-
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
   </body>
 </html>

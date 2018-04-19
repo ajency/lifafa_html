@@ -1,6 +1,49 @@
-.test-class{
-	color: red;
-	.another-test-class{
-		color: blue;
+
+.file-uploader {
+	border: 2px dashed #ccc;
+    border-radius: 8px;
+    padding: 8px;
+    background: #f6f6f6;
+    position: relative;
+    input[type="file"] {
+    	position: absolute;
+    	left: 0;
+    	top: 0;
+    	opacity: 0;
+    }
+}
+
+a.collapsible {
+	position: relative;
+	&:after {
+		font-family: 'Material Icons';
+		content: "\E313";
+		margin-left: 10px;
+		font-size: 20px;
+		display: inline-block;
+		vertical-align: bottom;
 	}
+	&.active {
+		&:after {
+			content: "\E316";
+		}
+	}
+}
+
+
+.left-addon {
+	position: relative;
+	&:before {
+		content: "\20B9";
+		position: absolute;
+		left: 0;
+		bottom: 8px;
+	}
+	input {
+		padding-left: 15px;
+	}
+}
+
+.collapsible-content {
+  display: none;
 }
