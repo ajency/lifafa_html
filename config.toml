@@ -1,0 +1,5 @@
+publishDir = "docs"
+baseURL = "https://ajency.github.io/lifafa/"
+languageCode = "en-us"
+title = "Lifafa Screens"
+theme = "lifafa-theme"

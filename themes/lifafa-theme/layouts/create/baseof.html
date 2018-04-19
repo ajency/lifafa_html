@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>{{ .Title }} :: {{ .Site.Title }}</title>
+
+    <!-- TODO add manifest here -->
+    <link rel="manifest" href="/manifest.json">
+    <!-- Add to home screen for Safari on iOS -->
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta property="og:url"  content=""/>
+    <meta property="og:type" content="" />
+    <meta property="og:title"  content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <link rel="shortcut icon" href="/frontend/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/frontend/images/favicon.ico" type="image/x-icon">
+
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link href="{{"css/mobilestyle.css" | absURL}}" rel="stylesheet">
+    <link href="{{"css/custom.css" | absURL}}" rel="stylesheet">
+
+  </head>
+  <body class="custom_scrollbar lifafa-ui">
+    <!-- <div class="search_lifafa_data">
+    </div> -->
+    <!-- <div class="loaderlifafa">
+        <div class="mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active"></div>
+    </div> -->
+    {{ block "main" . }}
+    	<!-- The part of the page that begins to differ between templates -->
+    {{ end }}
+  </body>
+</html>
