@@ -24,12 +24,13 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="{{"css/mobilestyle.css" | absURL}}" rel="stylesheet">
     <link href="{{"css/custom.css" | absURL}}" rel="stylesheet">
 
   </head>
-  <body class="custom_scrollbar lifafa-ui">
+  <body class="custom_scrollbar mdl-mobile ">
     <!-- <div class="search_lifafa_data">
     </div> -->
     <!-- <div class="loaderlifafa">
@@ -38,5 +39,6 @@
     {{ block "main" . }}
     	<!-- The part of the page that begins to differ between templates -->
     {{ end }}
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
   </body>
 </html>
