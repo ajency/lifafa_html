@@ -82,7 +82,8 @@
           align-items: initial;
   margin-bottom: 0;
 }
-.mdl-mobile .select_event_bg {
+.mdl-mobile .event_select_wrapper .category_event.round-variant .select_event_bg,
+.mdl-mobile .event_select_wrapper .category_event.square-variant .select_event_bg {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100px;
           flex: 0 0 100px;
@@ -90,50 +91,64 @@
   background: #f6f6f6;
   margin-bottom: 0;
   position: relative;
-}
-.mdl-mobile .select_event_bg:not(:last-child) {
   margin-right: 15px;
 }
-.mdl-mobile .select_event_bg:before {
+.mdl-mobile .event_select_wrapper .category_event.round-variant .select_event_bg.selected,
+.mdl-mobile .event_select_wrapper .category_event.square-variant .select_event_bg.selected {
+  background: #f6f6f6 !important;
+}
+.mdl-mobile .event_select_wrapper .category_event.round-variant .select_event_bg.selected:after,
+.mdl-mobile .event_select_wrapper .category_event.square-variant .select_event_bg.selected:after {
+  display: none;
+}
+.mdl-mobile .event_select_wrapper .category_event.round-variant .select_event_bg.selected:before,
+.mdl-mobile .event_select_wrapper .category_event.square-variant .select_event_bg.selected:before {
+  color: #1595ae;
+}
+.mdl-mobile .category_event.square-variant .select_event_bg {
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25), 0 0px 0px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25), 0 0px 0px rgba(0, 0, 0, 0.22);
+}
+.mdl-mobile .category_event.square-variant .select_event_bg.selected {
+  -webkit-box-shadow: 0 2px 4px #1595ae, 0 0px 0px #1595ae;
+          box-shadow: 0 2px 4px #1595ae, 0 0px 0px #1595ae;
+}
+.mdl-mobile .category_event.square-variant .select_event_bg:first-child {
+  margin-left: 5px;
+}
+.mdl-mobile .category_event.round-variant .select_event_bg:before {
   position: absolute;
   left: 0;
   right: 0;
   bottom: -25px;
   text-align: center;
 }
-.mdl-mobile .select_event_bg.color_wedding:before {
+.mdl-mobile .category_event.round-variant .select_event_bg.color_wedding:before {
   content: "Wedding";
 }
-.mdl-mobile .select_event_bg.color_farewell:before {
+.mdl-mobile .category_event.round-variant .select_event_bg.color_farewell:before {
   content: "Farewell";
 }
-.mdl-mobile .select_event_bg.color_babyshower:before {
+.mdl-mobile .category_event.round-variant .select_event_bg.color_babyshower:before {
   content: "Babyshower";
 }
-.mdl-mobile .select_event_bg.color_honeymoon:before {
+.mdl-mobile .category_event.round-variant .select_event_bg.color_honeymoon:before {
   content: "Honeymoon";
 }
-.mdl-mobile .select_event_bg.color_custom:before {
+.mdl-mobile .category_event.round-variant .select_event_bg.color_custom:before {
   content: "Custom";
 }
-.mdl-mobile .select_event_bg.color_birthday:before {
+.mdl-mobile .category_event.round-variant .select_event_bg.color_birthday:before {
   content: "Birthday";
 }
-.mdl-mobile .select_event_bg.color_anniversary:before {
+.mdl-mobile .category_event.round-variant .select_event_bg.color_anniversary:before {
   content: "Anniversay";
 }
-.mdl-mobile .select_event_bg.color_housewarming:before {
+.mdl-mobile .category_event.round-variant .select_event_bg.color_housewarming:before {
   content: "Housewarming";
 }
-.mdl-mobile .select_event_bg.selected {
+.mdl-mobile .category_event.round-variant .select_event_bg.selected {
   border: 2px solid #1595ae;
-  background: #f6f6f6 !important;
-}
-.mdl-mobile .select_event_bg.selected:after {
-  display: none;
-}
-.mdl-mobile .select_event_bg.selected:before {
-  color: #1595ae;
 }
 .mdl-mobile .radio-btn-group .radio-btn {
   display: inline-block;
@@ -215,25 +230,10 @@
 .mdl-mobile .w-100 {
   width: 100% !important;
 }
-.mdl-mobile .d-flex {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-}
-.mdl-mobile .align-items-center {
-  -webkit-box-align: center !important;
-      -ms-flex-align: center !important;
-          align-items: center !important;
-}
 .mdl-mobile .justify-content-between {
   -webkit-box-pack: justify !important;
       -ms-flex-pack: justify !important;
           justify-content: space-between !important;
-}
-.mdl-mobile .justify-content-center {
-  -webkit-box-pack: center !important;
-      -ms-flex-pack: center !important;
-          justify-content: center !important;
 }
 .mdl-mobile .alert {
   position: relative;
