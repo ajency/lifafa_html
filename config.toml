@@ -1,5 +1,5 @@
 publishDir = "docs"
-baseURL = "https://ajency.github.io/lifafa/"
+baseURL = "https://ajency.github.io/lifafa_html/"
 languageCode = "en-us"
 title = "Lifafa Screens"
 theme = "lifafa-theme"

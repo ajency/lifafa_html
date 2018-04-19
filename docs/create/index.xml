@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Your Lifafa on Lifafa Screens</title>
-    <link>https://ajency.github.io/lifafa/create/</link>
+    <link>https://ajency.github.io/lifafa_html/create/</link>
     <description>Recent content in Your Lifafa on Lifafa Screens</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 26 Sep 2017 13:29:21 +0530</lastBuildDate>
     
-	<atom:link href="https://ajency.github.io/lifafa/create/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ajency.github.io/lifafa_html/create/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Log In</title>
-      <link>https://ajency.github.io/lifafa/create/login/</link>
+      <link>https://ajency.github.io/lifafa_html/create/login/</link>
       <pubDate>Fri, 12 Jan 2018 03:01:59 +0530</pubDate>
       
-      <guid>https://ajency.github.io/lifafa/create/login/</guid>
+      <guid>https://ajency.github.io/lifafa_html/create/login/</guid>
       <description></description>
     </item>
     
