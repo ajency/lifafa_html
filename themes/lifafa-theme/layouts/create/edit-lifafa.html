@@ -3,11 +3,13 @@
 
 		<div class="padding_20">
 
-			<label for="" class="mb10 font16 d-block">Select an Occasion</label>
+			
+			<p class="mb10 font14 font_weight_bold">Select an Occasion</p>
 
 
 
-				<div class="event_select_wrapper">
+
+				<div class="event_select_wrapper mb15">
 					<div class="create_lifafa_bg_wrap">
 					<div class="">
 						
@@ -56,8 +58,8 @@
 
 						<div class="unique_title">
 							<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label is-upgraded width_100">
-								<label for="" class="mb10 font16 d-block">Lifafa title</label>
-								<input class="mdl-textfield__input font_weight_normal" type="text" name="title" id="sample3" ng-model="lifafa_name" value="" data-role="none" placeholder="Eg Big Fat wedding">
+								<p class="mb10 font14 font_weight_bold">Give your Lifafa a title</p>
+								<input class="mdl-textfield__input font_weight_normal" type="text" name="title" id="sample3" ng-model="lifafa_name" value="" data-role="none" placeholder="Tying the Knot">
 								<!-- <label class="mdl-textfield__label" for="sample3">Your Lifafa title</label> -->
 								<span class="mdl-textfield__error title_error"></span>
 							</div>
@@ -66,7 +68,8 @@
 						<div class="me_details_form_mobile mb15">
 							<div class="form_group width_100">
 								<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label info_width has-placeholder is-upgraded width_100">
-									<label for="" class="mb10 font16 d-block">Ocassion date</label>
+									
+									<p class="mb10 font14 font_weight_bold">Ocassion date</p>
 									<input type="text" class="datepicker-here mdl-textfield__input font_weight_normal" name="event_occasion_date" data-role="none" id="event_occasion_date" value="19-04-2018" placeholder="Set Date">
 									<label for="event_occasion_date" class="event_date primary_text_color">
 											<i class="li li_calendar"></i>
@@ -79,8 +82,14 @@
 						
 
 						<div class="mb30">
+
+							<div class="display_flex justify_content mb10">
+								
+								<p class="font14 font_weight_bold">About the ocassion</p>
+								<div class="primary_text_color text_align_right font14 mb-0 border-bottom" id="edit_note_btn font_weight_bold">Edit note</div>
+							</div>
 							<!-- <div class="primary_text_color text_align_right" id="edit_note_btn">Edit note</div> -->
-							<label for="" class="mb10 font16 d-block">About my ocassion</label>
+							
 							<div class="edit_content_wrap">
 								<div class="edit_content_text bg-white">
 									<p contenteditable="true" id="note_edit_des" class="font_size14 light_color_text">It’s my big day! My fiance and I are very excited to invite you to our wedding. Your presence will be the biggest gift for us. We are so blessed to have everything we need to start our new life. So, we thought we would create a little Lifafa instead of accepting gifts. You can use it to contribute to our future and help us in realizing our dreams. We look forward to seeing you on our big day!</p>
@@ -90,29 +99,25 @@
 							</div>
 						</div>
 
-						<div class="video_paste_wrap width_100 mb30">
-							<span class="video_paste_text font16 d-block mb10">Upload video (optional)</span>
-							<div class="paste_videolink_wrap">
-								<input type="text" name="url" placeholder="Enter YouTube link" value="" class="video_paste mdl-textfield__input font_weight_normal " data-role="none">
-								
-							</div>
-							<span class="url_error mdl-textfield__error"></span>
-						</div>
+						
 					
 						<div class="mb30">
 							<div class="upload_pic_container">
-								<span class="video_paste_text font16 d-block mb10">Upload your own images</span>
+								
+								<p class="font14 font_weight_bold mb10">Upload images</p>
 								<div class=" upload--section file-uploader">
 									<div class="upload_section">
 										<div class="upload_image_bg text_align_center">
 											<span class="upload_cancel" style="display: none;"><i class="li li_close_fill"></i></span>
 																				<label class="fileContainer" id="">
 												<!-- <img src="https://www.lifafa.com/images/upload_dummy.jpg" id="image_upload1" alt=""> -->
-												<div>Upload Images</div>
+												<div class="font14"><i class="material-icons align-bottom text-grey">cloud_upload</i> Upload Images</div>
 																				<input type="file" name="upload[]" id="upload1" class="other_image" data-role="none">
 											</label>
 										</div>
 									</div>
+
+
 									<!-- <div class="upload_section">
 										<div class="upload_image_bg">
 											<span class="upload_cancel" style="display: none;"><i class="li li_close_fill"></i></span>
@@ -150,8 +155,37 @@
 										</div>
 									</div> -->
 								</div>
+
+								<!-- uploaded images -->
+								<div class="display_flex uploaded--images flex-wrap mt15 justify_content">
+									<div class="single-image">
+										<i class="li li_close_fill"></i>
+										<img src="http://via.placeholder.com/500x350" alt="">
+									</div>
+
+									<div class="single-image">
+										<i class="li li_close_fill"></i>
+										<img src="http://via.placeholder.com/500x350" alt="">
+									</div>
+								</div>
+								<!-- /uploaded images -->
+
+								
 							</div>
 							<span class="file_error mdl-textfield__error"></span>
+						</div>
+
+						<div class="video_paste_wrap width_100 mb30">
+							
+							<p class="font14 font_weight_bold mb10">Add Videos</p>
+							<div class="paste_videolink_wrap">
+								<input type="text" name="url" placeholder="Enter YouTube link" value="" class="video_paste mdl-textfield__input font_weight_normal " data-role="none">
+								
+							</div>
+							<div class="text_align_right">
+								<a href="" class="primary_text_color font14 border-bottom font_weight_bold">+ Add</a>
+							</div>
+							<span class="url_error mdl-textfield__error"></span>
 						</div>
 
 						<!-- checkboxes -->
@@ -159,14 +193,15 @@
 							<div class="width_100 white_bg">
 								<div class="spending_lifafa_wrap">
 									<!-- <h3 class="font_size16 primary_text_color font_weight_semi padding_bottom_20 padding_top_20">The Lifafa will be redeemed for</h3> -->
-									<label for="" class="mb10 font16 d-block">The Lifafa will be redeemed for</label>
+									
+									<p class="font14 font_weight_bold mb10">The Lifafa will be redeemed for</p>
 									
 									<label for=""></label>
 									<div class="checkbox-btn-group">
 										<div class="dream_gift_wrap checkbox-btn">
 					                        <div class="category_list">
 					                        	<div class="categorycheckbox--">
-						                          <input type="checkbox" data-role="none" name="selected_category[1]" class="filled_in category_selection styled_checkbox categorycheckbox" id="category_check_1" value="travel" />
+						                          <input type="checkbox" data-role="none" name="selected_category[1]" class="filled_in category_selection styled_checkbox categorycheckbox" id="category_check_1" value="travel" checked/>
 						                          <label for="category_check_1">Travel</label>
 					                      		</div>
 					                          
@@ -215,7 +250,7 @@
 					                    <span class="selected_category_error mdl-textfield__error"></span>
 									</div>
 
-									<p class="font14 font_weight_normal">(*You can change your mind later)</p>
+									<p class="font_size12 font_weight_normal">(*You can change your mind later)</p>
 							
 								</div>
 							</div>
@@ -225,23 +260,25 @@
 						<!-- radio btns -->
 						<div class="mb30">
 							<!-- <h4 class="my-3">The Lifafa is for</h4> -->
-							<label for="" class="mb10 font16 d-block">The Lifafa is for</label>
+							
+							<p class="font14 font_weight_bold mb10">The Lifafa is for</p>
 							<div class="radio-btn-group mb-3">
 								<div class="radio-btn">
 								<input id="Radio1" name="Radios" type="radio" value="Option 1" checked="checked">
-								<label for="Radio1">Yourself</label>
+								<label for="Radio1" class="font_size13">Yourself</label>
 								</div>
 
 								<div class="radio-btn">
 								<input id="Radio2" name="Radios" type="radio" value="Option 2" >
-								<label for="Radio2">Someone else</label>
+								<label for="Radio2" class="font_size13">Someone else</label>
 								</div>
 							</div>
 						</div>
 						<!-- /radio-btns -->
 
 						<div class="form_group mb30">
-							<label for="" class="mb10 font16 d-block">How much would you like to collect?</label>
+							
+							<p class="font14 font_weight_bold mb10">How much would you like to collect?</p>
 							<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label rupee_symbol is-upgraded width_100 pt0 pb0 left-addon">
 								<input class="mdl-textfield__input font_weight_normal font_size24" data-role="none" type="tel" name="lifafa_amount" id="lifafa_amount" value="50000" onkeypress="return isNumber(event)">
 								<!-- <label class="mdl-textfield__label" for="lifafa_amount">Your Lifafa goal amount</label> -->
@@ -253,18 +290,19 @@
 							<label class = "mdl-checkbox mdl-js-checkbox" for = "checkbox11">
 				              <input type = "checkbox" id = "checkbox11" 
 				                 class = "mdl-checkbox__input" >
-				              <span class = "mdl-checkbox__label font_weight_normal font14">No specific amount, happy to see it soar!</span>
+				              <span class = "mdl-checkbox__label  font14 pl5">No specific amount, happy to see it soar!</span>
 				           </label>
-				           <p class="font_weight_normal font14">(* the Lifaf goal amount will be displayed to all contributors)</p>
+				           <p class="font_size12 font_weight_normal">(* The Lifafa goal amount will be displayed to all contributors)</p>
 						</div>
 						
 						
 						
 						<div class="me_details_form_mobile mb30">
 							<div class="form_group width_100">
-								<label for="" class="mb10 font16 d-block">Lifafa expires on</label>
+								<!-- <label for="" class="mb10 font16 d-block">Lifafa expires on</label> -->
+								<p class="font14 font_weight_bold mb10">Accept contributions until</p>
 								<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label info_width has-placeholder is-upgraded width_100 pt0">
-									<input type="text" class="datepicker-here mdl-textfield__input font_weight_normal" name="event_end_date" data-role="none" id="event_date" value="26-04-2018" placeholder="Select event end date">
+									<input type="text" class="datepicker-here mdl-textfield__input font_weight_normal" name="event_end_date" data-role="none" id="event_date" value="26-04-2018" placeholder="Set Date">
 									<label for="event_date" class="event_date primary_text_color">
 											<i class="li li_calendar"></i>
 									</label>
@@ -277,6 +315,39 @@
 										This is the date until which you will receive contributions
 								</div>
 							</div> -->
+						</div>
+
+						<div class="mb30">
+							<p class="font14 font_weight_bold mb10">Your URL</p>
+							<div class="width_100 mdl-textfield mdl-textfield--floating-label url_width is-dirty is-upgraded display_flex pt0">
+								<span class="added_url">https://www.lifafa.com/</span>
+								<input  class="width_100 mdl-textfield__input" type="url" name="lifafa_url" id="lifafa_url" ng-model="lifafa_url" value="/valenie-lourenco-1524207474" data-role="none">
+								<!-- <label class="mdl-textfield__label" for="lifafa_url">Your Lifafa URL</label> -->
+							</div>
+							<span class="is_success lifafa_url_error" id="event_urlq_error"></span>
+							<span class="is_invalid lifafa_url_error" id="event_url_error"></span>
+						</div>
+
+						<div class="mb30">
+							<p class="font14 font_weight_bold mb10">Processing Fee</p>
+							<div class="you_know_wrap">
+								<p class="font_size13 font_weight_normal mb30">Creating a Lifafa is completely free. We charge a small processing fee on every contribution. This is to ensure a safe and secure payment gateway for you.
+									<a class="check_rates primary_text_color font_weight_semi font_size13" data-modal-open="check_rates_modal" href="#" data-role="none">Our charges</a></p>
+								
+								<p class="font14 font_weight_bold mb20">We would charge this fee to</p>
+								<div class="you_know_select">
+									<div class="radio_btn mb15">
+										<input type="radio" data-role="none" id="yes_btn" name="deduct" value="own"  checked >
+			                			<label for="yes_btn" class="font_size14 ">You. It wil be deducted from the Lifaf contributions received</label>
+									</div>
+
+									<div class="radio_btn">
+										<input type="radio" data-role="none" id="no_btn" name="deduct" value="contributor"  >
+				              			<label for="no_btn" class="font_size14">Your contributors. It will be added to their contribution amount.</label>
+									</div>
+									<span class="deduct_error mdl-textfield__error"></span>
+								</div>
+							</div>
 						</div>
 
 						<!-- publish Lifafa -->
