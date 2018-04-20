@@ -40,6 +40,19 @@
 .mdl-mobile .collapsible-content {
   display: none;
 }
+.mdl-mobile .stickynote-alert {
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  color: #000;
+  background-color: #fffbc9;
+  border-color: #faee6c;
+}
+.mdl-mobile .page-banner {
+  height: 150px;
+  background: #1595ae;
+}
 .mdl-mobile .card {
   position: relative;
   display: -webkit-box;
@@ -230,23 +243,6 @@
 .mdl-mobile .w-100 {
   width: 100% !important;
 }
-.mdl-mobile .justify-content-between {
-  -webkit-box-pack: justify !important;
-      -ms-flex-pack: justify !important;
-          justify-content: space-between !important;
-}
-.mdl-mobile .alert {
-  position: relative;
-  padding: 0.75rem 1.25rem;
-  margin-bottom: 1rem;
-  border: 1px solid transparent;
-  border-radius: 0.25rem;
-}
-.mdl-mobile .alert-warning {
-  color: #000;
-  background-color: #fffbc9;
-  border-color: #faee6c;
-}
 .mdl-mobile .bg-white {
   background-color: #fff !important;
 }
@@ -291,4 +287,10 @@
 }
 .mdl-mobile .rounded-circle {
   border-radius: 50% !important;
+}
+.mdl-mobile .border-tl-radius {
+  border-top-left-radius: 4px;
+}
+.mdl-mobile .border-tr-radius {
+  border-top-right-radius: 4px;
 }
