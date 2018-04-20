@@ -2,6 +2,9 @@
 	.radio-btn {
 		display: inline-block;
     	position: relative;
+    	&:not(:last-child) {
+    		margin-right: 5px;
+    	}
 	}
 }
 
@@ -10,6 +13,9 @@
 	.checkbox-btn {
 		display: inline-block;
     	position: relative;
+    	&:not(:last-child) {
+    		margin-right: 5px;
+    	}
 	}
 }
 
@@ -26,11 +32,10 @@
 	    	padding: .375rem .75rem;
 	    	border: 2px solid #ccc;
 	    	background: #fff;
-	    	color: #ccc;
-	    	border-radius: 4px;
-	    	text-shadow: 2px 1px 0 rgba(0,0,0,0);
+	    	color: #333;
+	    	border-radius: 8px;
 	    	display: block;
-	    	margin-bottom: 5px;
+	    	margin-bottom: 10px;
 	    	&:before {
 	    		display: none;
 	    	}
@@ -38,8 +43,7 @@
 	    &:checked + label {
 	    	background: #fff;
 	    	border: 2px solid #1495ae;
-	    	text-shadow: 1px 1px 0 rgba(0,0,0,0.4);
-	    	color: #1495ae;
+	    	// color: #1495ae;
 	    	&:before {
 	    		display: none;
 	    	}

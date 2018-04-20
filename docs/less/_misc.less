@@ -1,3 +1,5 @@
+// @brand-color: #1595ae;
+
 .file-uploader {
 	border: 2px dashed #ccc;
     border-radius: 8px;
@@ -36,7 +38,8 @@ a.collapsible {
 		content: "\20B9";
 		position: absolute;
 		left: 0;
-		bottom: 8px;
+		bottom: 10px;
+		font-size: 24px;
 	}
 	input {
 		padding-left: 15px;
@@ -45,4 +48,47 @@ a.collapsible {
 
 .collapsible-content {
   display: none;
+}
+
+.page-banner {
+	height: 150px;
+	background: #1595ae;
+}
+
+.mdl-button {
+	border-radius: 4px
+}
+
+.mdl-textfield__input,
+.added_url {
+	border-bottom: 2px solid #ccc;
+}
+
+// checkbox
+.mdl-checkbox__box-outline,
+.mdl-checkbox__focus-helper {
+	top: 0;
+	width: 22px;
+	height: 22px;
+	border-radius: 4px;
+}
+
+// image upload
+.uploaded--images {
+	.single-image {
+		flex: 0 0 49%;
+		position: relative;
+		margin-bottom: 6px;
+		text-align: center;
+		max-height: 350px;
+		img {
+			border-radius: 6px;
+		}
+		i {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			font-size: 24px;
+		}
+	}
 }

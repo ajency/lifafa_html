@@ -26,6 +26,7 @@
     <meta name="theme-color" content="#ffffff">
     
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
     <link href="https://ajency.github.io/lifafa_html/css/mobilestyle.css" rel="stylesheet">
     <link href="https://ajency.github.io/lifafa_html/css/custom.css" rel="stylesheet">
 
@@ -34,20 +35,29 @@
     
     
     
+	<div class="page-banner">
 		<div class="padding_20">
-			<div class="ui-content white_bg" role="main">
+			<div class="display_flex justify_content align_items_center mt15">
+				<h1 class="text-white font_size24">Create a Lifafa</h1>
+				<img src='https://ajency.github.io/lifafa_html/images/ring.png' alt="..." class="">
+			</div>
+		</div>
+		
+	</div>
+		<div class="padding_side_20" style="margin-top: -35px;">
+			<div class="ui-content white_bg border-tl-radius border-tr-radius padding_left10 padding_right10 mb15" role="main">
 				<div class="event_select_wrapper">
 					<div class="create_lifafa_bg_wrap">
 					
 						
-						<label for="" class="mb10 font16 d-block text_align_center">Select an Occasion</label>
+						<label for="" class="mb10 mt10 font16 d-block ">Select an Occasion</label>
 						<span class="name_error mdl-textfield__error"></span>
 						<div class="category_event square-variant pb20">
 							<div class="select_event_bg color_wedding selected display_flex align_items_center justify_content_center">
 
 								<div class="text_align_center">
 									<img src='https://ajency.github.io/lifafa_html/images/ring.png' alt="..." class="">
-									<p class="font_weight_normal font_size16 color_black mt5" id="wedding">Wedding</p>
+									<p class="font_size14 color_black mt5" id="wedding">Wedding</p>
 								</div>
 										
 								
@@ -57,7 +67,7 @@
 
 								<div class="text_align_center">
 									<img src='https://ajency.github.io/lifafa_html/images/ring.png' alt="..." class="">
-									<p class="font_weight_normal font_size16 color_black mt5" id="farewell-party">Farewell</p>
+									<p class="font_size14 color_black mt5" id="farewell-party">Farewell</p>
 								</div>
 								
 							</div>
@@ -65,7 +75,7 @@
 							<div class="select_event_bg color_babyshower display_flex align_items_center justify_content_center">
 								<div class="text_align_center">
 									<img src='https://ajency.github.io/lifafa_html/images/ring.png' alt="..." class="">
-									<p class="font_weight_normal font_size16 color_black mt5" id="baby-shower">Baby shower</p>
+									<p class="font_size14 color_black mt5" id="baby-shower">Baby shower</p>
 								</div>
 
 							</div>
@@ -73,7 +83,7 @@
 							<div class="select_event_bg color_honeymoon display_flex align_items_center justify_content_center">
 								<div class="text_align_center">
 									<img src='https://ajency.github.io/lifafa_html/images/ring.png' alt="..." class="">
-									<p class="font_weight_normal font_size16 color_black mt5" id="honeymoon">Honeymoon</p>
+									<p class="font_size14 color_black mt5" id="honeymoon">Honeymoon</p>
 								</div>
 
 							</div>
@@ -82,7 +92,7 @@
 
 								<div class="text_align_center">
 									<img src='https://ajency.github.io/lifafa_html/images/ring.png' alt="..." class="">
-									<p class="font_weight_normal font_size16 color_black mt5" id="custom-event">Special Event</p>
+									<p class="font_size14 color_black mt5" id="custom-event">Special Event</p>
 								</div>
 
 							</div>
@@ -90,14 +100,14 @@
 							<div class="select_event_bg color_birthday display_flex align_items_center justify_content_center">
 								<div class="text_align_center">
 									<img src='https://ajency.github.io/lifafa_html/images/ring.png' alt="..." class="">
-									<p class="font_weight_normal font_size16 color_black mt5" id="birthday">Birthday</p>
+									<p class="font_size14 color_black mt5" id="birthday">Birthday</p>
 								</div>
 							</div>
 												
 							<div class="select_event_bg color_anniversary display_flex align_items_center justify_content_center">
 								<div class="text_align_center">
 									<img src='https://ajency.github.io/lifafa_html/images/ring.png' alt="..." class="">
-									<p class="font_weight_normal font_size16 color_black mt5" id="anniversary">Anniversary</p>
+									<p class="font_size14 color_black mt5" id="anniversary">Anniversary</p>
 								</div>
 								
 							</div>
@@ -105,7 +115,7 @@
 							<div class="select_event_bg color_housewarming display_flex align_items_center justify_content_center">
 								<div class="text_align_center">
 									<img src='https://ajency.github.io/lifafa_html/images/ring.png' alt="..." class="">
-									<p class="font_weight_normal font_size16 color_black mt5" id="house-warming">Housewarming</p>
+									<p class="font_size14 color_black mt5" id="house-warming">Housewarming</p>
 								</div>
 								
 							</div>
@@ -116,6 +126,121 @@
 			</div>
 			</div>
 		</div>
+		
+		<div class="padding_side_30 mb20">
+					
+					<div class="your_lifafa_wrap mb30">
+						<div class="width_100 white_bg">
+							<div class="spending_lifafa_wrap">
+								
+						<label for="" class="mb10 font16 d-block">The Lifafa will be redemmed for</label>
+						<div class="checkbox-btn-group">
+							<div class="dream_gift_wrap checkbox-btn">
+				                <div class="width_100 category_list">
+				                	<div class="categorycheckbox--">
+				                      <input type="checkbox" data-role="none" name="selected_category[1]" class="filled_in category_selection styled_checkbox categorycheckbox" id="category_check_1" value="travel" checked="" />
+				                      <label for="category_check_1">Travel</label>
+				              		</div>
+				                 
+				                </div>
+				            </div>
+
+				            <div class="dream_gift_wrap checkbox-btn">
+				                <div class="width_100 category_list">
+				                	<div class="categorycheckbox--">
+				                      <input type="checkbox" data-role="none" name="selected_category[2]" class="filled_in category_selection styled_checkbox categorycheckbox" id="category_check_2" value="experiences" />
+				                      <label for="category_check_2">Experiences</label>
+				              		</div>
+				                  
+				                </div>
+				            </div>
+
+				            <div class="dream_gift_wrap checkbox-btn">
+				                <div class="width_100 category_list">
+				                	<div class="categorycheckbox--">
+				                      <input type="checkbox" data-role="none" name="selected_category[3]" class="filled_in category_selection styled_checkbox categorycheckbox" id="category_check_3" value="products" />
+				                      <label for="category_check_3">Buy Products</label>
+				              		</div>
+				                  
+				                </div>
+				            </div>
+
+				            <div class="dream_gift_wrap checkbox-btn">
+				                <div class="width_100 category_list">
+				                	<div class="categorycheckbox--">
+				                      <input type="checkbox" data-role="none" name="selected_category[12]" class="filled_in category_selection styled_checkbox categorycheckbox" id="category_check_12" value="charity" />
+				                      <label for="category_check_12">Give to charity</label>
+				              		</div>
+				                  
+				                </div>
+				            </div>
+
+				            <div class="dream_gift_wrap checkbox-btn">
+				                <div class="width_100 category_list">
+				                	<div class="categorycheckbox--">
+				                      <input type="checkbox" data-role="none" name="selected_category[13]" class="filled_in category_selection styled_checkbox categorycheckbox" id="category_check_13" value="others" />
+				                      <label for="category_check_13">I haven't decided</label>
+				              		</div>
+				                  
+				                </div>
+				            </div>
+				        </div>
+
+			               	<span class="selected_category_error mdl-textfield__error"></span>
+							</div>
+						</div>
+
+						<p class=" font_size13">(* You can change your mind later)</p>
+					</div>
+					
+
+					
+					<div class="mb30">
+						
+						<label for="" class="mb10 font16 d-block">The Lifafa is for</label>
+						<div class="radio-btn-group mb-3">
+							<div class="radio-btn">
+							<input id="Radio1" name="Radios" type="radio" value="Option 1" checked="checked">
+							<label for="Radio1" class="font_size13">Yourself</label>
+							</div>
+
+							<div class="radio-btn">
+							<input id="Radio2" name="Radios" type="radio" value="Option 2" >
+							<label for="Radio2" class="font_size13">Someone else</label>
+							</div>
+						</div>
+					</div>
+					
+
+					<div class=" mb30">
+						<div class="form_group mb15">
+							<label for="" class="mb10 font16 d-block">How much would you like to collect?</label>
+							<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label rupee_symbol is-upgraded width_100 pt0 pb0 left-addon">
+								<input class="mdl-textfield__input font_weight_normal font_size24" data-role="none" type="tel" name="lifafa_amount" id="lifafa_amount" value="" onkeypress="return isNumber(event)">
+								
+								<span class="lifafa_amount_error mdl-textfield__error"></span>
+							</div>
+						</div>
+						
+						<div class="">
+							<label class = "mdl-checkbox mdl-js-checkbox" for = "checkbox11">
+				              <input type = "checkbox" id = "checkbox11" 
+				                 class = "mdl-checkbox__input" >
+				              <span class = "mdl-checkbox__label  font14 mb10">No specific amount, happy to see it soar!</span>
+				           </label>
+				           <p class="font_size13">(* The Lifafa goal amount will be displayed to all contributors)</p>
+
+						</div>
+					</div>
+
+					
+						<form method="POST" action="https://www.lifafa.com/lifafa-publish/jkhj" accept-charset="UTF-8" rel="external" data-ajax="false" class="">
+							<input name="_token" type="hidden" value="OsqQ1R79W5Ooap3NZTsGXnwu1MNt2CyH6Px15h5w">
+							<button data-role="none" value="withoutadhar" name="submit" class="mdl-button mdl-js-button mdl-button--raised width_100 primary_color">Create</button>
+						</form>
+					
+			</div>
+		
 	
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
   </body>
