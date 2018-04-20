@@ -66,7 +66,6 @@
   position: relative;
   margin-bottom: 6px;
   text-align: center;
-  max-height: 350px;
 }
 .mdl-mobile .uploaded--images .single-image img {
   border-radius: 6px;
