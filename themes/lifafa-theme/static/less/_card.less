@@ -1,3 +1,5 @@
+@brand-color: #1595ae;
+
 .card {
   position: relative;
   display: flex;
@@ -116,5 +118,60 @@
 	}
 }
 
+
+.card {
+	&.contribution-details {
+		position: relative;
+		background: @brand-color;
+		@media (max-width: 767px) {
+			background: #f4f8f9;
+			// color: #fff;
+		}
+		&:before {
+			position: absolute;
+		    height: 40px;
+		    width: 40px;
+		    color: #fff;
+		    font-family: 'Material Icons';
+		    content: "\E195";
+		    background: @brand-color;
+		    font-size: 25px;
+		    line-height: 40px;
+		    text-align: center;
+		    border-radius: 50%;
+		    top: -20px;
+		    margin: 0 auto;
+		    left: 0;
+		    right: 0;
+		    border: 6px solid #fff;
+		    transform:rotate(45deg);
+		    @media (max-width: 767px) {
+		    	display: none;
+		    }
+		}
+		&:after {
+			content: "";
+			position: absolute;
+			top: 0;
+			right: 0;
+			background: url('../../static/images/ribbon.png') no-repeat;
+			height: 100px;
+			width: 100px; 
+		}
+		.icon-holder {
+			width: 30px;
+			height: 30px;
+			background: @brand-color;
+			color: #fff;
+			border-radius: 50%;
+			text-align: center;
+			line-height: 26px;
+			transform: rotate(45deg);
+			i {
+				vertical-align: middle;
+			}
+		}
+	}
+}
 
 
