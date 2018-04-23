@@ -304,9 +304,6 @@
 .mdl-mobile .my-0 {
   margin-bottom: 0 !important;
 }
-.mdl-mobile .w-100 {
-  width: 100% !important;
-}
 .mdl-mobile .bg-white {
   background-color: #fff !important;
 }
@@ -322,6 +319,9 @@
 }
 .mdl-mobile .w-100 {
   width: 100% !important;
+}
+.mdl-mobile .w-100px {
+  width: 100px;
 }
 .mdl-mobile .text-divider {
   overflow: hidden;
@@ -394,14 +394,6 @@
   color: #155724;
   background-color: #b8e986;
   border-color: #c3e6cb;
-}
-.mdl-mobile header {
-  display: -moz-box;
-  display: flex;
-  -moz-box-align: center;
-       align-items: center;
-  -moz-box-pack: justify;
-       justify-content: space-between;
 }
 .mdl-mobile header .header-logo {
   padding-left: 16px;
