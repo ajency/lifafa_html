@@ -1,3 +1,10 @@
+.mdl-mobile .content-wrapper {
+  max-width: 550px;
+  margin: auto;
+  height: 100%;
+  -webkit-box-shadow: 0 0 10px 1px rgba(128, 128, 128, 0.3);
+          box-shadow: 0 0 10px 1px rgba(128, 128, 128, 0.3);
+}
 .mdl-mobile .file-uploader {
   border: 2px dashed #ccc;
   border-radius: 8px;
@@ -44,6 +51,9 @@
 .mdl-mobile .page-banner {
   height: 150px;
   background: #1595ae;
+}
+.mdl-mobile .header-spacer {
+  margin-top: 65px;
 }
 .mdl-mobile .mdl-button {
   border-radius: 4px;
@@ -358,9 +368,6 @@
 .mdl-mobile .my-0 {
   margin-bottom: 0 !important;
 }
-.mdl-mobile .w-100 {
-  width: 100% !important;
-}
 .mdl-mobile .bg-white {
   background-color: #fff !important;
 }
@@ -377,6 +384,9 @@
 }
 .mdl-mobile .w-100 {
   width: 100% !important;
+}
+.mdl-mobile .w-100px {
+  width: 100px;
 }
 .mdl-mobile .text-divider {
   overflow: hidden;
@@ -562,5 +572,15 @@
   }
   .mdl-mobile .border-xs-0 {
     border: 0 !important;
+  }
+}
+.mdl-mobile header .header-logo {
+  padding-left: 16px;
+}
+@media (min-width: 768px) {
+  .mdl-mobile header {
+    max-width: 550px;
+    margin: auto;
+    left: -4px;
   }
 }
