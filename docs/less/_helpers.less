@@ -35,15 +35,19 @@
 .text-divider {
   overflow: hidden;
   text-align: center;
+  font-size: 22px;
+  color: #9a9b9b;
+  width: 90%;
+  margin: 0px auto 20px;
   &:before,
   &:after {
-    background-color: #333;
+    background-color: #ccc;;
     content: "";
     display: inline-block;
-    height: 1px;
+    height: 2px;
     position: relative;
     vertical-align: middle;
-    width: 50%;
+    width: 40%;
   }
   &:before {
     right: 1.5em;
@@ -91,4 +95,24 @@
 .flex-wrap {
   -ms-flex-wrap: wrap !important;
   flex-wrap: wrap !important;
+}
+
+.font_weight_bolder {
+  font-weight: 800;
+}
+
+// alerts
+.alert {
+  position: relative;
+  padding: 0.5rem;
+  // margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  font-family: Lato;
+}
+
+.alert-success {
+  color: #155724;
+  background-color: #b8e986;
+  border-color: #c3e6cb;
 }

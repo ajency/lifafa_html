@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Log In :: Lifafa Screens</title>
+    <title>Sign Up :: Lifafa Screens</title>
 
     
     <link rel="manifest" href="/manifest.json">
@@ -41,16 +41,16 @@
 				<i class="material-icons">arrow_back</i>
 			</a>
 
-			<span class="header_text">Login</span>
+			<span class="header_text">Sign Up</span>
 
-			<a href="https://www.lifafa.com/signup" rel="external" data-ajax="false" data-role="none" class="mdl-button mdl-js-button mdl-button--raised primary_color mdl-sm-button" data-transition="slidefade">Sign Up</a>
+			<a href="https://www.lifafa.com/login" rel="external" data-ajax="false" data-role="none" class="mdl-button mdl-js-button mdl-button--raised primary_color mdl-sm-button" data-transition="slidefade">Login</a>
 		</div>
 	</header>
 
 	<div class="padding_20 ml20 mr20 bg-white display_flex align_items_center h-100">
 
 		<div class="w-100">
-			<p class="black_color text_align_center font_weight_bold font_size16 mb30">Already Signed up?<br>Click to access your Lifafa</p>
+			<p class="black_color text_align_center font_weight_bold font_size16 mb30">Choose your signup option</p>
 			<div class="social_circle_wrap mb30">
 				<div class="mb15">
 					<a href="https://www.lifafa.com/facebook/login" rel="external" data-role="none" data-ajax="false">
@@ -76,33 +76,25 @@
 
 			<div class="text-divider mb20">or</div>
 
-			<a href="javascript:void(0);" class="collapsible primary_text_color text_align_center as-block font14 mb15 ">Log in using your email ID</a>
+			<a href="javascript:void(0);" class="collapsible primary_text_color text_align_center as-block font14 mb15 ">Sign up using your email ID</a>
 			<div class="collapsible-content">
 				  <div class="form_mobile_wrapper">
-					<form method="POST" action="https://www.lifafa.com/login" accept-charset="UTF-8" id="form_data" >
-						<input name="_token" type="hidden" value="x4X8pyTSgZvg7Hi53CXkQq2NIcu4odrM0RKoACgl">						<input type="hidden" name="_token" value="x4X8pyTSgZvg7Hi53CXkQq2NIcu4odrM0RKoACgl">
+					<form method="POST" action="https://www.lifafa.com/signup" accept-charset="UTF-8" id="signup_form" rel="external" data-ajax="false"><input name="_token" type="hidden" value="JB6ukLfGfniNGVWbmVSAscqJ8b6AFbOGyD16QM2Q">					<input type="hidden" name="_token" value="JB6ukLfGfniNGVWbmVSAscqJ8b6AFbOGyD16QM2Q">
 
 						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label width_100">
-							
-							<input class="mdl-textfield__input" id="login" data-role="none" name="login" type="text">							
-							<label class="mdl-textfield__label" for="login_email_mobile">Email Id</label>
-							<span id="login_error" class="mdl-textfield__error"></span>
+							<input class="mdl-textfield__input" data-role="none" id="email" name="email" type="text">						<label class="mdl-textfield__label" for="sign_email">Email ID</label>
+							<span id="email_signup_error" class="mdl-textfield__error"></span>
 						</div>
 
-						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label width_100 pb10">
-							<input class="mdl-textfield__input " type="password" id="password" name="password" data-role="none">
-							<label class="mdl-textfield__label" for="login_password">Enter your password</label>
-							<span id="password_error" class="mdl-textfield__error"></span>
+						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label width_100">
+							<input class="mdl-textfield__input reg_password" type="password" data-role= "none" id="password" name="password">
+							<label class="mdl-textfield__label" for="login_password">Set a password</label>
+							<span id="password_signup_error" class="mdl-textfield__error"></span>
+							<span class="" id="password_status"></span>
 						</div>
-
-						<div class="text_align_right">
-							<a href="" data-role="none" class="forget_pass primary_text_color" data-modal-open="forgetModal_entermobile_open">Forgot password?</a>
-						</div>
-
 
 						<div class="padding_top_20">
-							<button id="login_btn" type="submit" data-role="none" data-ajax="false" rel="external" class="mdl-button mdl-js-button mdl-button--raised primary_color width_100">Login</button>
-							
+							<button id="signup_form_submit" type="submit" class="mdl-button mdl-js-button mdl-button--raised primary_color width_100">Continue</button>
 						</div>
 
 					</form>
