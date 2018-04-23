@@ -83,6 +83,33 @@
   right: 10px;
   font-size: 24px;
 }
+.mdl-mobile .otp-group {
+  text-align: center;
+}
+.mdl-mobile .otp-group input {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid black;
+  width: 10%;
+  text-align: center;
+  padding: 5px;
+  margin-left: 10px;
+  font-size: 24px;
+  font-family: Lato;
+}
+.mdl-mobile .otp-textbox {
+  padding-left: 15px;
+  letter-spacing: 42px;
+  border: 0;
+  background-image: -webkit-gradient(linear, right top, left top, color-stop(70%, #000000), color-stop(0%, rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(to left, #000000 70%, rgba(255, 255, 255, 0) 0%);
+  background-position: bottom;
+  background-size: 50px 1px;
+  background-repeat: repeat-x;
+  background-position-x: 35px;
+  width: 100%;
+}
 .mdl-mobile .card {
   position: relative;
   display: -webkit-box;
@@ -131,9 +158,9 @@
 .mdl-mobile .event_select_wrapper .category_event.round-variant .select_event_bg,
 .mdl-mobile .event_select_wrapper .category_event.square-variant .select_event_bg {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 100px;
-          flex: 0 0 100px;
-  height: 100px;
+      -ms-flex: 0 0 115px;
+          flex: 0 0 115px;
+  height: 115px;
   background: #f6f6f6;
   margin-bottom: 0;
   position: relative;
@@ -244,6 +271,7 @@
 .mdl-mobile .checkbox-btn-group input[type="checkbox"]:checked + label {
   background: #fff;
   border: 2px solid #1495ae;
+  color: #1495ae;
 }
 .mdl-mobile .radio-btn-group input[type="radio"]:checked + label:before,
 .mdl-mobile .checkbox-btn-group input[type="radio"]:checked + label:before,
@@ -338,4 +366,19 @@
 .mdl-mobile .flex-wrap {
   -ms-flex-wrap: wrap !important;
   flex-wrap: wrap !important;
+}
+.mdl-mobile .font_weight_bolder {
+  font-weight: 800;
+}
+.mdl-mobile .alert {
+  position: relative;
+  padding: 0.5rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  font-family: Lato;
+}
+.mdl-mobile .alert-success {
+  color: #155724;
+  background-color: #b8e986;
+  border-color: #c3e6cb;
 }
