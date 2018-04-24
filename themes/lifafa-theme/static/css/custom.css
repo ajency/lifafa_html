@@ -200,6 +200,12 @@
   position: relative;
   margin-right: 15px;
 }
+.mdl-mobile .event_select_wrapper .category_event.round-variant .select_event_bg .img-holder,
+.mdl-mobile .event_select_wrapper .category_event.square-variant .select_event_bg .img-holder {
+  background: url('../images/lifafa-category-sprite.png') no-repeat;
+  height: 48px;
+  width: 48px;
+}
 .mdl-mobile .event_select_wrapper .category_event.round-variant .select_event_bg.selected,
 .mdl-mobile .event_select_wrapper .category_event.square-variant .select_event_bg.selected {
   background: #f6f6f6 !important;
@@ -212,14 +218,41 @@
 .mdl-mobile .event_select_wrapper .category_event.square-variant .select_event_bg.selected:before {
   color: #1595ae;
 }
+.mdl-mobile .event_select_wrapper .category_event.round-variant .select_event_bg.color_wedding .img-holder,
+.mdl-mobile .event_select_wrapper .category_event.square-variant .select_event_bg.color_wedding .img-holder {
+  background-position: -28px -28px;
+}
+.mdl-mobile .event_select_wrapper .category_event.round-variant .select_event_bg.color_babyshower .img-holder,
+.mdl-mobile .event_select_wrapper .category_event.square-variant .select_event_bg.color_babyshower .img-holder {
+  background-position: -314px -28px;
+}
+.mdl-mobile .event_select_wrapper .category_event.round-variant .select_event_bg.color_honeymoon .img-holder,
+.mdl-mobile .event_select_wrapper .category_event.square-variant .select_event_bg.color_honeymoon .img-holder {
+  background-position: -244px -28px;
+}
+.mdl-mobile .event_select_wrapper .category_event.round-variant .select_event_bg.color_birthday .img-holder,
+.mdl-mobile .event_select_wrapper .category_event.square-variant .select_event_bg.color_birthday .img-holder {
+  background-position: -103px -28px;
+}
+.mdl-mobile .event_select_wrapper .category_event.round-variant .select_event_bg.color_anniversary .img-holder,
+.mdl-mobile .event_select_wrapper .category_event.square-variant .select_event_bg.color_anniversary .img-holder {
+  background-position: -175px -28px;
+}
+.mdl-mobile .event_select_wrapper .category_event.round-variant .select_event_bg.color_housewarming .img-holder,
+.mdl-mobile .event_select_wrapper .category_event.square-variant .select_event_bg.color_housewarming .img-holder {
+  background-position: -387px -28px;
+}
+.mdl-mobile .event_select_wrapper .category_event.round-variant .select_event_bg.color_farewell .img-holder,
+.mdl-mobile .event_select_wrapper .category_event.square-variant .select_event_bg.color_farewell .img-holder {
+  background-position: -518px -28px;
+}
+.mdl-mobile .event_select_wrapper .category_event.round-variant .select_event_bg.color_custom .img-holder,
+.mdl-mobile .event_select_wrapper .category_event.square-variant .select_event_bg.color_custom .img-holder {
+  background-position: -453px -28px;
+}
 .mdl-mobile .category_event.square-variant .select_event_bg {
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25), 0 0px 0px rgba(0, 0, 0, 0.22);
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25), 0 0px 0px rgba(0, 0, 0, 0.22);
-}
-.mdl-mobile .category_event.square-variant .select_event_bg .img-holder {
-  background: url('../images/lifafa-category-sprite.png') no-repeat;
-  height: 48px;
-  width: 48px;
 }
 .mdl-mobile .category_event.square-variant .select_event_bg.selected {
   -webkit-box-shadow: 0 2px 4px #1595ae, 0 0px 0px #1595ae;
@@ -251,30 +284,6 @@
 }
 .mdl-mobile .category_event.square-variant .select_event_bg:first-child {
   margin-left: 5px;
-}
-.mdl-mobile .category_event.square-variant .select_event_bg.color_wedding .img-holder {
-  background-position: -28px -28px;
-}
-.mdl-mobile .category_event.square-variant .select_event_bg.color_babyshower .img-holder {
-  background-position: -314px -28px;
-}
-.mdl-mobile .category_event.square-variant .select_event_bg.color_honeymoon .img-holder {
-  background-position: -244px -28px;
-}
-.mdl-mobile .category_event.square-variant .select_event_bg.color_birthday .img-holder {
-  background-position: -103px -28px;
-}
-.mdl-mobile .category_event.square-variant .select_event_bg.color_anniversary .img-holder {
-  background-position: -175px -28px;
-}
-.mdl-mobile .category_event.square-variant .select_event_bg.color_housewarming .img-holder {
-  background-position: -387px -28px;
-}
-.mdl-mobile .category_event.square-variant .select_event_bg.color_farewell .img-holder {
-  background-position: -518px -28px;
-}
-.mdl-mobile .category_event.square-variant .select_event_bg.color_custom .img-holder {
-  background-position: -453px -28px;
 }
 .mdl-mobile .category_event.round-variant .select_event_bg:before {
   position: absolute;

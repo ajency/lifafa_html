@@ -1,54 +1,62 @@
 {{ define "main" }}
-	
+{{ partial "header.html" .}}
 
+<div class="page-banner">
+	<div class="container">
 		<div class="padding_20">
-
-			
-			<p class="mb10 font14 font_weight_bolder">Select an Occasion</p>
-
-
-
-
+			<div class="display_flex justify_content align_items_center mt15">
+				<h1 class="text-white font_size24">Edit a Lifafa</h1>
+				<img src='{{"images/mail-rs.png" | absURL}}' alt="..." class="">
+			</div>
+		</div>
+	</div> <!-- /container -->
+</div>
+	
+	<div class="container">
+		<div class="padding_side_20" style="margin-top: -35px;">
+			<div class="ui-content white_bg border-tl-radius border-tr-radius padding_left10 padding_right10 mb15" role="main">
+				<p class="mt10 mb10 font14 font_weight_bolder">Select an Occasion</p>
 				<div class="event_select_wrapper mb15">
 					<div class="create_lifafa_bg_wrap">
-					<div class="">
+						<div class="">
 						
-						<span class="name_error mdl-textfield__error"></span>
-						<div class="category_event pb30 round-variant">
-							<div class="select_event_bg color_wedding  rounded-circle selected display_flex align_items_center justify_content_center">
-								<img src='{{"images/ring.png" | absURL}}' alt="..." class="">
-							</div>
-							<div class="select_event_bg color_farewell  rounded-circle display_flex align_items_center justify_content_center">
-								<img src='{{"images/custom.png" | absURL}}' alt="..." class="">	
-							</div>
-							<div class="select_event_bg color_babyshower  rounded-circle display_flex align_items_center justify_content_center">
-								<img src='{{"images/custom.png" | absURL}}' alt="..." class="">	
-							</div>
+							<span class="name_error mdl-textfield__error"></span>
+							<div class="category_event pb30 round-variant">
+								<div class="select_event_bg color_wedding  rounded-circle selected display_flex align_items_center justify_content_center">
+									<div class="img-holder"></div>
+								</div>
+								<div class="select_event_bg color_farewell  rounded-circle display_flex align_items_center justify_content_center">
+									<div class="img-holder"></div>
+								</div>
+								<div class="select_event_bg color_babyshower  rounded-circle display_flex align_items_center justify_content_center">
+									<div class="img-holder"></div>
+								</div>
 
-							<div class="select_event_bg color_honeymoon  rounded-circle display_flex align_items_center justify_content_center">
-								<img src='{{"images/custom.png" | absURL}}' alt="..." class="">	
-							</div>
+								<div class="select_event_bg color_honeymoon  rounded-circle display_flex align_items_center justify_content_center">
+									<div class="img-holder"></div>
+								</div>
 
-							<div class="select_event_bg color_custom  rounded-circle display_flex align_items_center justify_content_center">
-								<img src='{{"images/custom.png" | absURL}}' alt="..." class="">
-							</div>
+								<div class="select_event_bg color_custom  rounded-circle display_flex align_items_center justify_content_center">
+									<div class="img-holder"></div>
+								</div>
 
-							<div class="select_event_bg color_birthday  rounded-circle display_flex align_items_center justify_content_center">
-								<img src='{{"images/cake.png" | absURL}}' alt="..." class="">
-							</div>
+								<div class="select_event_bg color_birthday  rounded-circle display_flex align_items_center justify_content_center">
+									<div class="img-holder"></div>
+								</div>
 
-							<div class="select_event_bg color_anniversary  rounded-circle display_flex align_items_center justify_content_center">
-								<img src='{{"images/custom.png" | absURL}}' alt="..." class="">	
-							</div>
+								<div class="select_event_bg color_anniversary  rounded-circle display_flex align_items_center justify_content_center">
+									<div class="img-holder"></div>
+								</div>
 
-							<div class="select_event_bg color_housewarming rounded-circle display_flex align_items_center justify_content_center">
-								<img src='{{"images/custom.png" | absURL}}' alt="..." class="">	
-							</div>
+								<div class="select_event_bg color_housewarming rounded-circle display_flex align_items_center justify_content_center">
+									<div class="img-holder"></div>
+								</div>
 																		
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
+			</div>	<!-- /ui-content -->
 
 			<form method="POST" action="https://www.lifafa.com/lifafa/edit/jonnn" accept-charset="UTF-8" id="edit_lifafa_second_form"  rel="external">
 				<input name="_token" type="hidden" value="8SoTQXDOVnQOsYbPiyD8N4MS7DwNUlRozLIX79jT">
@@ -361,4 +369,5 @@
 				</div>
 			</form>
 		</div>
+	</div> <!-- /container -->
 {{ end }}
