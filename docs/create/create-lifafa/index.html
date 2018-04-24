@@ -70,7 +70,7 @@
 
 						<p class="mt10 mb10 font14 font_weight_bolder">Select an Occasion</p>
 						<span class="name_error mdl-textfield__error"></span>
-						<div class="category_event square-variant pb20">
+						<div id="category_events" class="category_event square-variant pb20">
 							<div class="select_event_bg color_wedding selected display_flex align_items_center justify_content_center">
 								<div>
 									<div class="text_align_center img-holder m-auto"></div>
@@ -143,7 +143,7 @@
 							<div class="spending_lifafa_wrap">
 								
 
-						<p class="mb10 font14 font_weight_bolder">The Lifafa will be redemmed for</p>
+						<p class="mb10 font14 font_weight_bolder">The Lifafa will be redeemed for</p>
 						<div class="checkbox-btn-group">
 							<div class="dream_gift_wrap checkbox-btn">
 				                <div class="width_100 category_list">
@@ -253,6 +253,19 @@
 					
 			</div>
 		</div> 
+
+		<script>
+		
+		var header = document.getElementById("category_events");
+		var btns = header.getElementsByClassName("select_event_bg");
+		for (var i = 0; i < btns.length; i++) {
+		  btns[i].addEventListener("click", function() {
+		    var current = document.getElementsByClassName("selected");
+		    current[0].className = current[0].className.replace(" selected", "");
+		    this.className += " selected";
+		  });
+		}
+		</script>
 
 	
     </div>
