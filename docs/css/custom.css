@@ -136,11 +136,29 @@
   text-align: center;
 }
 .mdl-mobile .black-overlay {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.5);
 }
 .mdl-mobile .lifafa-view-bg {
   background: url('../images/lifafa-view-bg.jpg') no-repeat;
   background-size: cover;
+}
+.mdl-mobile .occasion-container {
+  position: relative;
+}
+.mdl-mobile .occasion-container:before {
+  content: "";
+  position: absolute;
+  background: url(../images/giftbox.png) no-repeat;
+  background-size: contain;
+  height: 69px;
+  width: 70px;
+  top: 0;
+  right: 0;
+}
+@media (max-width: 767px) {
+  .mdl-mobile .occasion-container:before {
+    display: none;
+  }
 }
 .mdl-mobile .card {
   position: relative;
@@ -258,6 +276,7 @@
 .mdl-mobile .card.contribution-details {
   position: relative;
   background: #1595ae;
+  background-size: contain;
 }
 @media (max-width: 767px) {
   .mdl-mobile .card.contribution-details {

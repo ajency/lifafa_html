@@ -161,10 +161,27 @@ a.collapsible {
 
 
 .black-overlay {
-	background: rgba(0, 0, 0, 0.4);
+	background: rgba(0, 0, 0, 0.5);
 }
 
 .lifafa-view-bg {
 	background: url('../images/lifafa-view-bg.jpg') no-repeat;
 	background-size: cover;
+}
+
+.occasion-container {
+	position: relative;
+	&:before {
+		content: "";
+	    position: absolute;
+	    background: url(../images/giftbox.png) no-repeat;
+	    background-size: contain;
+	    height: 69px;
+	    width: 70px;
+	    top: 0;
+	    right: 0;
+	    @media (max-width: 767px) {
+	    	display: none;
+	    }
+	}
 }
