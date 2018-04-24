@@ -69,6 +69,13 @@
   height: 22px;
   border-radius: 4px;
 }
+.mdl-mobile .redeem_edit_btn {
+  text-align: initial;
+  margin-top: initial;
+}
+.mdl-mobile .redeem_edit_btn .edit_lifafa:before {
+  display: none;
+}
 .mdl-mobile .mdl-sm-button {
   height: 36px;
   line-height: 36px;
@@ -127,6 +134,13 @@
   line-height: 32px;
   border-radius: 50%;
   text-align: center;
+}
+.mdl-mobile .black-overlay {
+  background: rgba(0, 0, 0, 0.4);
+}
+.mdl-mobile .lifafa-view-bg {
+  background: url('../images/lifafa-view-bg.jpg') no-repeat;
+  background-size: cover;
 }
 .mdl-mobile .card {
   position: relative;
@@ -280,7 +294,6 @@
   position: absolute;
   top: 0;
   right: 0;
-  background: url('../../static/images/ribbon.png') no-repeat;
   height: 100px;
   width: 100px;
 }
@@ -466,6 +479,9 @@
 }
 .mdl-mobile .m-auto {
   margin: auto !important;
+}
+.mdl-mobile .bg-grey {
+  background: #eee;
 }
 .mdl-mobile .container {
   width: 100%;
