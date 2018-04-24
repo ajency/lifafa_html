@@ -97,21 +97,9 @@
   font-size: 24px;
 }
 .mdl-mobile .otp-group {
-  text-align: center;
+  width: 280px;
 }
-.mdl-mobile .otp-group input {
-  border: 0;
-  outline: 0;
-  background: transparent;
-  border-bottom: 1px solid black;
-  width: 10%;
-  text-align: center;
-  padding: 5px;
-  margin-left: 10px;
-  font-size: 24px;
-  font-family: Lato;
-}
-.mdl-mobile .otp-textbox {
+.mdl-mobile .otp-group .otp-textbox {
   padding-left: 15px;
   letter-spacing: 42px;
   border: 0;
@@ -121,7 +109,7 @@
   background-size: 50px 1px;
   background-repeat: repeat-x;
   background-position-x: 35px;
-  width: 100%;
+  width: 280px;
 }
 .mdl-mobile .img-icon-holder {
   background: #f6f6f6;
@@ -603,6 +591,12 @@
 .mdl-mobile .border-lightblue {
   border-color: #f4f8f9 !important;
 }
+.mdl-mobile .h-100vh {
+  height: 100vh;
+}
+.mdl-mobile .text-nowrap {
+  white-space: nowrap !important;
+}
 @media (min-width: 576px) {
   .mdl-mobile .text-sm-left {
     text-align: left !important;
@@ -648,6 +642,13 @@
   }
   .mdl-mobile .text-sm-white {
     color: #fff !important;
+  }
+  .mdl-mobile .w-sm-480px {
+    width: 480px;
+  }
+  .mdl-mobile .py-sm-5 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
   }
 }
 @media (max-width: 575px) {
