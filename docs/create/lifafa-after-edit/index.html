@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Lifafa View :: Lifafa Screens</title>
+    <title>Lifafa After Edit :: Lifafa Screens</title>
 
     
     <link rel="manifest" href="/manifest.json">
@@ -47,22 +47,17 @@
     </div>
 </header>
 <div class="header-spacer"></div>
-	<div class="page-banner lifafa-view-bg h-250px">
-		<div class="padding_20 black-overlay">
-			<div class="display_flex justify_content  text-white">
-				<p class="font_weight_normal">This is how your Lifafa will look to everyone. Personalise this with a description, images, videos, <a href="" class="primary_text_color border-bottom">Edit your Lifafa</a></p>
+	<div class="page-banner lifafa-view-bg position-relative h-250px">
+        
+        <button class="mdl-button mdl-js-button mdl-button--fab bg-grey rounded-circle position-absolute" style="top: 15px; right: 15px;">
+          <i class="material-icons">share</i>
+        </button>
 
-                <div class="pl15">
-                    <a href="" class="text-white font_weight_normal border-bottom">Dismiss</a>
-                </div>
-                
-			</div>
-		</div>
-		
 	</div>
 		<div class="padding_side_20 container" style="margin-top: -35px;">
 			<div class="ui-content white_bg border-tl-radius border-tr-radius padding_left10 padding_right10 mb15 occasion-container" role="main">
-				<p class="mt50 mb30 font_size18 font_weight_bold text_align_center font_size24">Tying the Knot</p>
+				<p class="mt30 font_size18 font_weight_bold text_align_center font_size24">Alice & Bob's Wedding</p>
+                <p class="font_size14 text_align_center font_weight_normal mt15 mb15">on 04 April 2018</p>
 				
 
 				 <div class="edit_content_preview">
@@ -79,8 +74,6 @@
                 				<i class="material-icons">airplanemode_active</i>
                 			</div>
 
-                			
-							
 							<div class="text-sm-center pl-xs-3">
 								<p class="font_weight_normal">Lifafa will be redemmed for: <span class="font_weight_bold">Travel</span></p>
 							</div>
@@ -89,7 +82,7 @@
                 		<div class="display_flex justify_content border-xs-bottom border-sm-bottom-dashed border-lightblue pt15 pb15 align_items_center">
                 			<div class="col-sm-4 col-6 text-sm-center text_align_left">
                 				<p class="font_weight_bold font_size24 mb5">&#x20b9; 20,000</p>
-                				<p class="font_weight_normal">Lifaf Goal Amount</p>
+                				<p class="font_weight_normal font_size13">Lifafa Goal Amount</p>
                 			</div>
                 			<div class="col-sm-4 col-6 text_align_center d-sm-block d-none">
                 				<div class="margin_top_bottom c100 p0 primary_text_color 0 m-auto">
@@ -104,13 +97,23 @@
                 			</div>
                 			<div class="col-sm-4 col-6 text-sm-center text_align_left">
                 				<p class="font_weight_bold font_size24 mb5 primary_text_color text-sm-white">&#x20b9; 0</p>
-                				<p class="font_weight_normal primary_text_color text-sm-white">Contribution Received</p>
+                				<p class="font_weight_normal primary_text_color text-sm-white font_size13">Contribution Received</p>
                 			</div>
                 		</div>
 
-                		<div class="text-sm-center mt10 mb-sm-3">
-                			<p class="font_weight_normal">Created by: <span>Rahul Sharma</span></p>
-                		</div>
+                        <div class="display_flex text-sm-center mt10 mb-sm-3">
+                            <div class="col-6">
+                                <div class="font_weight_normal font_size13 text-grey text-sm-white">Created by: <p class="font_weight_bold">Rahul Sharma</p></div>
+                            </div>
+
+                            <div class="col-6">
+                                <div class="font_weight_normal font_size13 text-grey text-sm-white">Lifafa expires on:
+                                    <p class="font_weight_bold">29 June 2018</p>
+                                </div>
+                            </div>
+                        </div>
+
+                		
                 	</div>
                 </div>
                 
@@ -131,12 +134,39 @@
                 	<button id="login_btn" type="submit" data-role="none" data-ajax="false" rel="external" class="mdl-button mdl-js-button primary_text_color width_100 primary_border_color bg-transparent">Open for contributions</button>
                 </div>
 
-                <div class="mt30 mb100">
+                <div class="video-holder">
+                    <div class="video_container margin_left pr-0">
+                        <div class="media_wrap">
+                            <div id="player2">
+                                
+                                <video id="video" controls="controls" class="w-100">
+                                    <source src="http://www.quirksmode.org/html5/videos/big_buck_bunny.mp4" type="video/mp4">
+                                    <source src="http://www.quirksmode.org/html5/videos/big_buck_bunny.webm" type="video/webm">
+                                    <source src="http://www.quirksmode.org/html5/videos/big_buck_bunny.ogv" type="video/ogg">
+                                </video>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="image-holder mt30 mb30">
+                    <ul class="list-inline display_flex images-carousel pt15 pb15">
+                        <li class="list-inline-item col-6"><img src="http://via.placeholder.com/500x350" alt=""></li>
+                        <li class="list-inline-item col-6"><img src="http://via.placeholder.com/500x350" alt=""></li>
+                        <li class="list-inline-item col-6"><img src="http://via.placeholder.com/500x350" alt=""></li>
+                        <li class="list-inline-item col-6"><img src="http://via.placeholder.com/500x350" alt=""></li>
+                        <li class="list-inline-item col-6"><img src="http://via.placeholder.com/500x350" alt=""></li>
+                    </ul>
+                </div>
+
+                <div class="mt30 mb-100">
                 	<ul class="text_align_center list-inline">
                 		<li class="list-inline-item"><a href=""><i class="material-icons">code</i></a></li>
                 		<li class="list-inline-item"><a href=""><i class="material-icons">code</i></a></li>
                 		<li class="list-inline-item"><a href=""><i class="material-icons">code</i></a></li>
-                		<li class="list-inline-item"><a href=""><i class="material-icons">code</i></a></li>
+                		<li class="list-inline-item"><a href=""><i class="material-icons">mail</i></a></li>
                 		<li class="list-inline-item"><a href=""><i class="material-icons">code</i></a></li>
                 	</ul>
                 </div>
