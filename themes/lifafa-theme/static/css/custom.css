@@ -331,8 +331,8 @@
 }
 .mdl-mobile .card.contribution-details {
   position: relative;
-  background: #1595ae;
-  background-size: contain;
+  background: url('../images/lifafa-view-flower.png') no-repeat center;
+  background-size: cover;
 }
 @media (max-width: 767px) {
   .mdl-mobile .card.contribution-details {
@@ -637,6 +637,10 @@
 .mdl-mobile .h-250px {
   height: 250px;
 }
+.mdl-mobile .mr-0,
+.mdl-mobile .mx-0 {
+  margin-right: 0 !important;
+}
 @media (min-width: 576px) {
   .mdl-mobile .text-sm-left {
     text-align: left !important;
@@ -695,6 +699,19 @@
   }
   .mdl-mobile .px-sm-10 {
     padding: 0 10px;
+  }
+  .mdl-mobile .ml-sm-15px {
+    margin-left: 15px !important;
+  }
+  .mdl-mobile .mr-sm-15px {
+    margin-right: 15px !important;
+  }
+  .mdl-mobile .pb-sm-60 {
+    padding-bottom: 60px;
+  }
+  .mdl-mobile .boxshadow-sm-tlr {
+    -webkit-box-shadow: 0px -3px 18px -9px #000000;
+            box-shadow: 0px -3px 18px -9px #000000;
   }
 }
 @media (max-width: 575px) {
