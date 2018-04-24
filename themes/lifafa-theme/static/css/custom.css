@@ -1,8 +1,5 @@
 .mdl-mobile .content-wrapper {
   margin: auto;
-  height: 100%;
-  -webkit-box-shadow: 0 0 10px 1px rgba(128, 128, 128, 0.3);
-          box-shadow: 0 0 10px 1px rgba(128, 128, 128, 0.3);
 }
 .mdl-mobile .file-uploader {
   border: 2px dashed #ccc;
