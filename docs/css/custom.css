@@ -803,7 +803,7 @@
     margin: auto !important;
   }
   .mdl-mobile .w-sm-50 {
-    width: 50%;
+    width: 50% !important;
   }
 }
 @media (max-width: 575px) {
