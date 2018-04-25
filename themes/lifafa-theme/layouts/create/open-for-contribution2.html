@@ -1,0 +1,40 @@
+{{ define "main" }}
+	<header class="mdl-shadow--2dp white_bg mobile_header ui-header ui-bar-inherit ui-header-fixed slidedown" data-role="header" data-position="fixed" data-tap-toggle="false" role="banner">
+		<div class="display_flex justify_content align_items_center padding_left10 padding_right10">
+			<div class="">
+				<a href="https://www.lifafa.com" data-role="none" class="back_btn p-0" data-transition="slidefade">
+					<i class="material-icons">arrow_back</i>
+				</a>
+			</div>
+
+			<span class="header_text flex-1 text_align_center">Open for contributions</span>
+		</div>
+	</header>
+
+	<div class="padding_20 ml20 mr20 bg-white display_flex h-100vh flex_column justify_content container w-sm-480px">
+
+		<div class="text_align_center">
+			<div class="mt100">
+				<img src='{{"images/mo-rupee.png" | absURL}}' alt="..." class="">
+				<p class="font14 font_weight_bold mb10">Your incoming cash contribution are secured in digital wallets held with our partner YES Bank.</p>
+			</div>
+
+			
+
+			<div class="mt100">
+				<img src='{{"images/mo-aadhar.png" | absURL}}' alt="..." class="">
+				<p class="font14 font_weight_bold mb10">In order to comply with RBI regulations, we will need to validate your mobile number and Aadhaar card. This a quick process and will take less than 2 minutes.</p>
+			</div>
+		</div>
+
+		<div>
+			<button data-role="none" value="" name="submit" class="mdl-button mdl-js-button mdl-button--raised width_100 primary_color">Continue</button>
+		</div>
+	</div>
+
+
+
+ 	
+
+ 	
+{{ end }}

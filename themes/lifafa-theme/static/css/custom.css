@@ -154,6 +154,23 @@
           box-shadow: 0 0 4px #ccc;
   margin-left: 15px;
 }
+.mdl-mobile .contribution-field {
+  padding-left: 28px;
+}
+.mdl-mobile .contribution-field:before {
+  left: 28px;
+  font-size: 20px;
+  bottom: 8px;
+}
+.mdl-mobile .powered-by {
+  background: url(../images/powerd-by.png) no-repeat bottom;
+  background-size: contain;
+}
+@media (min-width: 576px) {
+  .mdl-mobile .powered-by {
+    background: none;
+  }
+}
 .mdl-mobile .card {
   position: relative;
   display: -webkit-box;
@@ -737,4 +754,63 @@
     margin: auto;
     left: -4px;
   }
+}
+.mdl-mobile .breadcrumb {
+  list-style: none;
+  overflow: hidden;
+}
+.mdl-mobile .breadcrumb li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.mdl-mobile .breadcrumb li.active a {
+  background: #c0ecf6;
+}
+.mdl-mobile .breadcrumb li.active a:after {
+  border-left: 30px solid #c0ecf6;
+}
+.mdl-mobile .breadcrumb li a {
+  background: #f2f2f2;
+  font-size: 14px;
+  color: #1e1e1e;
+  text-decoration: none;
+  padding: 10px 0 10px 55px;
+  position: relative;
+  display: block;
+}
+.mdl-mobile .breadcrumb li a:after {
+  border-left: 30px solid #f2f2f2;
+}
+.mdl-mobile .breadcrumb li:first-child a {
+  padding-left: 20px;
+}
+.mdl-mobile .breadcrumb li a:after {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  /* Go big on the size, and let overflow hide */
+  border-bottom: 50px solid transparent;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+  left: 100%;
+  z-index: 2;
+}
+.mdl-mobile .breadcrumb li a:before {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  /* Go big on the size, and let overflow hide */
+  border-bottom: 50px solid transparent;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+  margin-left: 1px;
+  left: 100%;
+  z-index: 1;
 }
