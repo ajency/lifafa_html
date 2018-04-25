@@ -847,6 +847,7 @@
 }
 .mdl-mobile .breadcrumb li a {
   background: #f2f2f2;
+  text-align: center;
   font-size: 14px;
   color: #1e1e1e;
   text-decoration: none;
