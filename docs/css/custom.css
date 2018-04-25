@@ -171,6 +171,20 @@
     background: none;
   }
 }
+.mdl-mobile .powered-by .powered-by-child {
+  background: url(../images/powerd-by.png) no-repeat bottom;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+@media (max-width: 767px) {
+  .mdl-mobile .powered-by .powered-by-child {
+    background: none;
+  }
+}
 .mdl-mobile #otp-resend-countdown {
   color: #1595ae;
 }
@@ -704,6 +718,9 @@
 .mdl-mobile .py-0 {
   padding-bottom: 0 !important;
 }
+.mdl-mobile .pt150 {
+  padding-top: 150px;
+}
 @media (min-width: 576px) {
   .mdl-mobile .text-sm-left {
     text-align: left !important;
@@ -775,6 +792,18 @@
   .mdl-mobile .boxshadow-sm-tlr {
     -webkit-box-shadow: 0px -3px 18px -9px #000000;
             box-shadow: 0px -3px 18px -9px #000000;
+  }
+  .mdl-mobile .bg-sm-white {
+    background: #fff;
+  }
+  .mdl-mobile .h-sm-100 {
+    height: 100%;
+  }
+  .mdl-mobile .m-sm-auto {
+    margin: auto !important;
+  }
+  .mdl-mobile .w-sm-50 {
+    width: 50%;
   }
 }
 @media (max-width: 575px) {
