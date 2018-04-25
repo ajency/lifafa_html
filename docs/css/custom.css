@@ -185,6 +185,10 @@
     background: none;
   }
 }
+.mdl-mobile .gradient {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#e5e5e5));
+  background: linear-gradient(to bottom, #ffffff 0%, #e5e5e5 100%);
+}
 .mdl-mobile #otp-resend-countdown {
   color: #1595ae;
 }
@@ -442,8 +446,16 @@
   position: absolute;
   top: 0;
   right: 0;
+  background: url('../images/ribbon.png') no-repeat;
+  background-size: contain;
   height: 100px;
   width: 100px;
+}
+@media (max-width: 767px) {
+  .mdl-mobile .card.contribution-details:after {
+    width: 50px;
+    height: 50px;
+  }
 }
 .mdl-mobile .card.contribution-details .icon-holder {
   width: 30px;
