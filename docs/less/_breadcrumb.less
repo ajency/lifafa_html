@@ -1,0 +1,61 @@
+.breadcrumb { 
+	list-style: none; 
+	overflow: hidden; 
+	li {
+		flex: 1;
+		&.active {
+			a {
+				background: #c0ecf6;
+				&:after {
+					border-left: 30px solid #c0ecf6;
+				}
+			}
+		}
+		a {
+			background: #f2f2f2;
+			
+			font-size: 14px;
+			color: #1e1e1e;
+			text-decoration: none; 
+			padding: 10px 0 10px 55px;
+			position: relative; 
+			display: block;
+			&:after {
+				border-left: 30px solid #f2f2f2;
+			}
+		}
+		&:first-child {
+			a {
+				padding-left: 20px;
+			}
+		}
+	}
+}
+
+.breadcrumb li a:after { 
+	content: " "; 
+	display: block; 
+	width: 0; 
+	height: 0;
+	border-top: 50px solid transparent;           /* Go big on the size, and let overflow hide */
+	border-bottom: 50px solid transparent;
+	position: absolute;
+	top: 50%;
+	margin-top: -50px; 
+	left: 100%;
+	z-index: 2; 
+}	
+.breadcrumb li a:before { 
+	content: " "; 
+	display: block; 
+	width: 0; 
+	height: 0;
+	border-top: 50px solid transparent;           /* Go big on the size, and let overflow hide */
+	border-bottom: 50px solid transparent;
+	position: absolute;
+	top: 50%;
+	margin-top: -50px; 
+	margin-left: 1px;
+	left: 100%;
+	z-index: 1; 
+}	
