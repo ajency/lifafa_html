@@ -48,6 +48,10 @@
   height: 150px;
   background: #1595ae;
 }
+.mdl-mobile .page-banner.stars-bg {
+  background: url('../images/stars-bg.png') repeat bottom;
+  background-size: contain;
+}
 .mdl-mobile .header-spacer {
   margin-top: 65px;
 }
