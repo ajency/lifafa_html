@@ -1,30 +1,33 @@
 {{ define "main" }}
-	<header class="mdl-shadow--2dp white_bg mobile_header ui-header ui-bar-inherit ui-header-fixed slidedown" data-role="header" data-position="fixed" data-tap-toggle="false" role="banner">
-		<div class="display_flex justify_content align_items_center padding_left10 padding_right10">
-			<div class="">
-				<a href="https://www.lifafa.com" data-role="none" class="back_btn p-0" data-transition="slidefade">
-					<i class="material-icons">arrow_back</i>
-				</a>
+	
+
+	<div class="powered-by h-100vh">
+
+		<header class="mdl-shadow--2dp white_bg mobile_header ui-header ui-bar-inherit ui-header-fixed slidedown" data-role="header" data-position="fixed" data-tap-toggle="false" role="banner">
+			<div class="display_flex justify_content align_items_center padding_left10 padding_right10">
+				<div class="">
+					<a href="https://www.lifafa.com" data-role="none" class="back_btn p-0" data-transition="slidefade">
+						<i class="material-icons">arrow_back</i>
+					</a>
+				</div>
+
+				<span class="header_text flex-1 text_align_center">Enter mobile number</span>
 			</div>
+		</header>
 
-			<span class="header_text flex-1 text_align_center">Enter mobile number</span>
+		<div class="pt50">
+			<ul class="breadcrumb display_flex">
+				<li class="active"><a href="#">Mobile Verification</a></li>
+				<li><a href="#">Aadhar KYCs</a></li>
+			</ul>
 		</div>
-	</header>
 
-	<div class="mt50">
-		<ul class="breadcrumb display_flex">
-			<li class="active"><a href="#">Mobile Verification</a></li>
-			<li><a href="#">Aadhar KYCs</a></li>
-		</ul>
-	</div>
-
-	<div class="powered-by">
-		<div class="padding_20 ml20 mr20 bg-white container w-sm-480px">
+		<div class="padding_20 ml20 mr20 container w-sm-480px">
 			<div class="mt30">
 				<p class="font14 font_weight_bolder">Enter mobile number</p>
 				
 				<form method="POST" action="https://www.lifafa.com" accept-charset="UTF-8" id="form_data"><input name="_token" type="hidden" value="vs8P1ijGS9pyPRzR4nhgcRsiktXAz9S5dj3W6qXW">				<input type="hidden" name="_token" value="vs8P1ijGS9pyPRzR4nhgcRsiktXAz9S5dj3W6qXW">
-					<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label pt15 pb15 w-100">
+					<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label pt15 pb15 w-100 mb15">
 						<!--  <input class="mdl-textfield__input"  type="email" id="email" name="email"> -->
 						<input class="mdl-textfield__input font_weight_bold font_size16" id="login" tabindex="1" name="login" type="text" value="+91">					
 						<!-- <label class="mdl-textfield__label" for="login_email_mobile">Use Email Id / Mobile Number</label> -->
