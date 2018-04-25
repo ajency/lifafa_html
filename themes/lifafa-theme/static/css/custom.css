@@ -171,6 +171,9 @@
     background: none;
   }
 }
+.mdl-mobile #otp-resend-countdown {
+  color: #1595ae;
+}
 .mdl-mobile .loader {
   position: relative;
   width: 50px;
@@ -696,6 +699,10 @@
 .mdl-mobile .mr-0,
 .mdl-mobile .mx-0 {
   margin-right: 0 !important;
+}
+.mdl-mobile .pb-0,
+.mdl-mobile .py-0 {
+  padding-bottom: 0 !important;
 }
 @media (min-width: 576px) {
   .mdl-mobile .text-sm-left {

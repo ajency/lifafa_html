@@ -1,0 +1,103 @@
+{{ define "main" }}
+	
+
+	<div class="powered-by h-100vh">
+
+		<header class="mdl-shadow--2dp white_bg mobile_header ui-header ui-bar-inherit ui-header-fixed slidedown" data-role="header" data-position="fixed" data-tap-toggle="false" role="banner">
+			<div class="display_flex justify_content align_items_center padding_left10 padding_right10">
+				<div class="">
+					<a href="https://www.lifafa.com" data-role="none" class="back_btn p-0" data-transition="slidefade">
+						<i class="material-icons">arrow_back</i>
+					</a>
+				</div>
+
+				<span class="header_text flex-1 text_align_center">Verification OTP</span>
+			</div>
+		</header>
+
+		<div class="pt50">
+			<ul class="breadcrumb display_flex">
+				<li class="active"><a href="#">Mobile Verification</a></li>
+				<li><a href="#">Aadhar KYCs</a></li>
+			</ul>
+		</div>
+
+		<div class="padding_20 ml20 mr20 container w-sm-480px">
+			<div class="mt50 text_align_center">
+				<div class="font_size16 font_weight_bold text_align_center">Please enter 6 digit OTP <p class="font_size16 mt10">sent to +91 9878222328</p></div>
+
+				<div class="modal_wrap verfiy_mobile_modal" id="mobile_top_verification" data-popup="verifyMobile_modal">
+					<div class="verify_mobile_modal_sec modal_inner">
+						<button onclick="closeModel()" class="close li li_cancel" id="mobile_top_verification_var"></button>
+						
+						<div class="resetPassword_field">
+							<form id="otp_form">
+								<div class="">
+									<div class="valid_tick mdl-textfield input__field mdl-js-textfield mdl-textfield--floating-label w-100 otp-group text_align_center">
+										<input class="mdl-textfield__input otp-textbox m-auto" type="password" id="verify_mobile_otp" name="verify_mobile_otp" maxlength="6">
+										<!-- <label class="mdl-textfield__label" for="verify_mobile_otp">Enter OTP</label> -->
+										<input type="hidden" id="verify_mobile" name="verify_mobile">
+										<span id="verify_mobile_otp_error" class="  mdl-textfield__error"></span>
+										<span class="is_success" id="temp_otp"></span>
+									</div>
+									
+									<p class="font_weight_bold font14"> Didn't receive the OTP?</p>
+
+									<div id="otp-resend-countdown" class="mt5 mb40"></div>
+									<!-- <div class="resetPassword_btn mt5 mb40">
+										<button id="resend_otp_btn" class="verify_button_otp primary_text_color button font14 pb-0">RESEND SMS</button>
+									</div> -->
+
+									<div class="resetPass_verify_btn">
+										<button id="forgot_otp_btn" class="mdl-button mdl-js-button mdl-js-ripple-effect verify_button primary_border_color bg-transparent primary_text_color w-100">Continue</button>
+									</div>
+								</div>
+							</form>
+
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+	<script>
+	function countdown( elementName, minutes, seconds )
+	{
+	    var element, endTime, hours, mins, msLeft, time;
+
+	    function twoDigits( n )
+	    {
+	        return (n <= 9 ? "0" + n : n);
+	    }
+
+	    function updateTimer()
+	    {
+	        msLeft = endTime - (+new Date);
+	        if ( msLeft < 1000 ) {
+	            // element.innerHTML = "countdown's over!";
+	            element.innerHTML = "<div class='resetPassword_btn'><button href='#' id='resend_otp_btn' class='verify_button_otp primary_text_color button font14 pb-0'>RESEND SMS</button></div>";
+	        } else {
+	            time = new Date( msLeft );
+	            hours = time.getUTCHours();
+	            mins = time.getUTCMinutes();
+	            element.innerHTML = (hours ? hours + ':' + twoDigits( mins ) : mins) + ':' + twoDigits( time.getUTCSeconds() );
+	            setTimeout( updateTimer, time.getUTCMilliseconds() + 500 );
+	        }
+	    }
+
+	    element = document.getElementById( elementName );
+	    endTime = (+new Date) + 1000 * (60*minutes + seconds) + 500;
+	    updateTimer();
+	}
+
+	countdown( "otp-resend-countdown", 00, 60 );
+	</script>
+
+
+
+ 	
+
+ 	
+{{ end }}
