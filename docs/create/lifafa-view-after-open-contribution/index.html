@@ -138,7 +138,7 @@
                 </div>
 
                 <div class="mt30 mb30 ml20 mr20">
-                    <button id="login_btn" type="submit" data-role="none" data-ajax="false" rel="external" class="mdl-button mdl-js-button mdl-button--raised width_100 primary_color">Open for contributions</button>
+                    <button id="login_btn" type="submit" data-role="none" data-ajax="false" rel="external" class="mdl-button mdl-js-button mdl-button--raised width_100 primary_color open-contributions">Open for contributions</button>
                 </div>
 
                 <div class="video-holder">
@@ -189,6 +189,60 @@
                     <a href="https://www.lifafa.com/lifafa/edit/as" rel="external" data-ajax="false" class="edit_lifafa mdl-button mdl-js-button mdl-button--raised mdl-sm-button bg-grey primary_text_color" data-role="none"><i class="material-icons font_size16">border_color</i> Edit Lifafa</a>
                 </div>
         </div>
+
+        
+        <div class="lifafa-open-contributions">
+            <div class="padding_20 container  text_align_center bg-white lifafa-contributions">
+
+                
+                <div class="ml20 mr20 mt30">
+                    <p class="font_size16 font_weight_bolder">Your Lifafa is open for contributions</p>
+
+                    <div class="mt15 mb15 pt15 pb15">
+                        <p class="font_size14 font_weight_normal">You can receive contributions upto a limit of <span class="primary_text_color">Rs.8238/-*</span></p>
+                    </div>
+
+                    <form method="POST" class="mt30 mb30">
+                        <button data-role="none" value="" name="" class="mdl-button mdl-js-button mdl-button--raised width_100 primary_color mb15">Invite others to contribute</button>
+
+                        <button data-role="none" value="" name="" class="mdl-button mdl-js-button  width_100 primary_border_color bg-transparent primary_text_color">View Lifafa</button>
+                    </form>
+                </div>
+
+                <p class="font_weight_normal font_size14">
+                    *want to increase the Lifafa limit? You can do so by completing the Aadhaar based KYC.
+                </p>
+                
+                <div class="mt15 mb15">
+                    <a href="" class="primary_text_color border-bottom font_size14">Complete KYC</a>
+                </div>      
+            </div>
+        </div>
+        
+
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+ 
+        <script>
+            $( document ).ready(function() {
+                $( ".open-contributions" ).click(function() {
+                  $( ".lifafa-open-contributions" ).addClass( "is-shown" );
+                  $( ".content-wrapper" ).addClass( "show-overlay" );
+                });
+
+
+                $(document).mouseup(function(e) {
+                 var Click_todo;
+                 Click_todo = $('.lifafa-open-contributions');
+                 if (!Click_todo.is(e.target) && Click_todo.has(e.target).length === 0) {
+                   $('.lifafa-open-contributions').removeClass('is-shown');
+                   $( ".content-wrapper" ).removeClass( "show-overlay" );
+                 }
+                });
+
+            });
+        </script>
         
     
     </div>
