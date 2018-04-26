@@ -146,6 +146,21 @@ a.collapsible {
 	}
 }
 
+.otp-countdown{
+	&:before{
+		content: 'Please wait';
+		padding-right: 0.5em;
+		color: #4a4a4a;
+	}
+}
+
+.otp-continue{
+	.mdl-button{
+		height: auto;
+	    line-height: 45px;
+	}
+}
+
 
 .img-icon-holder {
 	background: #f6f6f6;
@@ -266,3 +281,19 @@ a.collapsible {
         transform: rotate(360deg);
     }
 }
+
+// Login desktop wrapper box-shadow
+
+.account-container{
+	@media (min-width: 800px){
+		background-color: transparent;
+		&__wrapper{
+			background-color: #fff;
+			padding: 30px 20px;
+			box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+		}
+	}
+}
+
+
+
