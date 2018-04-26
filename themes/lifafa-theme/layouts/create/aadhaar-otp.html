@@ -25,10 +25,10 @@
 		</div>
 
 		<div class="padding_20 ml20 mr20 container w-sm-480px powered-by-child">
-			<div class="pt80 text_align_center">
+			<div class="pt100 text_align_center">
 				<div class="font_size16 font_weight_bold text_align_center">Please enter 6 digit OTP </div>
 
-				<div class="modal_wrap verfiy_mobile_modal" id="mobile_top_verification" data-popup="verifyMobile_modal">
+				<div class="modal_wrap verfiy_mobile_modal pt30" id="mobile_top_verification" data-popup="verifyMobile_modal">
 					<div class="verify_mobile_modal_sec modal_inner">
 						<button onclick="closeModel()" class="close li li_cancel" id="mobile_top_verification_var"></button>
 						
@@ -53,15 +53,17 @@
 									<div class="resetPass_verify_btn w-sm-50 m-sm-auto otp-continue">
 										<button id="forgot_otp_btn" class="mdl-button mdl-js-button mdl-js-ripple-effect verify_button primary_border_color bg-transparent primary_text_color w-100">Continue</button>
 									</div>
+									
+									<div class="mt-sm-5 mb-sm-5">
+										<p class="font_weight_bold font14 text-darker text_align_left mt10">Want to proceed without KYC? Sure!</p>
 
-									<p class="font_weight_bold font14 text-darker text_align_left mt10">Want to proceed without KYC? Sure!</p>
+										<div class="alert alert-warning mb10 mt10">
+											<p class="font_size13 gray_color text_align_left">You can create a Lifafa with a limit of <span class="primary_text_color">Rs.8238/-</span></p>
+										</div>
 
-									<div class="alert alert-warning mb10 mt10">
-										<p class="font_size13 gray_color text_align_left">You can create a Lifafa with a limit of <span class="primary_text_color">Rs.8238/-</span></p>
+										<p class="font_weight_normal font14 text_align_left font_size12 mb10">This is because there is an exisiting balance in other pre-paid wallet linked with this Aadhaar number.</p>
 									</div>
-
-									<p class="font_weight_normal font14 text_align_left font_size12 mb10">This is because there is an exisiting balance in other pre-paid wallet linked with this Aadhaar number.</p>
-
+									
 									<div class="w-100 w-sm-50 m-sm-auto otp-continue">
 										<button id="signup_form_submit" type="submit" class="mdl-button mdl-js-button mdl-button--raised primary_color width_100">Skip KYC to Create Lifafa</button>
 									</div>
