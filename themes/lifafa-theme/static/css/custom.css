@@ -966,10 +966,21 @@
             box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
   }
 }
-.mdl-mobile .lifafa-contributions {
+.mdl-mobile .lifafa-open-contributions {
+  position: fixed;
+  bottom: 0;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: translateY(120%);
+          transform: translateY(120%);
+  z-index: 9999;
+  left: 0;
+  right: 0;
+}
+.mdl-mobile .lifafa-open-contributions .lifafa-contributions {
   position: relative;
 }
-.mdl-mobile .lifafa-contributions:before {
+.mdl-mobile .lifafa-open-contributions .lifafa-contributions:before {
   font-family: 'Material Icons';
   content: "\E8F6";
   height: 50px;
@@ -983,4 +994,25 @@
   position: absolute;
   color: #fff;
   line-height: 50px;
+}
+.mdl-mobile .lifafa-open-contributions.is-shown {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+.mdl-mobile .show-overlay {
+  overflow-y: hidden;
+}
+.mdl-mobile .show-overlay:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+}
+.mdl-mobile .show-overlay header {
+  z-index: 0;
 }

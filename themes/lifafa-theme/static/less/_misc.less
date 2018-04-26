@@ -295,7 +295,16 @@ a.collapsible {
 	}
 }
 
-.lifafa-contributions {
+.lifafa-open-contributions {
+	position: fixed;
+    // height: 70vh;
+    bottom: 0;
+    transition: 0.5s all;
+    transform: translateY(120%);
+    z-index: 9999;
+    left: 0;
+    right: 0;
+	.lifafa-contributions {
 	position: relative;
 	&:before {
 		font-family: 'Material Icons';
@@ -312,8 +321,31 @@ a.collapsible {
 		color: #fff;
 		line-height: 50px;
 
+		}
+	}
+	&.is-shown {
+		transform: translateY(0%);
 	}
 }
+
+.show-overlay {
+	overflow-y: hidden;
+	&:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		background: rgba(0,0,0,0.5);
+		width: 100%;
+		height: 100%;
+	}
+	header {
+		z-index: 0;
+	}
+}
+
 
 
 
