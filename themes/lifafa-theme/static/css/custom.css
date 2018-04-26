@@ -884,10 +884,10 @@
   }
 }
 @media (min-width: 800px) {
-  .mdl-mobile .login-container {
+  .mdl-mobile .account-container {
     background-color: transparent;
   }
-  .mdl-mobile .login-container__wrapper {
+  .mdl-mobile .account-container__wrapper {
     background-color: #fff;
     padding: 30px 20px;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
