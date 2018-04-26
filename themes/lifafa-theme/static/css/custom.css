@@ -659,6 +659,9 @@
 .mdl-mobile .bg-grey {
   background: #eee;
 }
+.mdl-mobile .border-radius-4px {
+  border-radius: 4px;
+}
 .mdl-mobile .container {
   width: 100%;
   margin-right: auto;
@@ -738,6 +741,9 @@
 .mdl-mobile .h-250px {
   height: 250px;
 }
+.mdl-mobile .mh-200px {
+  min-height: 200px;
+}
 .mdl-mobile .mr-0,
 .mdl-mobile .mx-0 {
   margin-right: 0 !important;
@@ -745,6 +751,9 @@
 .mdl-mobile .pb-0,
 .mdl-mobile .py-0 {
   padding-bottom: 0 !important;
+}
+.mdl-mobile .pt120 {
+  padding-top: 120px;
 }
 .mdl-mobile .pt150 {
   padding-top: 150px;
