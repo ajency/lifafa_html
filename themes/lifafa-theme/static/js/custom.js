@@ -1,9 +1,12 @@
   $( document ).ready(function() {
       // $( ".open-contributions" ).click(function() {
-        $( ".lifafa-open-contributions" ).addClass( "is-shown" );
-        $( ".content-wrapper" ).addClass( "show-overlay" );
-      // });
 
+        if($('.lifafa-open-contributions').length){
+          $( ".lifafa-open-contributions" ).addClass( "is-shown" );
+          $( ".content-wrapper" ).addClass( "show-overlay" );  
+        }
+        
+      // });
 
       $(document).mouseup(function(e) {
        var Click_todo;
