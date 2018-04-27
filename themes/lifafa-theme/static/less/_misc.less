@@ -322,6 +322,7 @@ a.collapsible {
 		margin: 0 auto;
 		position: absolute;
 		color: #fff;
+		font-size: 1.6em;
 		line-height: 50px;
 
 		}
@@ -349,6 +350,26 @@ a.collapsible {
 	}
 }
 
+
+.box-wrap{
+	border: 2px solid #b4ddc6;
+	position: relative;
+	&__content{
+		z-index: 1;
+    	position: relative;
+	}
+	&:before{
+		content: '';
+		position: absolute;
+    	top: -7px;
+	    width: 87%;
+	    right: 0;
+	    height: 120%;
+	    background-color: #fff;
+	    margin: 0 auto;
+	    left: 0;
+	}
+}
 
 .dismiss{
 	&__action{

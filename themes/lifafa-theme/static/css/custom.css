@@ -1181,6 +1181,7 @@
   margin: 0 auto;
   position: absolute;
   color: #fff;
+  font-size: 1.6em;
   line-height: 50px;
 }
 .mdl-mobile .lifafa-open-contributions.is-shown {
@@ -1202,6 +1203,25 @@
 }
 .mdl-mobile .show-overlay header {
   z-index: 0;
+}
+.mdl-mobile .box-wrap {
+  border: 2px solid #b4ddc6;
+  position: relative;
+}
+.mdl-mobile .box-wrap__content {
+  z-index: 1;
+  position: relative;
+}
+.mdl-mobile .box-wrap:before {
+  content: '';
+  position: absolute;
+  top: -7px;
+  width: 87%;
+  right: 0;
+  height: 120%;
+  background-color: #fff;
+  margin: 0 auto;
+  left: 0;
 }
 .mdl-mobile .dismiss__action {
   position: absolute;
