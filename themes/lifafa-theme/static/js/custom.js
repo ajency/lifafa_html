@@ -23,6 +23,8 @@
 
 
   // Add active class to the current button (highlight it)
+
+  if(document.getElementById("category_events")){
     var header = document.getElementById("category_events");
     var btns = header.getElementsByClassName("select_event_bg");
     for (var i = 0; i < btns.length; i++) {
@@ -32,11 +34,13 @@
         this.className += " selected";
       });
     }
+  }
 
+    
 
+if(document.getElementById('otp-resend-countdown')){
 
-
-    function countdown( elementName, minutes, seconds ){
+  function countdown( elementName, minutes, seconds ){
       var element, endTime, hours, mins, msLeft, time;
 
       function twoDigits( n )
@@ -65,4 +69,8 @@
   }
 
   countdown( "otp-resend-countdown", 00, 60 );
+
+}
+
+
 
