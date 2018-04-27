@@ -622,11 +622,6 @@
     display: none !important;
   }
 }
-.mdl-mobile .content-wrapper {
-  /* The main section will take up all the available free space
-      on the page that is not taken up by the footer. */
-  flex: 1 0 auto;
-}
 .mdl-mobile footer {
   /* The footer will take up as much vertical space as it needs and not a pixel more. */
   flex: 0 0 auto;
@@ -925,9 +920,7 @@
   z-index: 1;
 }
 .mdl-mobile .content-wrapper {
-  margin: auto;
-  height: 100%;
-  width: 100%;
+  flex: 1 0 auto;
 }
 .mdl-mobile .file-uploader {
   border: 2px dashed #ccc;
@@ -1111,7 +1104,7 @@
 .mdl-mobile .powered-by .powered-by-child {
   background: url(../images/powerd-by.png) no-repeat bottom;
   background-size: contain;
-  height: 100%;
+  height: calc(100vh - 90px);
 }
 @media (max-width: 767px) {
   .mdl-mobile .powered-by .powered-by-child {
