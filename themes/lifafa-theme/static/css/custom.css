@@ -612,6 +612,10 @@
   .mdl-mobile .my-sm-5 {
     margin-bottom: 3rem !important;
   }
+  .mdl-mobile .pt-sm-100,
+  .mdl-mobile .py-sm-100 {
+    padding-top: 100px;
+  }
 }
 @media (max-width: 575px) {
   .mdl-mobile .border-xs-bottom {
