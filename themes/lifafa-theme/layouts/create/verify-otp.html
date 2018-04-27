@@ -1,7 +1,7 @@
 {{ define "main" }}
 	
 
-	<div class="powered-by h-100">
+	<div class="powered-by">
 
 		<header class="mdl-shadow--2dp white_bg mobile_header ui-header ui-bar-inherit ui-header-fixed slidedown" data-role="header" data-position="fixed" data-tap-toggle="false" role="banner">
 			<div class="display_flex justify_content align_items_center padding_left10 padding_right10">
@@ -25,7 +25,7 @@
 		</div>
 
 		<div class="padding_20 ml20 mr20 container w-sm-480px powered-by-child">
-			<div class="pt150 text_align_center">
+			<div class="text_align_center">
 				<div class="font_size16 font_weight_bold text_align_center">Please enter 6 digit OTP <p class="font_size16 mt10">sent to +91 9878222328</p></div>
 
 				<div class="modal_wrap verfiy_mobile_modal" id="mobile_top_verification" data-popup="verifyMobile_modal">
@@ -63,43 +63,6 @@
 			</div>
 		</div>
 	</div>
-
-	<script>
-	function countdown( elementName, minutes, seconds )
-	{
-	    var element, endTime, hours, mins, msLeft, time;
-
-	    function twoDigits( n )
-	    {
-	        return (n <= 9 ? "0" + n : n);
-	    }
-
-	    function updateTimer()
-	    {
-	        msLeft = endTime - (+new Date);
-	        if ( msLeft < 1000 ) {
-	            // element.innerHTML = "countdown's over!";
-	            element.innerHTML = "<div class='resetPassword_btn'><button href='#' id='resend_otp_btn' class='verify_button_otp primary_text_color button font14 pb-0'>RESEND SMS</button></div>";
-	        } else {
-	            time = new Date( msLeft );
-	            hours = time.getUTCHours();
-	            mins = time.getUTCMinutes();
-	            element.innerHTML = (hours ? hours + ':' + twoDigits( mins ) : mins) + ':' + twoDigits( time.getUTCSeconds() );
-	            setTimeout( updateTimer, time.getUTCMilliseconds() + 500 );
-	        }
-	    }
-
-	    element = document.getElementById( elementName );
-	    endTime = (+new Date) + 1000 * (60*minutes + seconds) + 500;
-	    updateTimer();
-	}
-
-	countdown( "otp-resend-countdown", 00, 60 );
-	</script>
-
-
-
- 	
 
  	
 {{ end }}
