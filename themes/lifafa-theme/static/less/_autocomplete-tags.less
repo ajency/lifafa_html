@@ -1,0 +1,25 @@
+#ms1 {
+   #tag-input-0 {
+        border: 0;
+        border-bottom: 2px solid #ccc;
+        width: 100% !important;
+    } 
+    .tag-sel-item {
+        background: #e9eae9;
+        color: @brand-color;
+        display: inline-block;
+        padding: 4px 6px;
+        border-radius: 4px;
+        font-size: 14px;
+        &:not(:last-child) {
+            margin-right: 5px;
+        }
+        .tag-close-btn {
+            &:after {
+                content: "x";
+                padding-left: 10px;
+                color: #a1a1a1;
+            }
+        }
+    }
+}
