@@ -2,11 +2,14 @@
       // $( ".open-contributions" ).click(function() {
 
         if($('.lifafa-open-contributions').length){
-          $( ".lifafa-open-contributions" ).addClass( "is-shown" );
-          $( ".content-wrapper" ).addClass( "show-overlay" );  
+          $( ".open-contributions" ).click(function() {
+            $( ".lifafa-open-contributions" ).addClass( "is-shown" );
+            $( ".content-wrapper" ).addClass( "show-overlay" );
+          });
+          $('.open-contributions').trigger('click');  
         }
         
-      // });
+      
 
       $(document).mouseup(function(e) {
        var Click_todo;
