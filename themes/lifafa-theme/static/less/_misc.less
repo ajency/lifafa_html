@@ -330,6 +330,15 @@ a.collapsible {
 	&.is-shown {
 		transform: translateY(0%);
 	}
+	@media screen and (min-width: 650px){
+		.container{
+			width: 40%;
+		}
+		&.is-shown{
+			transform: translateY(-50%);	
+		}
+		
+	}
 }
 
 .show-overlay {

@@ -1187,6 +1187,14 @@
 .mdl-mobile .lifafa-open-contributions.is-shown {
   transform: translateY(0%);
 }
+@media screen and (min-width: 650px) {
+  .mdl-mobile .lifafa-open-contributions .container {
+    width: 40%;
+  }
+  .mdl-mobile .lifafa-open-contributions.is-shown {
+    transform: translateY(-50%);
+  }
+}
 .mdl-mobile .show-overlay {
   overflow-y: hidden;
 }
