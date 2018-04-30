@@ -386,6 +386,9 @@
 .mdl-mobile .text-grey {
   color: #ababab;
 }
+.mdl-mobile .grey-darker {
+  color: #767676;
+}
 .mdl-mobile .border-bottom {
   border-bottom: 1px solid #1595ae !important;
 }
@@ -1233,3 +1236,11 @@
 .mdl-mobile .mdl-tabs__tab-bar.invite-via .mdl-tabs__tab:not(:last-child) {
   margin-right: 15px;
 }
+.mdl-mobile .contrib-banner {
+  min-height: 120px;
+}
+.mdl-mobile .contribution_cart_panel .paymentwrap .li {
+  font-size: 1.75rem;
+  color: #7c7c7c;
+}
+/*# sourceMappingURL=custom.css.map */
