@@ -1,0 +1,267 @@
+{{ define "main" }}
+<header class="mdl-shadow--2dp white_bg mobile_header ui-header ui-bar-inherit ui-header-fixed slidedown" data-position="fixed" data-role="header" data-tap-toggle="false" role="banner">
+    <div class="display_flex justify_content align_items_center padding_left10 padding_right10">
+        <div class="">
+            <a class="back_btn p-0" data-role="none" data-transition="slidefade" href="https://www.lifafa.com">
+                <i class="material-icons">
+                    arrow_back
+                </i>
+            </a>
+        </div>
+        <span class="header_text font_weight_bold flex-1 text_align_center pr20">
+            Contribute
+        </span>
+    </div>
+</header>
+<div class="page-banner stars-bg contrib-banner mh-200px mt40 pt10">
+    <div class="container">
+        <div class="padding_20">
+            <div class="text_align_center mt15">
+                <h1 class="text-white font_size20 text_align_left mt10">
+                    <small class="display_block mb5 font_size16">
+                        You are contributing to
+                    </small>
+                    Nikhil & pooja's Wedding Lifafa.
+                </h1>
+            </div>
+        </div>
+    </div>
+    <!-- /container -->
+</div>
+<div class="container">
+    <div class="padding_right10 padding_left10 contribution_cart_panel">
+        <div class="ui-content white_bg border-tl-radius border-tr-radius padding_10 mb15 " role="main">
+            <!-- tabs -->
+            <main class="mdl-layout__content share_registry_wrap">
+                <div class="mdl-tabs mdl-js-tabs share_registry_cont">
+                    <h5 class="font_weight_bolder font14 padding_10">
+                        How much would you like to contribute?
+                    </h5>
+                    <form accept-charset="UTF-8" action="https://www.lifafa.com/contribution" class="form-horizontal" id="contribution_payment" method="POST">
+                        <input name="_token" type="hidden" value="LyRwuNs5dM2uSH8hQnTK5W8Y0gFvhQu16BqNIdav">
+                            <input name="lifafa_id" type="hidden" value="43">
+                                <div class="billinginformation">
+                                    <form accept-charset="UTF-8" action="https://www.lifafa.com/sumeet-kotak-1522051214-birthday" id="contribution_form" method="POST">
+                                        <input name="_token" type="hidden" value="LyRwuNs5dM2uSH8hQnTK5W8Y0gFvhQu16BqNIdav">
+                                            <div class="contribute_amount">
+                                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label ">
+                                                    <input name="title_slug" type="hidden" value="rahuls-birthday">
+                                                        <input id="contributor_name" name="name" type="hidden" value="">
+                                                            <input id="contributor_email" name="email" type="hidden" value="">
+                                                                <input class="mdl-textfield__input" id="amount" name="amount" onkeypress="return isNumber(event)" placeholder="₹" type="text">
+                                                                    <label class="mdl-textfield__label" for="amount">
+                                                                        Enter Your Amount
+                                                                    </label>
+                                                                    <span class="mdl-textfield__error" id="amount_error">
+                                                                    </span>
+                                                                </input>
+                                                            </input>
+                                                        </input>
+                                                    </input>
+                                                </div>
+                                            </div>
+                                        </input>
+                                    </form>
+                                    <div class="formgroup_wrap">
+                                        <div class="formgroup">
+                                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                                <p class="mb10 font14 font_weight_bolder">
+                                                    Your name
+                                                </p>
+                                                <input class="mdl-textfield__input" id="name" name="name" type="text">
+                                                    <span class="mdl-textfield__error">
+                                                    </span>
+                                                </input>
+                                            </div>
+                                        </div>
+                                        <div class="formgroup">
+                                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                                <p class="mb10 font14 font_weight_bolder">
+                                                    Email
+                                                </p>
+                                                <input class="mdl-textfield__input" id="email" name="email" type="text">
+                                                    <span class="mdl-textfield__error">
+                                                    </span>
+                                                </input>
+                                            </div>
+                                        </div>
+                                        <div class="formgroup">
+                                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                                <p class="mb10 font14 font_weight_bolder">
+                                                    Mobile Number
+                                                </p>
+                                                <div class="display_flex">
+                                                    <input class="mdl-textfield__input width_15 text_align_center mr10" maxlength="3" minlength="3" type="text" value="+91">
+                                                        <input class="mdl-textfield__input mobile1" id="mobile" maxlength="10" minlength="10" name="mobile" pattern="-?[0-9]*(\.[0-9]+)?" type="text">
+                                                        </input>
+                                                    </input>
+                                                </div>
+                                                <span class="mdl-textfield__error">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </input>
+                        </input>
+                    </form>
+                    <form accept-charset="UTF-8" action="https://www.lifafa.com/contribution" class="form-horizontal" id="contribution_payment" method="POST">
+                        <input name="_token" type="hidden" value="LyRwuNs5dM2uSH8hQnTK5W8Y0gFvhQu16BqNIdav">
+                            <input name="lifafa_id" type="hidden" value="43">
+                                <div class="write_message_text_field">
+                                    <p class="mb10 font14 font_weight_bolder">
+                                        Message
+                                    </p>
+                                    <textarea class="mdl-textfield__input border-radius-4px p-1 border h-100px" cols="50" id="message" name="message" placeholder="Congratulations!" rows="1">
+                                    </textarea>
+                                    <span class="mdl-textfield__error">
+                                    </span>
+                                </div>
+                            </input>
+                        </input>
+                    </form>
+                    <div class="paymentwrap text_align_center grey-darker mt20 pt10">
+                        <p class="mb5">
+                            You can pay by
+                        </p>
+                        <div class="paymentways">
+                            <span>
+                                <i class="li li_cc_visa">
+                                </i>
+                            </span>
+                            <span>
+                                <i class="li li_cc_mastercard">
+                                </i>
+                            </span>
+                            <span>
+                                <i class="li li_cc_discover">
+                                </i>
+                            </span>
+                            <span>
+                                <i class="li li_cc_amex">
+                                </i>
+                            </span>
+                        </div>
+                        <div class="gstText font16 mt20">
+                            Lifafa GST number: 27AADCL2615EZV
+                        </div>
+                    </div>
+                    <div class="sidebar">
+                        <div class="summary_wrap">
+                            <div class="summary_title">
+                                <span>
+                                    Summary
+                                </span>
+                            </div>
+                            <div class="summary_form">
+                                <span class="lifafa_name">
+                                    Rahuls Birthday
+                                </span>
+                                <div class="summaryulwrap lif_my_contri">
+                                    <ul class="innercontent">
+                                        <li>
+                                            <span class="width_70">
+                                                My Contribution
+                                            </span>
+                                            <span class="width_30 text_align_right" id="my_contributon">
+                                                ₹ 5,000
+                                            </span>
+                                            <div class="clearfix">
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="summaryulwrap lif_my_contri_total">
+                                    <ul class="innercontent">
+                                        <li>
+                                            <span class="width_70">
+                                                Total
+                                            </span>
+                                            <span class="width_30 text_align_right" id="total">
+                                                ₹ 5000
+                                            </span>
+                                            <div class="clearfix">
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ul class="innercontent">
+                                        <li>
+                                            <span class="width_70">
+                                                (+) Convenience fee(2.00%)
+                                            </span>
+                                            <span class="width_30 text_align_right" id="tran_fee">
+                                                ₹                                                                                     100
+                                            </span>
+                                            <!-- <div  id="gst_all_state">
+                                                <span class="width_70">(+) IGST @ (18%)</span>
+                                                <span class="width_30 text_align_right" id="gst_tran_fee">₹ 18</span>
+                                            </div> -->
+                                            <div id="gst_all_state">
+                                                <span class="width_70">
+                                                    (+) CGST @ (9%)
+                                                </span>
+                                                <span class="width_30 text_align_right" id="igst_tran_fee">
+                                                    ₹ 9
+                                                </span>
+                                                <span class="width_70">
+                                                    (+) SGST @ (9%)
+                                                </span>
+                                                <span class="width_30 text_align_right" id="sgst_tran_fee">
+                                                    ₹ 9
+                                                </span>
+                                            </div>
+                                            <div class="clearfix">
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="summaryulwrap">
+                                    <ul class="innercontent">
+                                        <li>
+                                            <span class="width_70">
+                                                Grand Total
+                                            </span>
+                                            <input id="total_amount" name="total_amount" type="hidden" value="5118">
+                                                <!--  <input type="hidden" name="name" id="name" value="">
+                                            <input type="hidden" name="email" id="email" value=""> -->
+                                                <input id="gst_transaction_fee" name="gst_transaction_fee" type="hidden" value="18">
+                                                    <input id="igst_fee" name="igst_fee" type="hidden" value="9">
+                                                        <input id="sgst_fee" name="sgst_fee" type="hidden" value="9">
+                                                            <input id="convenience_fee" name="convenience_fee" type="hidden" value="100">
+                                                                <span class="width_30 text_align_right" id="total_amount_display">
+                                                                    ₹ 5118
+                                                                </span>
+                                                                <div class="clearfix">
+                                                                </div>
+                                                            </input>
+                                                        </input>
+                                                    </input>
+                                                </input>
+                                            </input>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="clearfix">
+                                </div>
+                                <div class="summarybtn_wrap">
+                                    <button class="mdl-button mdl-js-button summarybtn" id="make_payment" name="submit" type="submit" value="save">
+                                        Contribute
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <form accept-charset="UTF-8" action="https://www.lifafa.com/contribution" class="form-horizontal" id="contribution_payment" method="POST">
+                      <button class="fmdl-button mdl-js-button mdl-js-ripple-effect mt15 mb15 w-100 mdl-button width_100 primary_color" id="share_lifafa">
+                          Contribute
+                      </button>
+                    </form>                    
+                </div>
+            </main>
+        </div>
+    </div>
+</div>
+
+<!-- /tabs -->
+<!-- /container -->
+{{ end }}
