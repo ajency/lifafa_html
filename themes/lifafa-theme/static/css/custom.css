@@ -400,6 +400,9 @@
   padding-left: 0;
   list-style: none;
 }
+.mdl-mobile .italic {
+  font-style: italic;
+}
 .mdl-mobile .list-inline-item {
   display: inline-block;
 }
