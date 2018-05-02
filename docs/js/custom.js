@@ -9,13 +9,21 @@
           // $('.open-contributions').trigger('click');  
         }
         
+
+      if($('.payment-summary').length){
+          $( ".summary-trigger" ).click(function() {
+            $('.payment-summary').addClass( "is-shown" );
+            $( ".content-wrapper" ).addClass( "show-overlay" );
+          });
+        }
+          
       
 
       $(document).mouseup(function(e) {
        var Click_todo;
-       Click_todo = $('.lifafa-open-contributions');
+       Click_todo = $('.lifafa-open-contributions,.payment-summary');
        if (!Click_todo.is(e.target) && Click_todo.has(e.target).length === 0) {
-         $('.lifafa-open-contributions').removeClass('is-shown');
+         $('.lifafa-open-contributions,.payment-summary').removeClass('is-shown');
          $( ".content-wrapper" ).removeClass( "show-overlay" );
        }
       });
