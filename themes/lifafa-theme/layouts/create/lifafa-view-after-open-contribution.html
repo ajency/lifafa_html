@@ -149,6 +149,11 @@
 
                 
                 <div class="ml10 mr10 mt30">
+                {{ if $.Params.verified }}
+                    <div class="alert alert-success mb20 text_align_left">
+                        <p class="font_size13 gray_color">Your Aadhaar number has been verified.</p>
+                    </div>
+                {{ end }}
                     <p class="font_size16 font_weight_bolder">Your Lifafa is open for contributions</p>
 
                     <div class="mt15 mb15 pt15 pb15 box-wrap">
