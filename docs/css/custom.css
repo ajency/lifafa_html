@@ -386,6 +386,9 @@
 .mdl-mobile .text-grey {
   color: #ababab;
 }
+.mdl-mobile .grey-darker {
+  color: #767676;
+}
 .mdl-mobile .border-bottom {
   border-bottom: 1px solid #1595ae !important;
 }
@@ -847,6 +850,27 @@
   left: 100%;
   z-index: 1;
 }
+.mdl-mobile #ms1 #tag-input-0 {
+  border: 0;
+  border-bottom: 2px solid #ccc;
+  width: 100% !important;
+}
+.mdl-mobile #ms1 .tag-sel-item {
+  background: #e9eae9;
+  color: #1595ae;
+  display: inline-block;
+  padding: 4px 6px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.mdl-mobile #ms1 .tag-sel-item:not(:last-child) {
+  margin-right: 5px;
+}
+.mdl-mobile #ms1 .tag-sel-item .tag-close-btn:after {
+  content: "x";
+  padding-left: 10px;
+  color: #a1a1a1;
+}
 .mdl-mobile .content-wrapper {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
@@ -1141,7 +1165,8 @@
     width: 40%;
   }
   .mdl-mobile .lifafa-open-contributions.is-shown {
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
   }
 }
 .mdl-mobile .show-overlay {
@@ -1211,3 +1236,11 @@
 .mdl-mobile .mdl-tabs__tab-bar.invite-via .mdl-tabs__tab:not(:last-child) {
   margin-right: 15px;
 }
+.mdl-mobile .contrib-banner {
+  min-height: 120px;
+}
+.mdl-mobile .contribution_cart_panel .paymentwrap .li {
+  font-size: 1.75rem;
+  color: #7c7c7c;
+}
+/*# sourceMappingURL=custom.css.map */
