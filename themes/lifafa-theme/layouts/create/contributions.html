@@ -30,7 +30,7 @@
 </div>
 <div class="container">
     <div class="padding_right10 padding_left10 contribution_cart_panel">
-        <div class="ui-content white_bg border-tl-radius border-tr-radius padding_10 mb15 " role="main">
+        <div class="ui-content white_bg border-tl-radius border-tr-radius padding_10 mb15 overflow_initial" role="main">
             <!-- tabs -->
             <main class="mdl-layout__content share_registry_wrap w-100">
                 <div class="mdl-tabs mdl-js-tabs share_registry_cont">
@@ -48,16 +48,22 @@
                                                     <input name="title_slug" type="hidden" value="rahuls-birthday">
                                                         <input id="contributor_name" name="name" type="hidden" value="">
                                                             <input id="contributor_email" name="email" type="hidden" value="">
-                                                                <input class="mdl-textfield__input" id="amount" name="amount" onkeypress="return isNumber(event)" placeholder="₹" type="text">
-                                                                    <label class="mdl-textfield__label" for="amount">
-                                                                        Enter Your Amount
-                                                                    </label>
-                                                                    <span class="mdl-textfield__error" id="amount_error">
-                                                                    </span>
-                                                                </input>
+                                                                <div class="contribute_amount__field position_relative">
+                                                                    <input class="mdl-textfield__input" id="amount" name="amount" onkeypress="return isNumber(event)" placeholder="₹" type="text" value="₹">
+                                                                        <span class="mdl-textfield__error" id="amount_error">
+                                                                        </span>
+                                                                    </input>    
+                                                                    <i class="material-icons material-icons display_flex align_items_center justify_content_center primary_text_color edit">border_color</i>
+                                                                </div>
+                                                                
                                                             </input>
                                                         </input>
                                                     </input>
+                                                    <div class="charges text-darker mt10">
+                                                        <p class="font_weight_bolder font_size14">You will be charged: ₹*</p>
+                                                        <div class="font_size12">*A processing fee of 3% will be charged on the contribution.</div>
+                                                        <a href="#" class="font_size14 font_weight_bold primary_text_color text_decoration summary-trigger">Payment Summary</a>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </input>
@@ -120,8 +126,8 @@
                             </input>
                         </input>
                     </form>
-                    <div class="paymentwrap text_align_center grey-darker mt20 pt10">
-                        <p class="mb5">
+                    <div class="paymentwrap text_align_center text-darker mt20 pt10">
+                        <p class="mb5 font_weight_bold">
                             You can pay by
                         </p>
                         <div class="paymentways">
@@ -142,37 +148,38 @@
                                 </i>
                             </span>
                         </div>
-                        <div class="gstText font16 mt20">
+                        <div class="gstText font16 mt30 font_weight_bold">
                             Lifafa GST number: 27AADCL2615EZV
                         </div>
                     </div>
-                    <div class="sidebar">
+                    <div class="sidebar payment-summary">
                         <div class="summary_wrap">
-                            <div class="summary_title">
-                                <span>
-                                    Summary
-                                </span>
+                            <div class="summary_title position_relative">
+                                <div class="message-icon display_flex align_items_center justify_content_center">
+                                    <img src='{{"images/message-icon.png" | absURL}}' alt="..." class="">
+                                </div>
+                                <div class="font_weight_bolder text_align_center padding_20">
+                                    Payment Summary
+                                </div>
                             </div>
                             <div class="summary_form">
-                                <span class="lifafa_name">
+                                <!-- <span class="lifafa_name">
                                     Rahuls Birthday
-                                </span>
+                                </span> -->
                                 <div class="summaryulwrap lif_my_contri">
                                     <ul class="innercontent">
-                                        <li>
-                                            <span class="width_70">
-                                                My Contribution
+                                        <li class="display_flex pt15 pb15 mb15 contri-amt">
+                                            <span class="width_70 flex-1">
+                                                Contribution Amount:
                                             </span>
                                             <span class="width_30 text_align_right" id="my_contributon">
                                                 ₹ 5,000
                                             </span>
-                                            <div class="clearfix">
-                                            </div>
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="summaryulwrap lif_my_contri_total">
-                                    <ul class="innercontent">
+                                <div class="summaryulwrap lif_my_contri_total pb10">
+                                    <!-- <ul class="innercontent">
                                         <li>
                                             <span class="width_70">
                                                 Total
@@ -183,71 +190,79 @@
                                             <div class="clearfix">
                                             </div>
                                         </li>
-                                    </ul>
+                                    </ul> -->
                                     <ul class="innercontent">
                                         <li>
-                                            <span class="width_70">
-                                                (+) Convenience fee(2.00%)
-                                            </span>
-                                            <span class="width_30 text_align_right" id="tran_fee">
-                                                ₹                                                                                     100
-                                            </span>
+                                            <div class="display_flex pt5 pb15">
+                                                <span class="width_70 flex-1">
+                                                    (+) Convenience fee(2.00%)
+                                                </span>
+                                                <span class="width_30 text_align_right" id="tran_fee">
+                                                    ₹                                                                                     100
+                                                </span>
+                                            </div>
                                             <!-- <div  id="gst_all_state">
                                                 <span class="width_70">(+) IGST @ (18%)</span>
                                                 <span class="width_30 text_align_right" id="gst_tran_fee">₹ 18</span>
                                             </div> -->
                                             <div id="gst_all_state">
-                                                <span class="width_70">
-                                                    (+) CGST @ (9%)
-                                                </span>
-                                                <span class="width_30 text_align_right" id="igst_tran_fee">
-                                                    ₹ 9
-                                                </span>
-                                                <span class="width_70">
-                                                    (+) SGST @ (9%)
-                                                </span>
-                                                <span class="width_30 text_align_right" id="sgst_tran_fee">
-                                                    ₹ 9
-                                                </span>
+                                                <div class="display_flex pt15 pb15">
+                                                    <span class="width_70 flex-1">
+                                                        (+) CGST @ (9%)
+                                                    </span>
+                                                    <span class="width_30 text_align_right" id="igst_tran_fee">
+                                                        ₹ 9
+                                                    </span>
+                                                </div>
+                                                <div class="display_flex pt15 pb15">
+                                                    <span class="width_70 flex-1">
+                                                        (+) SGST @ (9%)
+                                                    </span>
+                                                    <span class="width_30 text_align_right" id="sgst_tran_fee">
+                                                        ₹ 9
+                                                    </span>
+                                                </div>
                                             </div>
                                             <div class="clearfix">
                                             </div>
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="summaryulwrap">
+                                <div class="summaryulwrap pb10 pt15">
                                     <ul class="innercontent">
                                         <li>
-                                            <span class="width_70">
-                                                Grand Total
-                                            </span>
-                                            <input id="total_amount" name="total_amount" type="hidden" value="5118">
-                                                <!--  <input type="hidden" name="name" id="name" value="">
-                                            <input type="hidden" name="email" id="email" value=""> -->
-                                                <input id="gst_transaction_fee" name="gst_transaction_fee" type="hidden" value="18">
-                                                    <input id="igst_fee" name="igst_fee" type="hidden" value="9">
-                                                        <input id="sgst_fee" name="sgst_fee" type="hidden" value="9">
-                                                            <input id="convenience_fee" name="convenience_fee" type="hidden" value="100">
-                                                                <span class="width_30 text_align_right" id="total_amount_display">
-                                                                    ₹ 5118
-                                                                </span>
-                                                                <div class="clearfix">
-                                                                </div>
+                                            <div class="display_flex pt5 pb15">
+                                                <span class="width_70 flex-1">
+                                                    Grand Total
+                                                </span>
+                                                <input id="total_amount" name="total_amount" type="hidden" value="5118">
+                                                    <!--  <input type="hidden" name="name" id="name" value="">
+                                                <input type="hidden" name="email" id="email" value=""> -->
+                                                    <input id="gst_transaction_fee" name="gst_transaction_fee" type="hidden" value="18">
+                                                        <input id="igst_fee" name="igst_fee" type="hidden" value="9">
+                                                            <input id="sgst_fee" name="sgst_fee" type="hidden" value="9">
+                                                                <input id="convenience_fee" name="convenience_fee" type="hidden" value="100">
+                                                                    <span class="width_30 text_align_right" id="total_amount_display">
+                                                                        ₹ 5118
+                                                                    </span>
+                                                                    <div class="clearfix">
+                                                                    </div>
+                                                                </input>
                                                             </input>
                                                         </input>
                                                     </input>
                                                 </input>
-                                            </input>
+                                            </div>
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="clearfix">
+                                <!-- <div class="clearfix">
                                 </div>
                                 <div class="summarybtn_wrap">
                                     <button class="mdl-button mdl-js-button summarybtn" id="make_payment" name="submit" type="submit" value="save">
                                         Contribute
                                     </button>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>

@@ -303,6 +303,9 @@
 .mdl-mobile .flex-1 {
   flex: 1;
 }
+.mdl-mobile .line-height {
+  line-height: 1.3;
+}
 .mdl-mobile .h-100 {
   height: 100% !important;
 }
@@ -478,6 +481,12 @@
 }
 .mdl-mobile .text-nowrap {
   white-space: nowrap !important;
+}
+.mdl-mobile .overflow_initial {
+  overflow: initial;
+}
+.mdl-mobile .fz-size-xl {
+  font-size: 1.15em;
 }
 .mdl-mobile .mt-0 {
   margin-top: 0;
@@ -1076,7 +1085,8 @@
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
   }
 }
-.mdl-mobile .lifafa-open-contributions {
+.mdl-mobile .lifafa-open-contributions,
+.mdl-mobile .payment-summary {
   position: fixed;
   bottom: 0;
   transition: 0.5s all;
@@ -1085,10 +1095,12 @@
   left: 0;
   right: 0;
 }
-.mdl-mobile .lifafa-open-contributions .lifafa-contributions {
+.mdl-mobile .lifafa-open-contributions .lifafa-contributions,
+.mdl-mobile .payment-summary .lifafa-contributions {
   position: relative;
 }
-.mdl-mobile .lifafa-open-contributions .lifafa-contributions:before {
+.mdl-mobile .lifafa-open-contributions .lifafa-contributions:before,
+.mdl-mobile .payment-summary .lifafa-contributions:before {
   font-family: 'Material Icons';
   content: "\E8F6";
   height: 50px;
@@ -1104,14 +1116,17 @@
   font-size: 1.6em;
   line-height: 50px;
 }
-.mdl-mobile .lifafa-open-contributions.is-shown {
+.mdl-mobile .lifafa-open-contributions.is-shown,
+.mdl-mobile .payment-summary.is-shown {
   transform: translateY(0%);
 }
 @media screen and (min-width: 650px) {
-  .mdl-mobile .lifafa-open-contributions .container {
+  .mdl-mobile .lifafa-open-contributions .container,
+  .mdl-mobile .payment-summary .container {
     width: 40%;
   }
-  .mdl-mobile .lifafa-open-contributions.is-shown {
+  .mdl-mobile .lifafa-open-contributions.is-shown,
+  .mdl-mobile .payment-summary.is-shown {
     transform: translateY(-50%);
   }
 }
@@ -1207,4 +1222,99 @@
 .mdl-mobile .box-starter:after {
   height: 10px;
   border-right: 2px solid #b4ddc6;
+}
+.mdl-mobile .contribute_amount .has-placeholder {
+  padding-top: 0;
+}
+.mdl-mobile .contribute_amount__field .mdl-textfield__input {
+  font-size: 30px;
+  color: #000;
+}
+.mdl-mobile .contribute_amount__field .mdl-textfield__input::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #000;
+}
+.mdl-mobile .contribute_amount__field .mdl-textfield__input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #000;
+}
+.mdl-mobile .contribute_amount__field .mdl-textfield__input:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #000;
+}
+.mdl-mobile .contribute_amount__field .mdl-textfield__input:-moz-placeholder {
+  /* Firefox 18- */
+  color: #000;
+}
+.mdl-mobile .contribute_amount .edit {
+  position: absolute;
+  top: -2px;
+  border-radius: 50%;
+  right: 0;
+  background-color: #eee;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  text-align: center;
+}
+.mdl-mobile .payment-summary {
+  background-color: #fff;
+  padding: 1.5em;
+}
+.mdl-mobile .payment-summary .contri-amt {
+  border-bottom: 2px dashed #b7b7b7;
+}
+.mdl-mobile .payment-summary .lif_my_contri_total {
+  border-bottom: 2px dashed #b7b7b7;
+}
+.mdl-mobile .payment-summary .message-icon {
+  position: absolute;
+  top: -43px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  background-color: #fff;
+  padding-left: 2px;
+}
+.mdl-mobile .progress-loader .barr {
+  height: 5px;
+  background-color: #ddd;
+  border-radius: 4px;
+}
+.mdl-mobile .progress-loader .barr_progress {
+  background-color: #1595ae;
+  height: 5px;
+  border-radius: 4px;
+  transition: all 0.5s ease;
+}
+.mdl-mobile .angle-right {
+  font-size: 3em;
+}
+.mdl-mobile .total-contrib {
+  background-image: url('../images/confetti.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 180px;
+}
+.mdl-mobile .total-contrib__amt {
+  font-size: 1.5em;
+}
+.mdl-mobile .visibility-action {
+  background-color: #eee;
+}
+.mdl-mobile .visibility-action__icon {
+  position: absolute;
+  top: -35px;
+  left: 0;
+  right: 0;
+  width: 68px;
+  height: 68px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: #ffe27f;
+  border: 4px solid #fff;
 }
