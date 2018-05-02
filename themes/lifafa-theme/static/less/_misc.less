@@ -430,3 +430,32 @@ a.collapsible {
 		}
 	}
 }
+
+// aadhaar and mobile number page box started
+
+.box-starter{
+	position: relative;
+	&:before,&:after{
+		content: '';
+		position: absolute;
+	    top: -12px;
+	    left: -10px;
+	    width: 100px;
+	    height: 50px;
+	    z-index: -1;
+	    border-bottom: 0;
+	}
+	&:before{
+		border: 2px solid #b4ddc6;
+		border-bottom: 0;
+    	border-right: 0;
+	}
+	&:after{
+		height: 10px;
+    	border-right: 2px solid #b4ddc6;
+	}
+}
+
+
+
+
