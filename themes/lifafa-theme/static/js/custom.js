@@ -31,7 +31,6 @@
         $('.contribute_amount .amount-field').attr('readonly', false).focus();
       });
 
-
       // Checkbox checked sticky show
 
       $('.contributors .mdl-checkbox__input').change(function(){
