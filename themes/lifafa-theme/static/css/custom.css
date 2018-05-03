@@ -1155,10 +1155,14 @@
 }
 .mdl-mobile .show-overlay {
   overflow-y: hidden;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
+}
+@media screen and (max-width: 650px) {
+  .mdl-mobile .show-overlay {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
 }
 .mdl-mobile .show-overlay:after {
   content: "";
@@ -1170,6 +1174,7 @@
   background: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100%;
+  z-index: 1;
 }
 .mdl-mobile .show-overlay header {
   z-index: 0;
@@ -1306,6 +1311,12 @@
   border-radius: 50%;
   background-color: #fff;
   padding-left: 2px;
+}
+@media screen and (min-width: 650px) {
+  .mdl-mobile .payment-summary {
+    width: 40%;
+    margin: 0 auto;
+  }
 }
 .mdl-mobile .progress-loader .barr {
   height: 5px;
