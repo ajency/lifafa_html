@@ -1163,6 +1163,9 @@
     top: 0;
     left: 0;
   }
+  .mdl-mobile .show-overlay + footer {
+    display: none;
+  }
 }
 .mdl-mobile .show-overlay:after {
   content: "";
