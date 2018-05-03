@@ -163,14 +163,17 @@
                         <button data-role="none" value="" name="" class="mdl-button mdl-js-button  width_100 primary_border_color bg-transparent primary_text_color">View Lifafa</button>
                     </form>
                 </div>
+                {{ if $.Params.verified }}
 
+                {{ else }}
                 <p class="font_weight_normal font_size14">
                     *want to increase the Lifafa limit? You can do so by completing the Aadhaar based KYC.
                 </p>
-                
                 <div class="mt15 mb15">
                     <a href="" class="primary_text_color border-bottom font_size14">Complete KYC</a>
-                </div>      
+                </div>  
+                {{ end }}
+                    
             </div>
         </div>
         <!-- /modal -->
