@@ -13,4 +13,41 @@ header{
 		margin: auto;
 		left: -4px;
 	}
+	.user_signin_wrap{
+		cursor: pointer;
+		// display: flex;
+		// align-items: center;
+		.user_name{
+			position: relative;
+			&:after {
+			    content: '\e313';
+			    font-family: 'Lifafa';
+			    position: absolute;
+			    right: -20px;
+			    top: 0px;
+			    font-size: 17px;
+			}
+		}
+	}
+
+	.admin_content {
+	    background: rgba(0, 0, 0, 0.9);
+	    position: absolute;
+	    min-width: 210px;
+	    top: 65px;
+	    z-index: 223;
+	    display: none;
+	    opacity: 0;
+	    right: 0;
+	    li {
+	        display: block;
+	        float: none;
+	        a {
+	            color: #ffffff;
+	            font-size: 0.875rem;
+	            padding: 10px 20px;
+	            display: block;
+	        }
+	    }
+	}
 }
