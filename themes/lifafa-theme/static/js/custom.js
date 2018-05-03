@@ -16,14 +16,38 @@
             $( ".content-wrapper" ).addClass( "show-overlay" );
           });
         }
-          
+
+
+      if($('.custom-modal').length){
+          $( ".send_contributor_msg" ).click(function() {
+            $('.custom-modal').addClass( "is-shown" );
+            $( ".content-wrapper" ).addClass( "show-overlay" );
+          });
+        } 
+      
+      // Contribution field edit
+
+      $('.contribute_amount .edit').click(function(){
+        $('.contribute_amount .amount-field').attr('readonly', false).focus();
+      });
+
+
+      // Checkbox checked sticky show
+
+      $('.contributors .mdl-checkbox__input').change(function(){
+        if($(this).is(":checked")) {
+            $('.sticky-thanks').addClass("show");
+          } else {
+            $('.sticky-thanks').removeClass("show");
+          }
+      });
       
 
       $(document).mouseup(function(e) {
        var Click_todo;
-       Click_todo = $('.lifafa-open-contributions,.payment-summary');
+       Click_todo = $('.lifafa-open-contributions,.payment-summary,.custom-modal');
        if (!Click_todo.is(e.target) && Click_todo.has(e.target).length === 0) {
-         $('.lifafa-open-contributions,.payment-summary').removeClass('is-shown');
+         $('.lifafa-open-contributions,.payment-summary,.custom-modal').removeClass('is-shown');
          $( ".content-wrapper" ).removeClass( "show-overlay" );
        }
       });

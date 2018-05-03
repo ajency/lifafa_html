@@ -373,6 +373,9 @@
   -ms-flex-wrap: wrap !important;
   flex-wrap: wrap !important;
 }
+.mdl-mobile .justify_content_spacebetween {
+  justify-content: space-between;
+}
 .mdl-mobile .font_weight_bolder {
   font-weight: 800;
 }
@@ -1130,8 +1133,32 @@
     transform: translateY(-50%);
   }
 }
+.mdl-mobile .custom-modal {
+  position: fixed;
+  bottom: 0;
+  transition: 0.5s all;
+  transform: translateY(120%);
+  z-index: 9999;
+  left: 0;
+  right: 0;
+}
+.mdl-mobile .custom-modal.is-shown {
+  transform: translateY(0%);
+}
+@media screen and (min-width: 650px) {
+  .mdl-mobile .custom-modal .container {
+    width: 40%;
+  }
+  .mdl-mobile .custom-modal.is-shown {
+    transform: translateY(-50%);
+  }
+}
 .mdl-mobile .show-overlay {
   overflow-y: hidden;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 .mdl-mobile .show-overlay:after {
   content: "";
@@ -1317,4 +1344,51 @@
   border-radius: 50%;
   background-color: #ffe27f;
   border: 4px solid #fff;
+}
+.mdl-mobile .contributors .custom-check {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.mdl-mobile .contributors .custom-check:before {
+  content: '\E835';
+  font-family: "Material Icons";
+  text-rendering: optimizeLegibility;
+  font-size: 2em;
+}
+.mdl-mobile .contributors .custom-check:checked:before {
+  content: '\E834';
+  color: #1595ae;
+}
+.mdl-mobile .contributors .thank-icon {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  padding: 5px;
+  background-color: #ff1d1d;
+}
+.mdl-mobile .contributors .thank-icon i {
+  font-size: 1.1em;
+  color: #fff;
+}
+.mdl-mobile .contributors__list {
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.34);
+  padding: 20px;
+}
+.mdl-mobile .sticky-thanks {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  z-index: 1;
+  display: none;
+}
+.mdl-mobile .sticky-thanks.show {
+  display: block;
+}
+.mdl-mobile .contrib-message {
+  background-color: #fff;
+  padding: 1em;
+}
+.mdl-mobile .contrib-message .cancel-btn {
+  background-color: transparent;
 }
