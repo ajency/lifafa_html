@@ -1146,8 +1146,9 @@
   transform: translateY(0%);
 }
 @media screen and (min-width: 650px) {
-  .mdl-mobile .custom-modal .container {
+  .mdl-mobile .custom-modal {
     width: 40%;
+    margin: 0 auto;
   }
   .mdl-mobile .custom-modal.is-shown {
     transform: translateY(-50%);
@@ -1373,20 +1374,20 @@
   content: '\E834';
   color: #1595ae;
 }
-.mdl-mobile .contributors .thank-icon {
+.mdl-mobile .contributors__list {
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.34);
+  padding: 20px;
+}
+.mdl-mobile .thank-icon {
   width: 25px;
   height: 25px;
   border-radius: 50%;
   padding: 5px;
-  background-color: #ff1d1d;
+  background-color: #ec2525;
 }
-.mdl-mobile .contributors .thank-icon i {
+.mdl-mobile .thank-icon i {
   font-size: 1.1em;
   color: #fff;
-}
-.mdl-mobile .contributors__list {
-  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.34);
-  padding: 20px;
 }
 .mdl-mobile .sticky-thanks {
   position: fixed;
@@ -1402,7 +1403,25 @@
 .mdl-mobile .contrib-message {
   background-color: #fff;
   padding: 1em;
+  padding-bottom: 0;
 }
 .mdl-mobile .contrib-message .cancel-btn {
   background-color: transparent;
+}
+.mdl-mobile .contrib-message .thank-icon {
+  position: absolute;
+  top: -22px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 45px;
+  height: 45px;
+}
+.mdl-mobile .contrib-message .thank-icon i {
+  font-size: 1.6em;
+}
+.mdl-mobile .contrib-message .more i {
+  left: -5px;
+  vertical-align: middle;
+  position: relative;
 }
