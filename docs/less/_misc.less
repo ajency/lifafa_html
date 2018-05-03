@@ -365,10 +365,12 @@ a.collapsible {
 
 .show-overlay {
 	overflow-y: hidden;
-	position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
+	@media screen and (max-width: 650px){
+		position: fixed;
+		width: 100%;
+		top: 0;
+		left: 0;
+	}
 	&:after {
 		content: "";
 		position: absolute;
@@ -379,6 +381,7 @@ a.collapsible {
 		background: rgba(0,0,0,0.5);
 		width: 100%;
 		height: 100%;
+		z-index: 1;
 	}
 	header {
 		z-index: 0;
@@ -544,6 +547,10 @@ a.collapsible {
 	    border-radius: 50%;
 	    background-color: #fff;
 	    padding-left: 2px;
+	}
+	@media screen and (min-width: 650px){
+		width: 40%;
+		margin: 0 auto;
 	}
 }
 
