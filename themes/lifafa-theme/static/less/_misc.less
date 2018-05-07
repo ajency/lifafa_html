@@ -176,6 +176,7 @@ a.collapsible {
 
 .black-overlay {
 	background: rgba(0, 0, 0, 0.5);
+	z-index: 1;
 }
 
 .lifafa-view-bg {
@@ -419,6 +420,10 @@ a.collapsible {
 	}
 	a{
 		color: #23d9fd;
+		&.text-white {
+			color: #fff;
+			border-color: white !important;
+		}
 	}
 }
 
@@ -714,6 +719,13 @@ a.collapsible {
     }
 }
 
+.gift-bg {
+	@media (max-width: 767px) {
+		background-image: url('../images/Accept-Lifafa.png');
+		background-size: cover;
+	    background-repeat: no-repeat;
+	}
+}
 
 
 
