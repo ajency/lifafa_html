@@ -585,6 +585,12 @@
   margin-left: auto;
   margin-right: auto;
 }
+.mdl-mobile .ml--20px {
+  margin-left: -20px;
+}
+.mdl-mobile .mr--20px {
+  margin-right: -20px;
+}
 @media (min-width: 576px) {
   .mdl-mobile .text-sm-left {
     text-align: left !important;
@@ -634,6 +640,9 @@
   .mdl-mobile .text-sm-white {
     color: #fff;
   }
+  .mdl-mobile .text-sm-white.primary_text_color {
+    color: #fff !important;
+  }
   .mdl-mobile .w-sm-480px {
     width: 480px;
   }
@@ -646,6 +655,9 @@
   }
   .mdl-mobile .px-sm-10 {
     padding: 0 10px;
+  }
+  .mdl-mobile .px-sm-30px {
+    padding: 0 30px;
   }
   .mdl-mobile .ml-sm-15px {
     margin-left: 15px !important;
@@ -1479,6 +1491,12 @@
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 180px;
+  background-position: center;
+}
+@media (min-width: 576px) {
+  .mdl-mobile .total-contrib {
+    background-size: 50% 100%;
+  }
 }
 .mdl-mobile .total-contrib__amt {
   font-size: 1.5em;
@@ -1599,5 +1617,16 @@
     background-image: url('../images/Accept-Lifafa.png');
     background-size: cover;
     background-repeat: no-repeat;
+  }
+}
+.mdl-mobile .bubble-bg {
+  background-image: url('../images/bg-bubbles.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 25%;
+}
+@media (min-width: 576px) {
+  .mdl-mobile .bubble-bg {
+    padding-top: 21%;
   }
 }

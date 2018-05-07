@@ -585,8 +585,12 @@ a.collapsible {
 .total-contrib{
 	background-image: url('../images/confetti.png');
 	background-size: cover;
+	@media (min-width: 576px) {
+		background-size: 50% 100%;
+	}
     background-repeat: no-repeat;
     min-height: 180px;
+    background-position: center;
 	&__amt{
 		font-size: 1.5em;
 	}
@@ -738,6 +742,16 @@ a.collapsible {
 		background-size: cover;
 	    background-repeat: no-repeat;
 	}
+}
+
+.bubble-bg {
+	background-image: url('../images/bg-bubbles.png');
+	background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 25%;
+    @media (min-width: 576px) {
+    	padding-top: 21%;
+    }
 }
 
 
