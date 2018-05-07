@@ -1425,3 +1425,22 @@
   vertical-align: middle;
   position: relative;
 }
+.mdl-mobile .gift-lifafa .message-box {
+  height: 200px;
+}
+.mdl-mobile .preview-mail {
+  position: fixed;
+  top: 0em;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.68);
+  overflow: auto;
+  display: none;
+}
+.mdl-mobile .preview-mail .dotted-border {
+  background-color: #fff;
+  border: 3px dashed #969696;
+  border-radius: 5px;
+}

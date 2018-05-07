@@ -44,12 +44,30 @@
 
       $(document).mouseup(function(e) {
        var Click_todo;
-       Click_todo = $('.lifafa-open-contributions,.payment-summary,.custom-modal');
+       Click_todo = $('.lifafa-open-contributions,.payment-summary,.custom-modal,');
        if (!Click_todo.is(e.target) && Click_todo.has(e.target).length === 0) {
          $('.lifafa-open-contributions,.payment-summary,.custom-modal').removeClass('is-shown');
          $( ".content-wrapper" ).removeClass( "show-overlay" );
        }
       });
+
+      // Preview mail click outside close
+
+      $('.send-mail').click(function(e){
+        e.stopPropagation();
+        $('.preview-mail').show();
+      });
+
+
+
+      $(document).mouseup(function(e) {
+       var Click_todo;
+       Click_todo = $('.preview-mail .dotted-border');
+       if (!Click_todo.is(e.target) && Click_todo.has(e.target).length === 0) {
+         $( ".preview-mail" ).hide();
+       }
+      });      
+
 
       $( ".collapsible" ).click(function() {
         $( ".collapsible-content" ).slideToggle( "slow" );
