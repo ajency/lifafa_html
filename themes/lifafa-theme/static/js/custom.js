@@ -44,7 +44,7 @@
 
       $(document).mouseup(function(e) {
        var Click_todo;
-       Click_todo = $('.lifafa-open-contributions,.payment-summary,.custom-modal,');
+       Click_todo = $('.lifafa-open-contributions,.payment-summary,.custom-modal');
        if (!Click_todo.is(e.target) && Click_todo.has(e.target).length === 0) {
          $('.lifafa-open-contributions,.payment-summary,.custom-modal').removeClass('is-shown');
          $( ".content-wrapper" ).removeClass( "show-overlay" );
