@@ -176,6 +176,7 @@ a.collapsible {
 
 .black-overlay {
 	background: rgba(0, 0, 0, 0.5);
+	z-index: 1;
 }
 
 .lifafa-view-bg {
@@ -419,6 +420,10 @@ a.collapsible {
 	}
 	a{
 		color: #23d9fd;
+		&.text-white {
+			color: #fff;
+			border-color: white !important;
+		}
 	}
 }
 
@@ -580,8 +585,12 @@ a.collapsible {
 .total-contrib{
 	background-image: url('../images/confetti.png');
 	background-size: cover;
+	@media (min-width: 576px) {
+		background-size: 50% 100%;
+	}
     background-repeat: no-repeat;
     min-height: 180px;
+    background-position: center;
 	&__amt{
 		font-size: 1.5em;
 	}
@@ -727,6 +736,23 @@ a.collapsible {
     }
 }
 
+.gift-bg {
+	@media (max-width: 767px) {
+		background-image: url('../images/Accept-Lifafa.png');
+		background-size: cover;
+	    background-repeat: no-repeat;
+	}
+}
+
+.bubble-bg {
+	background-image: url('../images/bg-bubbles.png');
+	background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 25%;
+    @media (min-width: 576px) {
+    	padding-top: 21%;
+    }
+}
 
 
 

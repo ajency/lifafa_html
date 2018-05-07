@@ -73,18 +73,6 @@
         $( ".collapsible-content" ).slideToggle( "slow" );
       });
 
-      // create lifafa $(function() {
-     $("input[name='isfor']").click(function() {
-       if ($("#someone").is(":checked")) {
-         $("#dvPinNo").show();
-       } else {
-         $("#dvPinNo").hide();
-       }
-     });
-
-
-
-
       // autocomplete tags
       /**
        * All auto suggestion boxes are fucked up or badly written.

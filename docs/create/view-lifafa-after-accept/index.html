@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Lifafa View Invitee with Contributions :: Lifafa Screens</title>
+    <title>View Lifafa After Accept :: Lifafa Screens</title>
 
     
     <link rel="manifest" href="/manifest.json">
@@ -77,6 +77,14 @@
 </header>
 <div class="header-spacer"></div>
     <div class="page-banner lifafa-view-bg position-relative h-250px">
+    	<div class="padding_20 black-overlay position_relative">
+			<div class="text-white pt15 dismiss">
+                <div class="dismiss__action">
+                    <a href="" class="text-white font_weight_normal border-bottom font_size13">Dismiss</a>
+                </div>
+				<p class="font_weight_normal font_size13 text_align_center">You were gifted this Lifafa. Redeem it for online purchases or transferto your bank account. <a href="" class="border-bottom font_weight_bolder list-inline-item ">Redeem Lifafa</a></p>
+			</div>
+		</div>
         
         <button class="mdl-button mdl-js-button mdl-button--fab bg-grey rounded-circle position-absolute" style="top: 15px; right: 15px;">
           <i class="material-icons">share</i>
@@ -110,7 +118,7 @@
                             </div>
                         </div>
 
-                        <div class="display_flex justify_content pt15 pb15 align_items_center border-xs-bottom border-sm-bottom-dashed border-lightblue">
+                        <div class="display_flex justify_content border-xs-bottom border-sm-bottom-dashed border-lightblue pt15 pb15 align_items_center">
                             <div class="col-sm-4 col-6 text-sm-center text_align_left">
                                 <p class="font_weight_bold font_size20 mb5">&#x20b9; 20,000</p>
                                 <p class="font_weight_normal font_size13">Lifafa Goal Amount</p>
@@ -145,31 +153,35 @@
                     </div>
                 </div>
                 
-                <a href="/lifafa_html/create/all-contributors/" class="display_block">
-                    <div class="display_flex mt30 border-sm-bottom-dashed border-gray border-xs-0 align_items_center pb15 justify_content_spacearound">
-                        <div>
-                            <div class="img-icon-holder">
-                                <img src='https://ajency.github.io/lifafa_html/images/contribute.png' alt="..." class="">
-                            </div>
-                            
+
+                <div class="display_flex mt30 border-sm-bottom-dashed border-gray border-xs-0 align_items_center pb15">
+                    <div class="col-1">
+                        <div class="img-icon-holder">
+                            <img src='https://ajency.github.io/lifafa_html/images/contribute.png' alt="..." class="">
                         </div>
-                        <div class="font_size14">
-                            <p class="font_weight_bolder text-darker">Trupti Rao, Amit Adav, Rajesh</p>
-                            <p class="font_weight_normal text-grey">+4 Others have contributed</p>
-                        </div>
-                        <i class="material-icons primary_text_color angle-right">chevron_right</i>
                     </div>
-                </a>
+
+                    <div class="pl15 col-10">
+                        <div class="font_size14">
+	                        <p class="font_weight_bolder text-darker">Trupti Rao, Amit Adav, Rajesh</p>
+	                        <p class="font_weight_normal text-grey">+4 Others have contributed</p>
+	                    </div>
+                    </div>
+
+                    <div class="col-1">
+                    	<i class="material-icons primary_text_color angle-right">chevron_right</i>
+                    </div>
+                </div>
 
                 <hr style="color: #ccc;" class="mt-0 mb-0 d-sm-none">
                 <div class="text_align_center mt15">
-                    <a href="/lifafa_html/create/all-contributors-invitee/" class="font_size16 font_weight_bold primary_text_color">View All Contributors <i class=" material-icons primary_text_color vertical-middle">chevron_right</i></a>
+                    <a href="" class="font_size14 font_weight_bold primary_text_color">+ Invite others to contribute</a>
                 </div>
 
-                <div class="mt30 ml20 mr20">
-                    <a href="/lifafa_html/create/contributions/" type="submit" data-role="none" data-ajax="false" rel="external" class="mdl-button mdl-js-button mdl-button--raised width_100 primary_color open-contributions mb15">Contribute to Lifafa</a>
-                    
-                    
+                <div class="mt30 mb30 ml20 mr20">
+                    <a href="/lifafa_html/create/open-for-contribution1/" id="login_btn" type="submit" data-role="none" data-ajax="false" rel="external" class="mdl-button mdl-js-button mdl-button--raised width_100 primary_color open-contributions mb15">Open for contributions</a>
+
+                    <button data-role="none" value="" name="" class="mdl-button mdl-js-button  width_100 primary_border_color bg-transparent primary_text_color">Redeem Lifafa</button>
                 </div>
 
                 <div class="video-holder ml--20px mr--20px pl20 pr20 bubble-bg pb20">
@@ -213,7 +225,7 @@
 
             
         </div>
-
+        
         <div class="ui-footer ui-footer-fixed display_flex primary_text_color padding_20 primary_color align_items_center justify_content">
                 <div><p class="font_weight_normal font_size14">Add a personal touch to your Lifafa with images, videos and a message.</p></div>
                 <div class="redeem_edit_btn">
@@ -221,8 +233,9 @@
                 </div>
         </div>
 
+        
 
-       
+        
     
     </div>
     <footer class="text_align_center text-sm-left pt30">

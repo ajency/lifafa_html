@@ -66,11 +66,19 @@
 				<p class="font14 font_weight_bolder">Enter mobile number</p>
 				
 				<form method="POST" action="https://www.lifafa.com" accept-charset="UTF-8" id="form_data"><input name="_token" type="hidden" value="vs8P1ijGS9pyPRzR4nhgcRsiktXAz9S5dj3W6qXW">				<input type="hidden" name="_token" value="vs8P1ijGS9pyPRzR4nhgcRsiktXAz9S5dj3W6qXW">
-					<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label pt15 pb15 w-100 mb15">
-						
-						<input class="mdl-textfield__input font_weight_bold font_size16" id="login" tabindex="1" name="login" type="text" value="+91">					
-						
-						<span id="login_error" class="  mdl-textfield__error"></span>
+					
+
+					<div class="formgroup">
+					    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label w-100">
+					        <div class="display_flex">
+					            <input class="mdl-textfield__input width_15 text_align_center mr10 font_weight_bold" maxlength="3" minlength="3" type="text" value="+91">
+					                <input class="mdl-textfield__input mobile1" id="mobile" maxlength="10" minlength="10" name="mobile" pattern="-?[0-9]*(\.[0-9]+)?" type="text">
+					                </input>
+					            </input>
+					        </div>
+					        <span class="mdl-textfield__error">
+					        </span>
+					    </div>
 					</div>
 
 					<div class="w-sm-50 m-sm-auto">
