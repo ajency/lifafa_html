@@ -21,7 +21,7 @@
 					<!-- <div class="padding_20 min_height"> -->
 						<!-- <p class="black_color font16 font_weight_bold text_align_center">Select an occasion</p> -->
 
-						<p class="mt10 mb10 font14 font_weight_bolder">Select an Occasion</p>
+						<p class="mt10 mb10 font14 font_weight_bolder">Select an occasion</p>
 						<span class="name_error mdl-textfield__error"></span>
 						<div id="category_events" class="category_event square-variant pb20">
 							<div class="select_event_bg color_wedding selected display_flex align_items_center justify_content_center">
@@ -52,12 +52,7 @@
 								</div>
 							</div>
 
-							<div class="select_event_bg color_custom display_flex align_items_center justify_content_center">
-								<div>
-									<div class="text_align_center img-holder m-auto"></div>
-									<p class="font_size14 color_black mt5" id="custom-event">Special Event</p>
-								</div>
-							</div>
+							
 
 							<div class="select_event_bg color_birthday display_flex align_items_center justify_content_center">
 								<div>
@@ -79,7 +74,13 @@
 									<div class="text_align_center img-holder m-auto"></div>
 									<p class="font_size14 color_black mt5" id="house-warming">Housewarming</p>
 								</div>
+							</div>
 
+							<div class="select_event_bg color_custom display_flex align_items_center justify_content_center">
+								<div>
+									<div class="text_align_center img-holder m-auto"></div>
+									<p class="font_size14 color_black mt5" id="custom-event">Special Event</p>
+								</div>
 							</div>
 
 						</div>
@@ -122,7 +123,7 @@
 				                <div class="width_100 category_list">
 				                	<div class="categorycheckbox--">
 				                      <input type="checkbox" data-role="none" name="selected_category[3]" class="filled_in category_selection styled_checkbox categorycheckbox" id="category_check_3" value="products" />
-				                      <label for="category_check_3">Buy Products</label>
+				                      <label for="category_check_3">Products</label>
 				              		</div>
 
 				                </div>
@@ -132,7 +133,7 @@
 				                <div class="width_100 category_list">
 				                	<div class="categorycheckbox--">
 				                      <input type="checkbox" data-role="none" name="selected_category[12]" class="filled_in category_selection styled_checkbox categorycheckbox" id="category_check_12" value="charity" />
-				                      <label for="category_check_12">Give to charity</label>
+				                      <label for="category_check_12">Charity</label>
 				              		</div>
 
 				                </div>
@@ -161,25 +162,32 @@
 					<div class="mb30">
 						<!-- <h4 class="my-3">The Lifafa is for</h4> -->
 
-						<p class="mb10 font14 font_weight_bolder">The Lifafa is for</p>
+						<p class="mb10 font14 font_weight_bolder">This Lifafa is for</p>
 						<div class="radio-btn-group mb-3">
 							<div class="radio-btn">
-							<input id="Radio1" name="Radios" type="radio" value="Option 1" checked="checked">
-							<label for="Radio1" class="font_size13">Yourself</label>
+							<input id="yourself" name="isfor" type="radio" value="Option 1" checked="checked">
+							<label for="yourself" class="font_size13">Yourself</label>
 							</div>
 
 							<div class="radio-btn">
-							<input id="Radio2" name="Radios" type="radio" value="Option 2" >
-							<label for="Radio2" class="font_size13">Someone else</label>
+							<input id="someone" name="isfor" type="radio" value="Option 2" >
+							<label for="someone" class="font_size13">Someone else</label>
 							</div>
 						</div>
 					</div>
 					<!-- /radio-btns -->
+					
+					<div id="dvPinNo" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label is-upgraded width_100 pt-0 mb15" style="display: none;">
+						<p class="mb10 font14 font_weight_bolder">Who is it for?</p>
+						<input class="mdl-textfield__input font_weight_normal" type="text" name="title" id="" ng-model="" value="" data-role="none" placeholder="">
+						
+					</div>
+
 
 					<div class=" mb30">
 						<div class="form_group mb15">
 
-							<p class="mb10 font14 font_weight_bolder">How much would you like to collect?</p>
+							<p class="mb10 font14 font_weight_bolder">How much would you like to collect in contributions?</p>
 							<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label rupee_symbol is-upgraded width_100 pt0 pb0 left-addon">
 								<input class="mdl-textfield__input font_weight_normal font_size24" data-role="none" type="tel" name="lifafa_amount" id="lifafa_amount" value="" onkeypress="return isNumber(event)">
 								<!-- <label class="mdl-textfield__label" for="lifafa_amount">Your Lifafa goal amount</label> -->
@@ -206,5 +214,7 @@
 					<!-- </div> -->
 			</div>
 		</div> <!-- /container -->
+
+		
 
 	{{ end }}
