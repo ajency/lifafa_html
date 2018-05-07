@@ -20,112 +20,157 @@
 				<div class="contributors">
 					<div class="contributors__list">
 						<div class="display_flex justify_content_spacearound mb10">
-							<label class = "mdl-checkbox mdl-js-checkbox flex-1" for = "check-1">
-					              <input type = "checkbox" id = "check-1" class = "mdl-checkbox__input" >
+							{{ if $.Params.invitee }}
+								<label class = "flex-1" for = "check-1">
+							{{ else }}
+								<label class = "mdl-checkbox mdl-js-checkbox flex-1" for = "check-1">
+					            <input type = "checkbox" id = "check-1" class = "mdl-checkbox__input" >
+					        {{ end }}
 					             <div class="font_size14 pl5">
 										<p class="font_size13 font_weight_bolder">Trupti Rao</p>
 										<p class="text-grey text_decoration font_size12">truptirao78@gmail.com</p>
 									</div>
 					        </label>
+					        {{ if $.Params.invitee }}
+					        {{ else }}
 							<div class="font_size14 text_align_right">
 								<p class="fz-size-xl">₹ 2,000</p>
 								<p class="text-grey font_size12">on 22/03/2018</p>
 							</div>
+							{{ end }}
 						</div>
 						<p class="font_size14 line-height text-darker italic mt10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore consequuntur qui animi est ab quas.</p>
 						<div class="display_flex say-thanks mt15 font_size14">
-							<div class="thank-icon display_flex disable">
+							<div class="thank-icon display_flex {{ if $.Params.invitee }}
+					        {{ else }}disable{{ end }}">
 								<i class="material-icons">favorite</i>
 							</div>
-							<p class="text-grey pl5">Say Thanks</p>
+							<p class="text-grey pl5">{{ if $.Params.invitee }}Snehal : Thank you so much!
+					        {{ else }}Say Thanks{{ end }}</p>
 						</div>
 					</div>
 					<div class="contributors__list">
 						<div class="display_flex justify_content_spacearound mb10">
-							<label class = "mdl-checkbox mdl-js-checkbox flex-1" for = "check-2">
-					              <input type = "checkbox" id = "check-2" class = "mdl-checkbox__input" >
+							{{ if $.Params.invitee }}
+								<label class = "flex-1" for = "check-1">
+							{{ else }}
+								<label class = "mdl-checkbox mdl-js-checkbox flex-1" for = "check-1">
+					            <input type = "checkbox" id = "check-1" class = "mdl-checkbox__input" >
+					        {{ end }}
 					             <div class="font_size14 pl5">
 										<p class="font_size13 font_weight_bolder">Trupti Rao</p>
 										<p class="text-grey text_decoration font_size12">truptirao78@gmail.com</p>
 									</div>
 					        </label>
+					        {{ if $.Params.invitee }}
+					        {{ else }}
 							<div class="font_size14 text_align_right">
 								<p class="fz-size-xl">₹ 2,000</p>
 								<p class="text-grey font_size12">on 22/03/2018</p>
 							</div>
+							{{ end }}
 						</div>
 						<p class="font_size14 line-height text-darker italic mt10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore consequuntur qui animi est ab quas.</p>
 						<div class="display_flex say-thanks mt15 font_size14">
-							<div class="thank-icon display_flex disable">
+							<div class="thank-icon display_flex {{ if $.Params.invitee }}
+					        {{ else }}disable{{ end }}">
 								<i class="material-icons">favorite</i>
 							</div>
-							<p class="text-grey pl5">Say Thanks</p>
+							<p class="text-grey pl5">{{ if $.Params.invitee }}Snehal : Thank you so much!
+					        {{ else }}Say Thanks{{ end }}</p>
 						</div>
 					</div>
 					<div class="contributors__list">
 						<div class="display_flex justify_content_spacearound mb10">
-							<label class = "mdl-checkbox mdl-js-checkbox flex-1" for = "check-3">
-					              <input type = "checkbox" id = "check-3" class = "mdl-checkbox__input" >
+							{{ if $.Params.invitee }}
+								<label class = "flex-1" for = "check-1">
+							{{ else }}
+								<label class = "mdl-checkbox mdl-js-checkbox flex-1" for = "check-1">
+					            <input type = "checkbox" id = "check-1" class = "mdl-checkbox__input" >
+					        {{ end }}
 					             <div class="font_size14 pl5">
 										<p class="font_size13 font_weight_bolder">Trupti Rao</p>
 										<p class="text-grey text_decoration font_size12">truptirao78@gmail.com</p>
 									</div>
 					        </label>
+					        {{ if $.Params.invitee }}
+					        {{ else }}
 							<div class="font_size14 text_align_right">
 								<p class="fz-size-xl">₹ 2,000</p>
 								<p class="text-grey font_size12">on 22/03/2018</p>
 							</div>
+							{{ end }}
 						</div>
-						<p class="font_size14 line-height text-darker italic mt10">(No message))</p>
+						<p class="font_size14 line-height text-darker italic mt10">(No message)</p>
 						<div class="display_flex say-thanks mt15 font_size14">
-							<div class="thank-icon display_flex disable">
+							<div class="thank-icon display_flex {{ if $.Params.invitee }}
+					        {{ else }}disable{{ end }}">
 								<i class="material-icons">favorite</i>
 							</div>
-							<p class="text-grey pl5">Say Thanks</p>
+							<p class="text-grey pl5">{{ if $.Params.invitee }}Snehal : Thank you so much!
+					        {{ else }}Say Thanks{{ end }}</p>
 						</div>
 					</div>
 					<div class="contributors__list">
 						<div class="display_flex justify_content_spacearound mb10">
-							<label class = "mdl-checkbox mdl-js-checkbox flex-1" for = "check-4">
-					              <input type = "checkbox" id = "check-4" class = "mdl-checkbox__input" >
+							{{ if $.Params.invitee }}
+								<label class = "flex-1" for = "check-1">
+							{{ else }}
+								<label class = "mdl-checkbox mdl-js-checkbox flex-1" for = "check-1">
+					            <input type = "checkbox" id = "check-1" class = "mdl-checkbox__input" >
+					        {{ end }}
 					             <div class="font_size14 pl5">
 										<p class="font_size13 font_weight_bolder">Trupti Rao</p>
 										<p class="text-grey text_decoration font_size12">truptirao78@gmail.com</p>
 									</div>
 					        </label>
+					        {{ if $.Params.invitee }}
+					        {{ else }}
 							<div class="font_size14 text_align_right">
 								<p class="fz-size-xl">₹ 2,000</p>
 								<p class="text-grey font_size12">on 22/03/2018</p>
 							</div>
+							{{ end }}
 						</div>
 						<p class="font_size14 line-height text-darker italic mt10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore consequuntur qui animi est ab quas.</p>
 						<div class="display_flex say-thanks mt15 font_size14">
-							<div class="thank-icon display_flex disable">
+							<div class="thank-icon display_flex {{ if $.Params.invitee }}
+					        {{ else }}disable{{ end }}">
 								<i class="material-icons">favorite</i>
 							</div>
-							<p class="text-grey pl5">Say Thanks</p>
+							<p class="text-grey pl5">{{ if $.Params.invitee }}Snehal : Thank you so much!
+					        {{ else }}Say Thanks{{ end }}</p>
 						</div>
 					</div>
 					<div class="contributors__list">
 						<div class="display_flex justify_content_spacearound mb10">
-							<label class = "mdl-checkbox mdl-js-checkbox flex-1" for = "check-5">
-					              <input type = "checkbox" id = "check-5" class = "mdl-checkbox__input" >
+							{{ if $.Params.invitee }}
+								<label class = "flex-1" for = "check-1">
+							{{ else }}
+								<label class = "mdl-checkbox mdl-js-checkbox flex-1" for = "check-1">
+					            <input type = "checkbox" id = "check-1" class = "mdl-checkbox__input" >
+					        {{ end }}
 					             <div class="font_size14 pl5">
 										<p class="font_size13 font_weight_bolder">Trupti Rao</p>
 										<p class="text-grey text_decoration font_size12">truptirao78@gmail.com</p>
 									</div>
 					        </label>
+					        {{ if $.Params.invitee }}
+					        {{ else }}
 							<div class="font_size14 text_align_right">
 								<p class="fz-size-xl">₹ 2,000</p>
 								<p class="text-grey font_size12">on 22/03/2018</p>
 							</div>
+							{{ end }}
 						</div>
-						<p class="font_size14 line-height text-darker italic mt10">(No message))</p>
+						<p class="font_size14 line-height text-darker italic mt10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore consequuntur qui animi est ab quas.</p>
 						<div class="display_flex say-thanks mt15 font_size14">
-							<div class="thank-icon display_flex disable">
+							<div class="thank-icon display_flex {{ if $.Params.invitee }}
+					        {{ else }}disable{{ end }}">
 								<i class="material-icons">favorite</i>
 							</div>
-							<p class="text-grey pl5">Say Thanks</p>
+							<p class="text-grey pl5">{{ if $.Params.invitee }}Snehal : Thank you so much!
+					        {{ else }}Say Thanks{{ end }}</p>
 						</div>
 					</div>
 				</div>

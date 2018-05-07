@@ -1415,6 +1415,9 @@
   box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.34);
   padding: 20px;
 }
+.mdl-mobile .contributors__list label {
+  height: auto;
+}
 .mdl-mobile .thank-icon {
   width: 25px;
   height: 25px;
