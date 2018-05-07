@@ -90,15 +90,15 @@
                     <a href="{{ if $.Params.invitee }}/lifafa_html/create/all-contributors-invitee/{{ else }}/lifafa_html/create/invite-for-contribution/{{ end }}" class="{{ if $.Params.invitee }}font_size16{{ else }}font_size14{{ end }} font_weight_bold primary_text_color">{{ if $.Params.invitee }}View All Contributors <i class=" material-icons primary_text_color vertical-middle">chevron_right</i>{{ else }}+ Invite others to contribute{{ end }}</a>
                 </div>
 
-                <div class="mt30 mb30 ml20 mr20">
+                <div class="mt30 ml20 mr20">
                     <a href="/lifafa_html/create/contributions/" type="submit" data-role="none" data-ajax="false" rel="external" class="mdl-button mdl-js-button mdl-button--raised width_100 primary_color open-contributions mb15">Contribute to Lifafa</a>
                     {{ if $.Params.invitee }}
                     {{ else }}
-                    <a href="/lifafa_html/create/open-for-contribution1/" type="submit" data-role="none" data-ajax="false" rel="external" class="mdl-button mdl-js-button mdl-button--raised width_100 primary_border_color bg-transparent primary_text_color">Redeem Lifafa</a>
+                    <a href="/lifafa_html/create/open-for-contribution1/" type="submit" data-role="none" data-ajax="false" rel="external" class="mdl-button mdl-js-button width_100 primary_border_color bg-transparent primary_text_color">Redeem Lifafa</a>
                     {{ end }}
                 </div>
 
-                <div class="video-holder">
+                <div class="video-holder ml--20px mr--20px pl20 pr20 bubble-bg pb20">
                     <div class="video_container pr-0">
                         <div class="media_wrap">
                             <div id="player2">
@@ -125,7 +125,7 @@
                     </ul>
                 </div>
 
-                <div class="mt30 mb-100">
+                <div class="mt30 mb30">
                     <ul class="text_align_center list-inline">
                         <li class="list-inline-item mr15"><a href=""><img src='{{"images/fb.png" | absURL}}' alt="..." class=""></a></li>
                         <li class="list-inline-item mr15"><a href=""><img src='{{"images/twiter.png" | absURL}}' alt="..." class=""></a></li>
