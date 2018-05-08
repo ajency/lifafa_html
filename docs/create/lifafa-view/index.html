@@ -76,7 +76,7 @@
     </div>
 </header>
 <div class="header-spacer"></div>
-	<div class="page-banner lifafa-view-bg mh-200px">
+	<div class="page-banner tying-knot mh-200px">
 		<div class="padding_20 black-overlay position_relative">
 			<div class="text-white pt15 dismiss">
                 <div class="dismiss__action">
@@ -93,8 +93,8 @@
 				
 
 				 <div class="edit_content_preview">
-                    <p  id="note_edit_des" class="font_size12 text_align_center font_weight_normal">
-                    	<small class="">It’s my big day! My fiance and I are very excited to invite you to our wedding. <a href="#" class="primary_text_color"> Read More</a></a></small>
+                    <p  id="note_edit_des" class="font_size14 text_align_center font_weight_normal more">
+                    	 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, repudiandae, mollitia doloribus esse, quo voluptates ipsa totam facere quae nesciunt ipsam libero cum doloremque quos. Quasi blanditiis cum nulla minus.
                     </p>
                 </div>
             </div> 
@@ -111,7 +111,7 @@
                 			
 							
 							<div class="text-sm-center pl-xs-3">
-								<p class="font_weight_normal">Lifafa will be redemmed for: <span class="font_weight_bold">Travel</span></p>
+								<p class="font_weight_normal">Lifafa will be redemmed for: <span class="font_weight_bold d-sm-inline d-block">Travel</span></p>
 							</div>
                 		</div>
 
@@ -166,13 +166,13 @@
                 	<button id="login_btn" type="submit" data-role="none" data-ajax="false" rel="external" class="mdl-button mdl-js-button primary_text_color width_100 primary_border_color bg-transparent">Open for contributions</button>
                 </div>
 
-                <div class="mt30 mb100">
+                <div class="mt30 mb30">
                 	<ul class="text_align_center list-inline">
-                        <li class="list-inline-item mr15"><a href=""><img src='https://ajency.github.io/lifafa_html/images/fb.png' alt="..." class=""></a></li>
-                        <li class="list-inline-item mr15"><a href=""><img src='https://ajency.github.io/lifafa_html/images/twiter.png' alt="..." class=""></a></li>
-                        <li class="list-inline-item mr15"><a href=""><img src='https://ajency.github.io/lifafa_html/images/email.png' alt="..." class=""></a></li>
-                        <li class="list-inline-item mr15"><a href=""><img src='https://ajency.github.io/lifafa_html/images/whatsapp.png' alt="..." class=""></a></li>
-                        <li class="list-inline-item"><a href=""><img src='https://ajency.github.io/lifafa_html/images/code.png' alt="..." class=""></a></li>
+                        <li class="list-inline-item mr15"><a href="" class="disabled"><img src='https://ajency.github.io/lifafa_html/images/fb.png' alt="..." class=""></a></li>
+                        <li class="list-inline-item mr15"><a href="" class="disabled"><img src='https://ajency.github.io/lifafa_html/images/twiter.png' alt="..." class=""></a></li>
+                        <li class="list-inline-item mr15"><a href="" class="disabled"><img src='https://ajency.github.io/lifafa_html/images/email.png' alt="..." class=""></a></li>
+                        <li class="list-inline-item mr15"><a href="" class="disabled"><img src='https://ajency.github.io/lifafa_html/images/whatsapp.png' alt="..." class=""></a></li>
+                        <li class="list-inline-item"><a href="" class="disabled"><img src='https://ajency.github.io/lifafa_html/images/code.png' alt="..." class=""></a></li>
                     </ul>
                 </div>
             </div>
@@ -316,5 +316,61 @@
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <script type="text/javascript" src="https://ajency.github.io/lifafa_html/js/custom.js"></script>
+
+    <script>
+        $( document ).ready(function() {
+            
+            $("input[name='isfor']").click(function() {
+             if ($("#someone").is(":checked")) {
+               $("#hidden-div").show();
+             } else {
+               $("#hidden-div").hide();
+             }
+           });
+
+            
+
+            
+            $(window).load(function() {
+                if( $(window).width() < 767 ) {
+                    
+                    var showChar = 100;  
+                    var ellipsestext = "...";
+                    var moretext = "Read More";
+                    var lesstext = "Show less";
+                    
+
+                    $('.more').each(function() {
+                        var content = $(this).html();
+                    
+                        if(content.length > showChar) {
+                    
+                            var c = content.substr(0, showChar);
+                            var h = content.substr(showChar, content.length - showChar);
+                    
+                            var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
+                    
+                            $(this).html(html);
+                        }
+                    
+                    });
+                    
+                    $(".morelink").click(function(){
+                        if($(this).hasClass("less")) {
+                            $(this).removeClass("less");
+                            $(this).html(moretext);
+                        } else {
+                            $(this).addClass("less");
+                            $(this).html(lesstext);
+                        }
+                        $(this).parent().prev().toggle();
+                        $(this).prev().toggle();
+                        return false;
+                    });
+                }
+            });
+
+        });
+    </script>
   </body>
 </html>
