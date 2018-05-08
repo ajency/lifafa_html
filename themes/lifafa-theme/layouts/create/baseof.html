@@ -46,5 +46,18 @@
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <script type="text/javascript" src="{{"js/custom.js" | absURL}}"></script>
+
+    <script>
+        $( document ).ready(function() {
+            // create-edit lifafa - radiobtns
+            $("input[name='isfor']").click(function() {
+             if ($("#someone").is(":checked")) {
+               $("#hidden-div").show();
+             } else {
+               $("#hidden-div").hide();
+             }
+           });
+        });
+    </script>
   </body>
 </html>

@@ -21,35 +21,61 @@
 						<div class="">
 						
 							<span class="name_error mdl-textfield__error"></span>
-							<div id="category_events" class="category_event pb30 round-variant">
-								<div class="select_event_bg color_wedding  rounded-circle selected display_flex align_items_center justify_content_center">
-									<div class="img-holder"></div>
+							<div id="category_events" class="category_event pb15 square-variant">
+								<div class="select_event_bg color_wedding selected display_flex align_items_center justify_content_center">
+									<div>
+										<div class="img-holder m-auto"></div>
+										<p class="font_size14 color_black mt5" id="">Wedding</p>
+									</div>
 								</div>
-								<div class="select_event_bg color_farewell  rounded-circle display_flex align_items_center justify_content_center">
-									<div class="img-holder"></div>
+								<div class="select_event_bg color_farewell  display_flex align_items_center justify_content_center">
+									<div>
+										<div class="img-holder  m-auto"></div>
+										<p class="font_size14 color_black mt5" id="">Farewell</p>
+									</div>
 								</div>
-								<div class="select_event_bg color_babyshower  rounded-circle display_flex align_items_center justify_content_center">
-									<div class="img-holder"></div>
-								</div>
-
-								<div class="select_event_bg color_honeymoon  rounded-circle display_flex align_items_center justify_content_center">
-									<div class="img-holder"></div>
-								</div>
-
-								<div class="select_event_bg color_custom  rounded-circle display_flex align_items_center justify_content_center">
-									<div class="img-holder"></div>
-								</div>
-
-								<div class="select_event_bg color_birthday  rounded-circle display_flex align_items_center justify_content_center">
-									<div class="img-holder"></div>
+								<div class="select_event_bg color_babyshower display_flex align_items_center justify_content_center">
+									<div>
+										<div class="img-holder  m-auto"></div>
+										<p class="font_size14 color_black mt5" id="">BabyShower</p>
+									</div>
 								</div>
 
-								<div class="select_event_bg color_anniversary  rounded-circle display_flex align_items_center justify_content_center">
-									<div class="img-holder"></div>
+								<div class="select_event_bg color_honeymoon display_flex align_items_center justify_content_center">
+									<div>
+										<div class="img-holder  m-auto"></div>
+										<p class="font_size14 color_black mt5" id="">Honeymoon</p>
+									</div>
 								</div>
 
-								<div class="select_event_bg color_housewarming rounded-circle display_flex align_items_center justify_content_center">
-									<div class="img-holder"></div>
+								
+
+								<div class="select_event_bg color_birthday display_flex align_items_center justify_content_center">
+									<div>
+										<div class="img-holder  m-auto"></div>
+										<p class="font_size14 color_black mt5" id="">Birthday</p>
+									</div>
+								</div>
+
+								<div class="select_event_bg color_anniversary display_flex align_items_center justify_content_center">
+									<div>
+										<div class="img-holder  m-auto"></div>
+										<p class="font_size14 color_black mt5" id="">Anniversary</p>
+									</div>							
+								</div>
+
+								<div class="select_event_bg color_housewarming display_flex align_items_center justify_content_center">
+									<div>
+										<div class="img-holder  m-auto"></div>
+										<p class="font_size14 color_black mt5" id="">Housewarming</p>
+									</div>
+								</div>
+
+								<div class="select_event_bg color_custom display_flex align_items_center justify_content_center">
+									<div>
+										<div class="img-holder  m-auto"></div>
+										<p class="font_size14 color_black mt5" id="">Custom</p>
+									</div>
 								</div>
 																		
 							</div>
@@ -195,7 +221,7 @@
 					                        <div class="category_list">
 					                        	<div class="categorycheckbox--">
 						                          <input type="checkbox" data-role="none" name="selected_category[3]" class="filled_in category_selection styled_checkbox categorycheckbox" id="category_check_3" value="products" />
-						                          <label for="category_check_3">Buy Products</label>
+						                          <label for="category_check_3">Products</label>
 					                      		</div>
 					                          
 					                        </div>
@@ -205,7 +231,7 @@
 					                        <div class="category_list">
 					                        	<div class="categorycheckbox--">
 						                          <input type="checkbox" data-role="none" name="selected_category[12]" class="filled_in category_selection styled_checkbox categorycheckbox" id="category_check_12" value="charity" />
-						                          <label for="category_check_12">Give to Charity</label>
+						                          <label for="category_check_12">Charity</label>
 					                      		</div>
 					                          
 					                        </div>
@@ -234,20 +260,25 @@
 						<div class="mb30">
 							<!-- <h4 class="my-3">The Lifafa is for</h4> -->
 							
-							<p class="font14 font_weight_bolder mb10">The Lifafa is for</p>
+							<p class="font14 font_weight_bolder mb10">This Lifafa is for</p>
 							<div class="radio-btn-group mb-3">
 								<div class="radio-btn">
-								<input id="Radio1" name="Radios" type="radio" value="Option 1" checked="checked">
-								<label for="Radio1" class="font_size13">Yourself</label>
+								<input id="yourself" name="isfor" type="radio" value="Option 1" checked="checked">
+								<label for="yourself" class="font_size13">Yourself</label>
 								</div>
 
 								<div class="radio-btn">
-								<input id="Radio2" name="Radios" type="radio" value="Option 2" >
-								<label for="Radio2" class="font_size13">Someone else</label>
+								<input id="someone" name="isfor" type="radio" value="Option 2" >
+								<label for="someone" class="font_size13">Someone else</label>
 								</div>
 							</div>
 						</div>
 						<!-- /radio-btns -->
+
+						<div id="hidden-div" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label is-upgraded width_100 pt-0 mb15" style="display: none;">
+							<p class="mb10 font14 font_weight_bolder">Who is it for?</p>
+							<input class="mdl-textfield__input font_weight_normal" type="text" name="title" id="" ng-model="" value="" data-role="none" placeholder="">
+						</div>
 
 						<div class="form_group mb30">
 							
