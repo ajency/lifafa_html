@@ -70,6 +70,9 @@ a.collapsible {
 	&.stars-bg {
 		background: url('../images/stars-bg.png') repeat bottom;
 		background-size: contain;
+		@media (max-width: 767px) {
+			background-size: cover;
+		}
 	}
 	&.mh-200px {
 		min-height: 200px;
@@ -154,9 +157,9 @@ a.collapsible {
 
 .otp-countdown{
 	&:before{
-		content: 'Please wait';
+		/*content: 'Please wait';
 		padding-right: 0.5em;
-		color: #4a4a4a;
+		color: #4a4a4a;*/
 	}
 }
 
@@ -245,7 +248,7 @@ a.collapsible {
 		// left: 0;
 		height: calc(~'100vh - 90px');
 		@media (max-width: 767px) {
-			background: none;
+			/*background: none;*/
 		}
 	}
 }
@@ -655,7 +658,7 @@ a.collapsible {
     height: 25px;
     border-radius: 50%;
     padding: 5px;
-    background-color: #ec2525;
+    background-color: #ff6362;
     i{
     	font-size: 1.1em;
     	color: #fff;
@@ -776,4 +779,10 @@ a.collapsible {
 }
 
 
-
+/*override*/
+.mdl-checkbox.is-focused {
+	.mdl-checkbox__focus-helper {
+		box-shadow: none;
+		background: none;
+	}
+}
