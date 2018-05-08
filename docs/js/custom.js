@@ -1608,6 +1608,7 @@ if(document.getElementById('otp-resend-countdown')){
           msLeft = endTime - (+new Date);
           if ( msLeft < 1000 ) {
               // element.innerHTML = "countdown's over!";
+              document.getElementById('txt_msg').innerHTML = '';
               element.innerHTML = "<div class='resetPassword_btn'><button href='#' id='resend_otp_btn' class='verify_button_otp primary_text_color button font14 pb-0'>RESEND SMS</button></div>";
           } else {
               time = new Date( msLeft );
@@ -1623,7 +1624,7 @@ if(document.getElementById('otp-resend-countdown')){
       updateTimer();
   }
 
-  countdown( "otp-resend-countdown", 00, 60 );
+  countdown( "otp-resend-countdown", 00, 30 );
 
 }
 

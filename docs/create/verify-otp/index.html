@@ -48,7 +48,7 @@
 					</a>
 				</div>
 
-				<span class="header_text flex-1 text_align_center">Verification OTP</span>
+				<span class="header_text flex-1 text_align_center">OTP Verification</span>
 			</div>
 		</header>
 		
@@ -56,14 +56,14 @@
 			<div class="pt50">
 				<ul class="breadcrumb display_flex">
 					<li class="active"><a href="#">Mobile Verification</a></li>
-					<li><a href="#">Aadhar KYCs</a></li>
+					<li><a href="#">Aadhar KYC</a></li>
 				</ul>
 			</div>
 		</div>
 
 		<div class="padding_20 ml20 mr20 container w-sm-480px powered-by-child">
-			<div class="text_align_center">
-				<div class="font_size16 font_weight_bold text_align_center">Please enter 6 digit OTP <p class="font_size16 mt10">sent to +91 9878222328</p></div>
+			<div class="text_align_center pt-sm-30">
+				<div class="font_size16 font_weight_bold text_align_center">Enter the 6 digit OTP <p class="font_size16 mt10">sent to +91 9878222328</p></div>
 
 				<div class="modal_wrap verfiy_mobile_modal" id="mobile_top_verification" data-popup="verifyMobile_modal">
 					<div class="verify_mobile_modal_sec modal_inner">
@@ -73,21 +73,27 @@
 							<form id="otp_form">
 								<div class="">
 									<div class="valid_tick mdl-textfield input__field mdl-js-textfield mdl-textfield--floating-label w-100 otp-group text_align_center">
-										<input class="mdl-textfield__input otp-textbox m-auto" type="password" id="verify_mobile_otp" name="verify_mobile_otp" maxlength="6">
+										<input class="mdl-textfield__input otp-textbox m-auto" type="text" id="verify_mobile_otp" name="verify_mobile_otp" maxlength="6">
 										
 										<input type="hidden" id="verify_mobile" name="verify_mobile">
 										<span id="verify_mobile_otp_error" class="  mdl-textfield__error"></span>
 										<span class="is_success" id="temp_otp"></span>
 									</div>
 									
-									<p class="font_weight_bold font14"> Didn't receive the OTP?</p>
-
-									<div id="otp-resend-countdown" class="mt5 mb40 otp-countdown"></div>
-									
-
-									<div class="resetPass_verify_btn w-sm-50 m-sm-auto">
+									<div class="resetPass_verify_btn w-sm-50 m-sm-auto mb20">
 										<a href="/lifafa_html/create/enter-aadhaar/" id="forgot_otp_btn" class="mdl-button mdl-js-button mdl-js-ripple-effect verify_button primary_border_color bg-transparent primary_text_color w-100">Continue</a>
 									</div>
+
+									<p class="font_weight_bold font14"> Didn't receive the OTP?</p>
+									
+									<div class="display_flex align_items_center justify_content_center mb40 mt5">
+										<div id="txt_msg" class=" font_weight_bold font14 text-darker mr5">Please Wait: </div>
+										<div id="otp-resend-countdown" class="font_weight_bold font14 text-darker otp-countdown"></div>
+									</div>
+									
+									
+
+									
 								</div>
 							</form>
 
