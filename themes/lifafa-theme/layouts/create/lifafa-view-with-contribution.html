@@ -14,8 +14,9 @@
                 
 
                  <div class="edit_content_preview">
-                    <p  id="note_edit_des" class="font_size14 text_align_center font_weight_normal">
-                        <em>It’s my big day! My fiance and I are very excited to invite you to our wedding. <a class="primary_text_color"> Read More</a></a></em>
+                    <p  id="note_edit_des" class="font_size16 text_align_center font_weight_normal more">
+                        <!-- <em>It’s my big day! My fiance and I are very excited to invite you to our wedding. <a class="primary_text_color"> Read More</a></a></em> -->
+                        It’s my big day! My fiance and I are very excited to invite you to our wedding. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit minima inventore in facilis, vitae aliquam quas doloribus dolor debitis suscipit provident nisi temporibus numquam ea, vel eveniet at dolorum adipisci.
                     </p>
                 </div>
             </div> 
@@ -30,7 +31,7 @@
                             </div>
 
                             <div class="text-sm-center pl-xs-3">
-                                <p class="font_weight_normal">Lifafa will be redemmed for: <span class="font_weight_bold">Travel</span></p>
+                                <p class="font_weight_normal">Lifafa will be redeemed for: <span class="font_weight_bold">Travel</span></p>
                             </div>
                         </div>
 
@@ -58,10 +59,12 @@
 
                         <div class="text-sm-center mt10 mb-sm-3 display_flex align_items_center">
                             <div class="flex-1">
-                                 <p class="font_weight_normal font14 text-darker"><i class="italic">Created by:</i> <span class="font_size14 font_weight_bold display_block">Rahul Sharma</span></p>
+                                 <p class="font_weight_normal font14 text-darker text-sm-white"><i class="italic">Created by:</i> <span class="font_size14 font_weight_bold display_block">Rahul Sharma</span></p>
                             </div>
+
+                            <div class="flex-1 d-sm-block d-none"></div>
                              <div class="flex-1">
-                                 <p class="font_weight_normal font14 text-darker"><i class="italic">Lifafa expires on:</i> <span class="font_size14 font_weight_bold display_block">29 June 2018</span></p>
+                                 <p class="font_weight_normal font14 text-darker text-sm-white"><i class="italic">Lifafa expires on:</i> <span class="font_size14 font_weight_bold display_block">29 June 2018</span></p>
                             </div>
                         </div>
 
@@ -139,13 +142,16 @@
 
             
         </div>
-
+        
+        {{ if $.Params.invitee }}
+        {{ else }}
         <div class="ui-footer ui-footer-fixed display_flex primary_text_color padding_20 primary_color align_items_center justify_content">
                 <div><p class="font_weight_normal font_size14">Add a personal touch to your Lifafa with images, videos and a message.</p></div>
                 <div class="redeem_edit_btn">
                     <a href="https://www.lifafa.com/lifafa/edit/as" rel="external" data-ajax="false" class="edit_lifafa mdl-button mdl-js-button mdl-button--raised mdl-sm-button bg-grey primary_text_color" data-role="none"><i class="material-icons font_size16">border_color</i> Edit Lifafa</a>
                 </div>
         </div>
+        {{ end }}
 
 
        
