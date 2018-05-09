@@ -746,8 +746,10 @@
 }
 .mdl-mobile .disabled {
   pointer-events: none;
-  opacity: 0.65;
+  opacity: 0.45;
   cursor: default;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 .mdl-mobile header .header-logo {
   padding-left: 16px;

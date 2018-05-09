@@ -82,7 +82,7 @@
 					</div>
 
 					<div class="w-sm-50 m-sm-auto">
-						<a href="/lifafa_html/create/sending-otp/" id="submit" type="submit" class="mdl-button mdl-js-button mdl-js-ripple-effect primary_border_color bg-transparent primary_text_color w-100">Send OTP</a>
+						<a href="/lifafa_html/create/sending-otp/" id="submit" type="submit" class="mdl-button mdl-js-button mdl-js-ripple-effect primary_border_color bg-transparent primary_text_color w-100 disabled">Send OTP</a>
 					</div>
 				</form>
 
@@ -279,6 +279,27 @@
                         $(this).prev().toggle();
                         return false;
                     });
+                }
+            });
+
+            
+            $("#verify_mobile_otp").keyup(function(){
+                $("#forgot_otp_btn").removeClass("disabled");
+            });
+
+            
+            $("#login").keyup(function(){
+                $("#submit").removeClass("disabled");
+            });
+
+            
+            $("#mobile").keyup(function(){
+                $("#submit").removeClass("disabled");
+            });
+
+            $('#verify_mobile_otp, #login, #mobile').keyup(function() {
+                if ($(this).val() == '') { 
+                    $("#submit, #forgot_otp_btn").addClass("disabled");
                 }
             });
 

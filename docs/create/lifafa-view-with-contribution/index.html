@@ -405,6 +405,27 @@
                 }
             });
 
+            
+            $("#verify_mobile_otp").keyup(function(){
+                $("#forgot_otp_btn").removeClass("disabled");
+            });
+
+            
+            $("#login").keyup(function(){
+                $("#submit").removeClass("disabled");
+            });
+
+            
+            $("#mobile").keyup(function(){
+                $("#submit").removeClass("disabled");
+            });
+
+            $('#verify_mobile_otp, #login, #mobile').keyup(function() {
+                if ($(this).val() == '') { 
+                    $("#submit, #forgot_otp_btn").addClass("disabled");
+                }
+            });
+
         });
     </script>
   </body>
