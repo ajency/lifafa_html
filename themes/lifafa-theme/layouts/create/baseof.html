@@ -100,6 +100,27 @@
                 }
             });
 
+            // aadhar-otp
+            $("#verify_mobile_otp").keyup(function(){
+                $("#forgot_otp_btn").removeClass("disabled");
+            });
+
+            //enter-aadhaar
+            $("#login").keyup(function(){
+                $("#submit").removeClass("disabled");
+            });
+
+            // enter-mobile-no/
+            $("#mobile").keyup(function(){
+                $("#submit").removeClass("disabled");
+            });
+
+            $('#verify_mobile_otp, #login, #mobile').keyup(function() {
+                if ($(this).val() == '') { // check if value changed
+                    $("#submit, #forgot_otp_btn").addClass("disabled");
+                }
+            });
+
         });
     </script>
   </body>
