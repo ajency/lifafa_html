@@ -1184,7 +1184,7 @@
   bottom: 8px;
 }
 .mdl-mobile .powered-by {
-  background: url(../images/powerd-by.png) no-repeat bottom;
+  background: url(../images/powered-by2.png) no-repeat bottom;
   background-size: contain;
 }
 @media (min-width: 576px) {
@@ -1193,7 +1193,7 @@
   }
 }
 .mdl-mobile .powered-by .powered-by-child {
-  background: url(../images/powerd-by.png) no-repeat bottom;
+  background: url(../images/powered-by2.png) no-repeat bottom;
   background-size: contain;
   height: calc(100vh - 90px);
 }
