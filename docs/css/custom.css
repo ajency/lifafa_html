@@ -970,6 +970,10 @@
   border: 0;
   border-bottom: 2px solid #ccc;
   width: 100% !important;
+  color: transparent;
+}
+.mdl-mobile #ms1 #tag-input-0:focus {
+  color: inherit;
 }
 .mdl-mobile #ms1 .tag-sel-item {
   background: #e9eae9;
@@ -1198,8 +1202,8 @@
   height: calc(100vh - 90px);
 }
 @media (max-width: 767px) {
-  .mdl-mobile .powered-by .powered-by-child {
-    /*background: none;*/
+  .mdl-mobile .powered-by .powered-by-child.otp-verification {
+    height: calc(100vh - 10px);
   }
 }
 .mdl-mobile .gradient {

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Aadhaar otp :: Lifafa Screens</title>
+    <title>Verify Email Resend :: Lifafa Screens</title>
 
     
     <link rel="manifest" href="/manifest.json">
@@ -36,93 +36,56 @@
     
     <div class="content-wrapper">
         
-	
-
-	<div class="powered-by">
-
-		<header class="mdl-shadow--2dp white_bg mobile_header ui-header ui-bar-inherit ui-header-fixed slidedown" data-role="header" data-position="fixed" data-tap-toggle="false" role="banner">
-			<div class="display_flex justify_content align_items_center padding_left10 padding_right10">
-				<div class="">
-					<a href="https://www.lifafa.com" data-role="none" class="back_btn p-0" data-transition="slidefade">
-						<i class="material-icons">arrow_back</i>
-					</a>
-				</div>
-
-				<span class="header_text flex-1 text_align_center">OTP Verification</span>
+<div class="gradient">
+	<header class="mdl-shadow--2dp white_bg mobile_header ui-header ui-bar-inherit ui-header-fixed slidedown" data-role="header" data-position="fixed" data-tap-toggle="false" role="banner">
+		<div class="display_flex align_items_center padding_left10 padding_right10 ">
+			<div class="w-100px">
+				<a href="https://www.lifafa.com" data-role="none" class="back_btn p-0" data-transition="slidefade">
+					<i class="material-icons">arrow_back</i>
+				</a>
 			</div>
-		</header>
-		
-		<div class="w-sm-480px m-auto">
-			<div class="pt50">
-				<ul class="breadcrumb display_flex">
-					<li class="active"><a href="#">Mobile Verification <i class="material-icons font14 text-success vertical-middle">check_circle</i></a></li>
-					<li><a href="#">Aadhar KYC</a></li>
-				</ul>
-			</div>
+
+			<span class="header_text flex-1 text_align_center text-nowrap">Verify your email ID</span>
+
+			<div class="w-100px"></div>
 		</div>
+	</header>
 
-		<div class="padding_20 ml20 mr20 container w-sm-480px powered-by-child otp-verification">
-			<div class="text_align_center pt-sm-30">
-				<div class="font_size16 font_weight_bold text_align_center">Enter the 6 digit OTP </div>
+	<div class="padding_20 ml20 mr20 bg-white display_flex h-100vh flex_column justify_content container w-sm-480px py-sm-5">
 
-				<div class="modal_wrap verfiy_mobile_modal " id="mobile_top_verification" data-popup="verifyMobile_modal">
-					<div class="verify_mobile_modal_sec modal_inner">
-						<button onclick="closeModel()" class="close li li_cancel" id="mobile_top_verification_var"></button>
-						
-						<div class="resetPassword_field">
-							<form id="otp_form">
-								<div class="">
-									<div class="valid_tick mdl-textfield input__field mdl-js-textfield mdl-textfield--floating-label w-100 otp-group text_align_center pt5 mt20">
-										<input class="mdl-textfield__input otp-textbox m-auto" type="text" id="verify_mobile_otp" name="verify_mobile_otp" maxlength="6">
-										
-										<input type="hidden" id="verify_mobile" name="verify_mobile">
-										<span id="verify_mobile_otp_error" class="  mdl-textfield__error"></span>
-										<span class="is_success" id="temp_otp"></span>
-									</div>
-									
-									
-									<div class="resetPass_verify_btn w-sm-50 m-sm-auto otp-continue mb20 ">
-										<a href="/lifafa_html/create/lifafa-view-after-open-contribution/" id="forgot_otp_btn" class="mdl-button mdl-js-button mdl-js-ripple-effect verify_button primary_border_color bg-transparent primary_text_color w-100 disabled">Continue</a>
-									</div>
-	
-									<p class="font_weight_bold font14 text-darker"> Didn't receive the OTP?</p>
-									
-									<div class="display_flex align_items_center justify_content_center mt5">
-										<div id="txt_msg" class=" font_weight_bold font14 text-darker mr5">Please Wait: </div>
-										<div id="otp-resend-countdown" class="otp-countdown font14 font_weight_bold"></div>
-									</div>
-									
-									
-									<div class="mt-sm-5 mb-sm-5">
-										<p class="font_weight_bold font14 text-darker text_align_left mt10">Want to proceed without Aadhaar KYC? Sure!</p>
+		<div class="w-100 mt50">
+			<div class="alert alert-success mb20">
+				
 
-										<div class="alert alert-warning mb5 mt5">
-											
-											<p class="font_size13 gray_color text_align_left">You can accept contributions only up to the mentioned amount.</p>
-										</div>
+				
+				<p class="font_size12 gray_color">Verification code sent again to xyz@gmail.com</p>
 
-										
-										<p class="font_weight_normal font14 text_align_left font_size12 mb10">This is because pre-paid wallets linked with this Aadhaar number have an existing balance. The sum across all such wallets cannot exceed Rs.10,000/-</p>
-									</div>
-									
-									<div class="w-100 w-sm-50 m-sm-auto otp-continue">
-										<button id="signup_form_submit" type="submit" class="mdl-button mdl-js-button mdl-button--raised primary_color width_100">Skip KYC to Create Lifafa</button>
-									</div>
-
-								</div>
-							</form>
-
-						</div>
-					</div>
-				</div>
 				
 			</div>
+			<p class="black_color text_align_center font_size16 mb40">Enter the 6-digit verification code sent to <br> <a href="javascript:void(0);" class="primary_text_color ">xyz@gmail.com</a> </p>
+			
+
+			
+			
+			<div class="otp-group m-auto">
+				<input class="otp-textbox" type="text" maxlength="6" />
+
+				<div class="text_align_right mt20">
+					<a href="/lifafa_html/create/verify-email-resend/" data-role="none" class="forget_pass primary_text_color border-bottom" data-modal-open="forgetModal_entermobile_open">Resend Code</a>
+				</div>
+			</div>
+			
+
+			
+
 		</div>
+
+		<div class="w-100 w-sm-50 m-sm-auto">
+			<button id="signup_form_submit" type="submit" class="mdl-button mdl-js-button mdl-button--raised primary_color width_100">Sign Up</button>
+		</div>
+
 	</div>
-
-
-
- 	
+</div>
 
     </div>
     <footer class="text_align_center text-sm-left pt30">
