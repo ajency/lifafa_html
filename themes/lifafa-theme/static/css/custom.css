@@ -1051,6 +1051,9 @@
 .mdl-mobile .page-banner.mh-200px {
   min-height: 200px;
 }
+.mdl-mobile .page-banner.mh-250px {
+  min-height: 250px;
+}
 .mdl-mobile .header-spacer {
   margin-top: 65px;
 }
@@ -1671,7 +1674,7 @@
 .mdl-mobile .morelink {
   display: inline;
   white-space: nowrap;
-  font-size: 14px;
+  font-size: 16px;
   color: #1595ae;
 }
 .mdl-mobile .mdl-checkbox.is-focused .mdl-checkbox__focus-helper {
