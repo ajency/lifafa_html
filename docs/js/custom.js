@@ -31,6 +31,22 @@
         $('.contribute_amount .amount-field').attr('readonly', false).focus();
       });
 
+      // otp
+      $('.otp-holder :input').keypress(function() { 
+          $(this).next(':input').focus(); 
+      });
+
+      // aadhar-otp
+      $(".otp-holder :input").keyup(function(){
+          $("#forgot_otp_btn, #submit").removeClass("disabled");
+      });
+
+     $('.otp-holder :input').keyup(function() {
+          if ($(this).val() == '') { // check if value changed
+              $("#submit, #forgot_otp_btn").addClass("disabled");
+          }
+      });
+
       // Checkbox checked sticky show
 
       $('.contributors .mdl-checkbox__input').change(function(){
