@@ -36,6 +36,18 @@
           $(this).next(':input').focus(); 
       });
 
+      $('.otp-holder :input').keyup(function() { 
+           var key = event.keyCode || event.charCode;
+           if( key == 8 || key == 46 ){
+            if($(this).val()==""){
+               $(this).prev(':input').focus();
+              }
+              else{
+                $(this).val('')
+              }
+           }
+      });
+
       // aadhar-otp
       $(".otp-holder :input").keyup(function(){
           $("#forgot_otp_btn, #submit").removeClass("disabled");
