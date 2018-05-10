@@ -11,7 +11,7 @@
             <div class="ui-content white_bg border-tl-radius border-tr-radius padding_left10 padding_right10 mb15 occasion-container pb-sm-60 boxshadow-sm-tlr " role="main" style="">
                 <p class="mt30 font_size18 font_weight_bold text_align_center font_size24">Alice & Bob's Wedding</p>
                 <p class="font_size14 text_align_center font_weight_normal mt15 mb15">on 04 April 2018</p>
-                
+
 
                  <div class="edit_content_preview">
                     <p  id="note_edit_des" class="font_size16 text_align_center font_weight_normal more">
@@ -19,8 +19,8 @@
                         It’s my big day! My fiance and I are very excited to invite you to our wedding. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore omnis praesentium doloremque nam, atque a sit ipsa corrupti pariatur quo, ad tempora vel laudantium obcaecati animi autem. Ipsam excepturi, provident.
                     </p>
                 </div>
-            </div> 
-            
+            </div>
+
             <div class="ml-sm-15px mr-sm-15px mt-sm--35">
                 <!-- card -->
                 <div class="card mt20 contribution-details border-0 text-sm-white ">
@@ -49,7 +49,7 @@
                                         <div class="fill"></div>
                                     </div>
                                 </div>
-                                                              
+
                             </div>
                             <div class="col-sm-4 col-6 text-sm-center text_align_left">
                                 <p class="font_weight_bold font_size20 mb5 primary_text_color text-sm-white">&#x20b9; 0</p>
@@ -69,7 +69,7 @@
                             </div>
                         </div>
 
-                        
+
                     </div>
                 </div>
                 <!-- /card -->
@@ -79,7 +79,7 @@
                         <div class="img-icon-holder">
                             <img src='{{"images/contribute.png" | absURL}}' alt="..." class="">
                         </div>
-                        
+
                     </div>
                     <div class="pl15">
                         <p class="font_weight_normal">Opening for contributions will enable friends and family to pool in to this Lifafa.</p>
@@ -132,32 +132,32 @@
                     </ul>
                 </div>
 
-            </div>   
+            </div>
 
-            
+
         </div>
 
-       
-        
+
+
         <div class="ui-footer ui-footer-fixed display_flex primary_text_color padding_20 primary_color align_items_center justify_content">
                 <div><p class="font_weight_normal font_size14">Add a personal touch to your Lifafa with images, videos and a message.</p></div>
                 <div class="redeem_edit_btn">
                     <a href="/lifafa_html/create/edit-lifafa/" rel="external" data-ajax="false" class="edit_lifafa mdl-button mdl-js-button mdl-button--raised mdl-sm-button bg-grey primary_text_color" data-role="none"><i class="material-icons font_size16">border_color</i> Edit Lifafa</a>
                 </div>
         </div>
-        
+
          {{ if $.Params.contribute }}
 
 
         {{ else }}
         <!-- modal -->
-  
+
 
         <div class="lifafa-open-contributions">
-            <div class="padding_20 container  text_align_center bg-white lifafa-contributions">
+            <div class="padding_10 container  text_align_center bg-white lifafa-contributions">
 
-                
-                <div class="ml10 mr10 mt30">
+
+                <div class="ml10 mr10 mt20">
                 {{ if $.Params.verified }}
                     <div class="alert alert-success mb20 text_align_left">
                         <p class="font_size13 gray_color">Your Aadhaar number has been verified.</p>
@@ -165,11 +165,11 @@
                 {{ end }}
                     <p class="font_size16 font_weight_bolder">Your Lifafa is open for contributions</p>
 
-                    <div class="mt15 mb15 pt15 pb15 box-wrap">
+                    <div class="mt15 mb10 pt10 pb15 box-wrap">
                         <p class="font_size14 font_weight_normal box-wrap__content">You can receive contributions upto <span class="primary_text_color font_weight_bolder"> Rs. 20,000/-</span></p>
                     </div>
 
-                    <form method="POST" class="mt30 mb30">
+                    <form method="POST" class="mt20 mb20">
                         <a href="/lifafa_html/create/invite-for-contribution/" data-role="none" value="" name="" class="mdl-button mdl-js-button mdl-button--raised width_100 primary_color mb15">Invite others to contribute</a>
 
                         <button data-role="none" value="" name="" class="mdl-button mdl-js-button  width_100 primary_border_color bg-transparent primary_text_color">View Lifafa</button>
@@ -183,14 +183,14 @@
                 </p>
                 <div class="mt15 mb15">
                     <a href="" class="primary_text_color border-bottom font_size14">Complete KYC</a>
-                </div>  
+                </div>
                 {{ end }}
-                    
+
             </div>
         </div>
 
         {{ end }}
         <!-- /modal -->
 
-        
+
     {{ end }}
