@@ -324,7 +324,7 @@
                    *    Set to null to remove the limit.</p>
                    * Defaults to 10.
                    */
-                  maxSelection: 10,
+                  maxSelection: 100,
 
                   /**
                    * @cfg {Function} maxSelectionRenderer
