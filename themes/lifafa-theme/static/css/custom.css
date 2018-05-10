@@ -1686,3 +1686,20 @@
           box-shadow: none;
   background: none;
 }
+.mdl-mobile .otp-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 0;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.mdl-mobile .otp-holder input {
+  border: 0;
+  border-bottom: 1px solid #000;
+  width: 100%;
+  margin: 0 5px;
+  text-align: center;
+  font-size: 18px;
+}
