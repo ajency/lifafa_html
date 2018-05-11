@@ -1,0 +1,215 @@
+    {{ define "main" }}
+
+
+    {{ if $.Params.afteredit }}
+    {{ partial "header2.html" .}}
+
+    {{ else }}
+    {{ partial "header.html" .}}
+    {{ end }}
+    
+    
+    {{ if $.Params.afteredit }}
+    <div class="page-banner lifafa-view-bg position-relative h-250px">
+        <!-- Colored FAB button -->
+        <button class="mdl-button mdl-js-button mdl-button--fab bg-grey rounded-circle position-absolute" style="top: 15px; right: 15px;">
+          <i class="material-icons">share</i>
+        </button>
+    </div>
+
+    {{ else }}
+    <div class="page-banner tying-knot mh-250px">
+        <div class="padding_20 black-overlay position_relative">
+            <div class="text-white pt15 dismiss">
+                <div class="dismiss__action">
+                    <a href="" class="text-white font_weight_normal border-bottom font_size13">Dismiss</a>
+                </div>
+                <p class="font_weight_normal font_size13 text_align_center">This is what your Lifafa will look like to everyone. Personalise it with images, videos and a message. <a href="" class="border-bottom font_weight_bolder list-inline-item ">Edit your Lifafa</a></p>
+            </div>
+        </div>
+    </div>
+    
+    {{ end }}
+        <div class="padding_side_20 container" style="margin-top: -35px;">
+            <div class="ui-content white_bg border-tl-radius border-tr-radius padding_left10 padding_right10 mb15 occasion-container pb-sm-60 boxshadow-sm-tlr " role="main" style="">
+                
+                    
+                    {{ if $.Params.afteredit }}
+                    <p class="mt30 font_size18 font_weight_bold text_align_center font_size24">Alice & Bob's Wedding</p>
+
+                    {{ else }}
+                    <p class="mt50 mb30 font_size18 font_weight_bold text_align_center font_size24">Tying the Knot</p>
+                    
+                {{ end }}
+
+                
+                    
+                {{ if $.Params.afteredit }}
+                    <p class="font_size14 text_align_center font_weight_normal mt15 mb15">on 04 April 2018</p>
+                {{ end }}
+                
+                
+
+
+                 <div class="edit_content_preview">
+                    <p  id="note_edit_des" class="font_size16 text_align_center font_weight_normal more">
+                        <!-- <em>It’s my big day! My fiance and I are very excited to invite you to our wedding. <a class="primary_text_color"> Read More</a></a></em> -->
+                        It’s my big day! My fiance and I are very excited to invite you to our wedding. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione earum fugiat harum mollitia atque voluptatibus modi enim quidem numquam! Voluptate asperiores, tempora facere! Nam quasi, sapiente asperiores voluptate vel perspiciatis!
+                    </p>
+                </div>
+            </div>
+
+            <div class="ml-sm-15px mr-sm-15px mt-sm--35">
+                <!-- card -->
+                <div class="card mt20 contribution-details border-0 text-sm-white ">
+                    <div class="p-sm-0 p-3">
+                        <div class="d-sm-block display_flex mt-sm-5">
+                            <div class="d-sm-none icon-holder">
+                                <i class="material-icons">airplanemode_active</i>
+                            </div>
+
+                            <div class="text-sm-center pl-xs-3">
+                                <p class="font_weight_normal">Lifafa will be redeemed for: <span class="font_weight_bold d-sm-inline d-block">Travel</span></p>
+                            </div>
+                        </div>
+
+                        <div class="display_flex justify_content border-xs-bottom border-sm-bottom-dashed border-lightblue pt15 pb15 align_items_center">
+                            <div class="col-sm-4 col-6 text-sm-center text_align_left">
+                                <p class="font_weight_bold font_size24 mb5">&#x20b9; 20,000</p>
+                                <p class="font_weight_normal font_size13">Lifafa Goal Amount</p>
+                            </div>
+                            <div class="col-sm-4 col-6 text_align_center d-sm-block d-none">
+                                <div class="margin_top_bottom c100 p0 primary_text_color 0 m-auto">
+                                    <span>0 %</span>
+                                    <!-- <span class="complete_text">completed</span> -->
+                                    <div class="slice">
+                                        <div class="bar"></div>
+                                        <div class="fill"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-sm-4 col-6 text-sm-center text_align_left">
+                                <p class="font_weight_bold font_size24 mb5 primary_text_color text-sm-white">&#x20b9; 0</p>
+                                <p class="font_weight_normal primary_text_color text-sm-white font_size13">Contribution Received</p>
+                            </div>
+                        </div>
+                        
+                        
+
+                        {{ if $.Params.someone }}
+                        <div class="text-sm-center mt10 mb-sm-3 display_flex align_items_center">
+                            <div class="flex-1">
+                                 <p class="font_weight_normal font14 text-darker text-sm-white"><i class="italic">Created by:</i> <span class="font_size14 font_weight_bold display_block">Rahul Sharma</span></p>
+                            </div>
+                        </div>
+
+                        {{ else }}
+                        <div class="text-sm-center mt10 mb-sm-3 display_flex align_items_center">
+                            <div class="flex-1">
+                                 <p class="font_weight_normal font14 text-darker text-sm-white"><i class="italic">Created by:</i> <span class="font_size14 font_weight_bold display_block">Rahul Sharma</span></p>
+                            </div>
+
+                            <div class="flex-1 d-sm-block d-none"></div>
+
+                             <div class="flex-1">
+                                 <p class="font_weight_normal font14 text-darker text-sm-white"><i class="italic">{{if $.Params.afteredit }} Lifafa expires on: {{ else }} Contribution open until: {{ end }}</i> <span class="font_size14 font_weight_bold display_block">29 June 2018</span></p>
+                            </div>
+                        </div>
+
+
+                        {{ end }}
+
+
+                    </div>
+                </div>
+                <!-- /card -->
+                
+                
+               
+                
+                {{ if $.Params.someone }}
+                <div class="display_flex mt30 border-sm-bottom-dashed border-gray pb15 border-xs-0 align_items_center">
+                    <div>
+                        <div class="img-icon-holder">
+                            <img src='{{"images/gift.png" | absURL}}' alt="..." class="">
+                        </div>
+                        
+                    </div>
+                    <div class="pl15">
+                        <!-- <p class="font_weight_normal">No contributions yet. Open the Lifafa for contributions by completing the KYC.</p> -->
+                        <p class="font_weight_normal">This Lifafa has been created for <span class="font_weight_bold">Nikhil Shah</span></p>
+                    </div>
+                </div>
+
+                {{ else }}
+                 <div class="display_flex mt30 border-sm-bottom-dashed border-gray pb15 border-xs-0 align_items_center">
+                    <div>
+                        <div class="img-icon-holder">
+                            <img src='{{"images/contribute.png" | absURL}}' alt="..." class="">
+                        </div>
+
+                    </div>
+                    <div class="pl15">
+                        <p class="font_weight_normal">Opening for contributions will enable friends and family to pool in to this Lifafa.</p>
+                    </div>
+                </div>
+
+                {{ end }}
+
+                <div class="mt30 ml20 mr20">
+                    <a href="/lifafa_html/create/open-for-contribution1/" id="login_btn" type="submit" data-role="none" data-ajax="false" rel="external" class="mdl-button mdl-js-button primary_text_color width_100 primary_border_color bg-transparent">Open for contributions</a>
+                </div>
+                
+                {{if $.Params.afteredit }}
+                <div class="video-holder ml--20px mr--20px pl20 pr20 bubble-bg pb20">
+                    <div class="video_container pr-0">
+                        <div class="media_wrap">
+                            <div id="player2">
+                                <!-- delete -->
+                                <video id="video" controls="controls" class="w-100">
+                                    <source src="http://www.quirksmode.org/html5/videos/big_buck_bunny.mp4" type="video/mp4">
+                                    <source src="http://www.quirksmode.org/html5/videos/big_buck_bunny.webm" type="video/webm">
+                                    <source src="http://www.quirksmode.org/html5/videos/big_buck_bunny.ogv" type="video/ogg">
+                                </video>
+                                <!-- /delete -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="image-holder mt30 mb30">
+                    <ul class="list-inline display_flex images-carousel pt15 pb15">
+                        <li class="list-inline-item col-6"><img src="http://via.placeholder.com/500x350" alt=""></li>
+                        <li class="list-inline-item col-6"><img src="http://via.placeholder.com/500x350" alt=""></li>
+                        <li class="list-inline-item col-6"><img src="http://via.placeholder.com/500x350" alt=""></li>
+                        <li class="list-inline-item col-6"><img src="http://via.placeholder.com/500x350" alt=""></li>
+                        <li class="list-inline-item col-6"><img src="http://via.placeholder.com/500x350" alt=""></li>
+                    </ul>
+                </div>
+                {{ end }}
+
+                <div class="mt30 mb30">
+                    <ul class="text_align_center list-inline">
+                        <li class="list-inline-item mr15"><a href="" class="disabled"><img src='{{"images/fb.png" | absURL}}' alt="..." class=""></a></li>
+                        <li class="list-inline-item mr15"><a href="" class="disabled"><img src='{{"images/twiter.png" | absURL}}' alt="..." class=""></a></li>
+                        <li class="list-inline-item mr15"><a href="" class="disabled"><img src='{{"images/email.png" | absURL}}' alt="..." class=""></a></li>
+                        <li class="list-inline-item mr15"><a href="" class="disabled"><img src='{{"images/whatsapp.png" | absURL}}' alt="..." class=""></a></li>
+                        <li class="list-inline-item"><a href="" class="disabled"><img src='{{"images/code.png" | absURL}}' alt="..." class=""></a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="ui-footer ui-footer-fixed display_flex primary_text_color padding_20 primary_color align_items_center justify_content">
+                <div><p class="font_weight_normal font_size14">Add a personal touch to your Lifafa with images, videos and a message.</p></div>
+                <div class="redeem_edit_btn">
+                    <a href="/lifafa_html/create/edit-lifafa/" rel="external" data-ajax="false" class="edit_lifafa mdl-button mdl-js-button mdl-button--raised mdl-sm-button bg-grey primary_text_color" data-role="none"><i class="material-icons font_size16">border_color</i> Edit Lifafa</a>
+                </div>
+        </div>
+
+    {{ end }}
