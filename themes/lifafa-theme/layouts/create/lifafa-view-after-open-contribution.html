@@ -1,6 +1,17 @@
     {{ define "main" }}
     {{ partial "header.html" .}}
     <div class="page-banner lifafa-view-bg position-relative h-250px">
+
+        {{ if $.Params.afteraccept }}
+        <div class="padding_20 black-overlay position_relative">
+            <div class="text-white pt15 dismiss">
+                <div class="dismiss__action">
+                    <a href="" class="text-white font_weight_normal border-bottom font_size13">Dismiss</a>
+                </div>
+                <p class="font_weight_normal font_size13 text_align_center">You were gifted this Lifafa. Redeem it for online purchases or transferto your bank account. <a href="" class="border-bottom font_weight_bolder list-inline-item ">Redeem Lifafa</a></p>
+            </div>
+        </div>
+        {{ end }}
         <!-- Colored FAB button -->
         <button class="mdl-button mdl-js-button mdl-button--fab bg-grey rounded-circle position-absolute" style="top: 15px; right: 15px;">
           <i class="material-icons">share</i>
@@ -74,6 +85,29 @@
                 </div>
                 <!-- /card -->
 
+                
+                
+                {{ if $.Params.afteraccept }}
+                <div class="display_flex mt30 border-sm-bottom-dashed border-gray border-xs-0 align_items_center pb15">
+                    <div class="col-1">
+                        <div class="img-icon-holder">
+                            <img src='{{"images/contribute.png" | absURL}}' alt="..." class="">
+                        </div>
+                    </div>
+
+                    <div class="pl15 col-10">
+                        <div class="font_size14">
+                            <p class="font_weight_bolder text-darker">Trupti Rao, Amit Adav, Rajesh</p>
+                            <p class="font_weight_normal text-grey">+4 Others have contributed</p>
+                        </div>
+                    </div>
+
+                    <div class="col-1">
+                        <i class="material-icons primary_text_color angle-right">chevron_right</i>
+                    </div>
+                </div>
+
+                {{ else }}
                 <div class="display_flex mt30 border-sm-bottom-dashed border-gray border-xs-0 align_items_center pb15">
                     <div>
                         <div class="img-icon-holder">
@@ -86,6 +120,8 @@
                     </div>
                 </div>
 
+                {{ end }}
+
                 <hr style="color: #ccc;" class="mt-0 mb-0 d-sm-none">
                 <div class="text_align_center mt15">
                     <a href="/lifafa_html/create/invite-for-contribution/" class="font_size14 font_weight_bold primary_text_color">+ Invite others to contribute</a>
@@ -93,6 +129,10 @@
 
                 <div class="mt30 ml20 mr20">
                     <a href="{{ if $.Params.contribute }}/lifafa_html/create/contributions/ {{ else }}/lifafa_html/create/open-for-contribution1/{{ end }}" id="login_btn" type="submit" data-role="none" data-ajax="false" rel="external" class="mdl-button mdl-js-button mdl-button--raised width_100 primary_color open-contributions">{{ if $.Params.contribute }}Contribute to Lifafa{{ else }}Open for contributions{{ end }}</a>
+                    
+                    {{ if $.Params.afteraccept }}
+                    <button data-role="none" value="" name="" class="mdl-button mdl-js-button  width_100 primary_border_color bg-transparent primary_text_color mt15">Redeem Lifafa</button>
+                    {{ end }}
                 </div>
 
                 <div class="video-holder ml--20px mr--20px pl20 pr20 bubble-bg pb20">
@@ -122,7 +162,7 @@
                     </ul>
                 </div>
 
-                <div class="mt30 mb-100">
+                <div class="mt30 mb30">
                     <ul class="text_align_center list-inline">
                         <li class="list-inline-item mr15"><a href=""><img src='{{"images/fb.png" | absURL}}' alt="..." class=""></a></li>
                         <li class="list-inline-item mr15"><a href=""><img src='{{"images/twiter.png" | absURL}}' alt="..." class=""></a></li>
