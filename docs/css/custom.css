@@ -1886,3 +1886,6 @@
   text-align: center;
   font-size: 18px;
 }
+.mdl-mobile .disabled-icon .left-addon:before {
+  opacity: 0.45;
+}
