@@ -23,7 +23,17 @@
             $('.custom-modal').addClass( "is-shown" );
             $( ".content-wrapper" ).addClass( "show-overlay" );
           });
-        } 
+        }
+
+        $("input[name='noSpecific']").click(function() {
+         if ($("#checkbox11").is(":checked")) {
+           $("#lifafa_amount").addClass("disabled");
+           $(".lifafa_amount_cover").addClass("disabled-icon");
+         } else {
+           $("#lifafa_amount").removeClass("disabled");
+           $(".lifafa_amount_cover").removeClass("disabled-icon");
+         }
+        }); 
       
       // Contribution field edit
 
