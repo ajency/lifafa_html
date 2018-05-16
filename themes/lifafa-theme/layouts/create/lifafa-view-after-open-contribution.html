@@ -145,13 +145,12 @@
 
                 <hr style="color: #ccc;" class="mt-0 mb-0 d-sm-none">
 
-                {{ if $.Params.contribute }}
-                {{ else }}
+                
                 <div class="text_align_center mt15">
                     <a href="/lifafa_html/create/invite-for-contribution/" class="font_size14 font_weight_bold primary_text_color">+ Invite others to contribute</a>
                 </div>
 
-                {{ end }}
+                
 
                 <div class="mt30 ml20 mr20">
                     <a href="{{ if $.Params.contribute }}/lifafa_html/create/contributions/ {{ else }}/lifafa_html/create/open-for-contribution1/{{ end }}" id="login_btn" type="submit" data-role="none" data-ajax="false" rel="external" class="mdl-button mdl-js-button mdl-button--raised width_100 primary_color open-contributions">{{ if $.Params.contribute }}Contribute to Lifafa{{ else }}Open for contributions{{ end }}</a>

@@ -1864,13 +1864,16 @@
   display: none;
 }
 .mdl-mobile .page-banner.gift-bg {
-  background-image: url('../images/Accept-Lifafa-large.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#e3eceb));
+  background: linear-gradient(to bottom, #ffffff 0%, #e3eceb 100%);
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .mdl-mobile .page-banner.gift-bg {
     background-image: url('../images/Accept-Lifafa.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
   }
 }
 .mdl-mobile .bubble-bg {
