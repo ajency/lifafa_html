@@ -60,7 +60,8 @@ a.collapsible {
 	}
 }
 
-.collapsible-content {
+.collapsible-content,
+.collapse-content {
   display: none;
 }
 
@@ -115,8 +116,11 @@ a.collapsible {
 }
 
 .mdl-sm-button {
-	height: 36px;
-	line-height: 36px;
+	// height: 36px;
+	// line-height: 36px;
+	height: 32px;
+	line-height: 26px;
+	font-size: 14px;
 }
 
 .p-0 {
@@ -810,4 +814,10 @@ a.collapsible {
     .left-addon:before {
         opacity: 0.45;
     }
+}
+
+.collapse-cover {
+	.content-info {
+		border-bottom: 1px dashed #ccc;
+	}
 }

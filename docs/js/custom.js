@@ -108,7 +108,13 @@
 
 
       $( ".collapsible" ).click(function() {
+        $(this).toggleClass('active');
         $( ".collapsible-content" ).slideToggle( "slow" );
+      });
+
+      $( ".collapse-cover .collapse-btn" ).click(function() {
+        $(".content-info").toggleClass('d-none');
+        $( ".collapse-content" ).slideToggle( "slow" );
       });
 
       // autocomplete tags
