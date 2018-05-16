@@ -1291,9 +1291,8 @@
   display: none;
 }
 .mdl-mobile .mdl-sm-button {
-  height: 32px;
-  line-height: 26px;
-  font-size: 14px;
+  height: 36px;
+  line-height: 36px;
 }
 .mdl-mobile .p-0 {
   padding: 0 !important;
