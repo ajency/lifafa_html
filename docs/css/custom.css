@@ -1924,3 +1924,6 @@
 .mdl-mobile .border-dashed {
   border-bottom: 1px dashed #ccc;
 }
+.mdl-mobile .progress-loader .barr_progress {
+  background-color: #7ed322;
+}
