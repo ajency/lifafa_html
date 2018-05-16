@@ -1,12 +1,7 @@
     {{ define "main" }}
-
-
-    {{ if $.Params.afteredit }}
     {{ partial "header2.html" .}}
 
-    {{ else }}
-    {{ partial "header.html" .}}
-    {{ end }}
+
     
     
     {{ if $.Params.afteredit }}
@@ -35,7 +30,7 @@
                 
                     
                     {{ if $.Params.afteredit }}
-                    <p class="mt30 font_size18 font_weight_bold text_align_center font_size24">Alice & Bob's Wedding</p>
+                    <p class="mt30 font_size18 font_weight_bold text_align_center font_size24">Nikhil & Pooja's Wedding</p>
 
                     {{ else }}
                     <p class="mt50 mb30 font_size18 font_weight_bold text_align_center font_size24">Tying the Knot</p>

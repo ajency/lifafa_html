@@ -1,5 +1,5 @@
     {{ define "main" }}
-    {{ partial "header.html" .}}
+    {{ partial "header2.html" .}}
     <div class="page-banner lifafa-view-bg position-relative h-250px">
         <!-- Colored FAB button -->
         <button class="mdl-button mdl-js-button mdl-button--fab bg-grey rounded-circle position-absolute" style="top: 15px; right: 15px;">
@@ -9,7 +9,7 @@
     </div>
         <div class="padding_side_20 container" style="margin-top: -35px;">
             <div class="ui-content white_bg border-tl-radius border-tr-radius padding_left10 padding_right10 mb15 occasion-container pb-sm-60 boxshadow-sm-tlr " role="main" style="">
-                <p class="mt30 font_size18 font_weight_bold text_align_center font_size24">Alice & Bob's Wedding</p>
+                <p class="mt30 font_size18 font_weight_bold text_align_center font_size24">Nikhil & Pooja's Wedding</p>
                 <p class="font_size14 text_align_center font_weight_normal mt15 mb15">on 04 April 2018</p>
                 
 
@@ -42,7 +42,7 @@
                             </div>
                             <div class="col-sm-4 col-6 text_align_center d-sm-block d-none">
                                 <div class="margin_top_bottom c100 p0 primary_text_color 0 m-auto">
-                                    <span>0 %</span>
+                                    <span>50%</span>
                                     <!-- <span class="complete_text">completed</span> -->
                                     <div class="slice">
                                         <div class="bar"></div>
@@ -52,7 +52,7 @@
                                                               
                             </div>
                             <div class="col-sm-4 col-6 text-sm-center text_align_left">
-                                <p class="font_weight_bold font_size20 mb5 primary_text_color text-sm-white">&#x20b9; 15,000</p>
+                                <p class="font_weight_bold font_size20 mb5 primary_text_color text-sm-white">&#x20b9; 10,000</p>
                                 <p class="font_weight_normal primary_text_color text-sm-white font_size13">Contribution Received</p>
                             </div>
                         </div>
@@ -64,7 +64,7 @@
 
                             <div class="flex-1 d-sm-block d-none"></div>
                              <div class="flex-1">
-                                 <p class="font_weight_normal font14 text-darker text-sm-white"><i class="italic">Lifafa expires on:</i> <span class="font_size14 font_weight_bold display_block">29 June 2018</span></p>
+                                 <p class="font_weight_normal font14 text-darker text-sm-white"><i class="italic">Contributions open until:</i> <span class="font_size14 font_weight_bold display_block">29 June 2018</span></p>
                             </div>
                         </div>
 
@@ -72,18 +72,36 @@
                     </div>
                 </div>
                 <!-- /card -->
+                
+                {{ if $.Params.inviteeSomeone }}
+                <div class="display_flex mt30 border-sm-bottom-dashed border-gray pb15 border-xs-0 align_items_center">
+                    <div>
+                        <div class="img-icon-holder">
+                            <img src='{{"images/gift.png" | absURL}}' alt="..." class="">
+                        </div>
+                        
+                    </div>
+                    <div class="pl15">
+                        <!-- <p class="font_weight_normal">No contributions yet. Open the Lifafa for contributions by completing the KYC.</p> -->
+                        <p class="font_weight_normal">This Lifafa has been created for <span class="font_weight_bold">Nikhil Shah</span></p>
+                    </div>
+                </div>
+                {{ end }}
+
                 <a href="/lifafa_html/create/all-contributors/" class="display_block">
-                    <div class="display_flex mt30 border-sm-bottom-dashed border-gray border-xs-0 align_items_center pb15 justify_content_spacearound">
-                        <div>
-                            <div class="img-icon-holder">
-                                <img src='{{"images/contribute.png" | absURL}}' alt="..." class="">
+                    <div class="display_flex mt30 border-sm-bottom-dashed border-gray border-xs-0 align_items_center pb15 justify_content_between">
+                        <div class="display_flex align_items_center w-100">
+                            <div class="mr15">
+                                <div class="img-icon-holder">
+                                    <img src='{{"images/contribute.png" | absURL}}' alt="..." class="">
+                                </div>
                             </div>
-                            
+                            <div class="font_size14">
+                                <p class="font_weight_bolder text-darker">Trupti Rao, Amit Adav, Rajesh</p>
+                                <p class="font_weight_normal text-grey">+4 Others have contributed</p>
+                            </div>
                         </div>
-                        <div class="font_size14">
-                            <p class="font_weight_bolder text-darker">Trupti Rao, Amit Adav, Rajesh</p>
-                            <p class="font_weight_normal text-grey">+4 Others have contributed</p>
-                        </div>
+                        
                         <i class="material-icons primary_text_color angle-right">chevron_right</i>
                     </div>
                 </a>
