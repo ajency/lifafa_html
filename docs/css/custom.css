@@ -1909,6 +1909,6 @@
 .mdl-mobile .disabled-icon .left-addon:before {
   opacity: 0.45;
 }
-.mdl-mobile .collapse-cover .content-info {
+.mdl-mobile .border-dashed {
   border-bottom: 1px dashed #ccc;
 }
