@@ -1,20 +1,21 @@
 {{ define "main" }}
-{{ partial "header.html" .}}
+{{ partial "header2.html" .}}
 
-<div class="page-banner d-xs-none stars-bg mh-200px">
+<div class="page-banner d-xss-none lifafa-view-bg mh-250px display_flex align_items_center">
 	<div class="container">
 		<div class="padding_20">
-			<div class="display_flex justify_content align_items_center mt15">
-				<h1 class="text-white font_size24">Edit Lifafa</h1>
-				<img src='{{"images/mail-rs.png" | absURL}}' alt="..." class="">
+			<div class="display_flex justify_content align_items_center">
+				<h1 class="font_size24 text-white">Edit Lifafa</h1>
+				<!-- <img src='{{"images/mail-rs.png" | absURL}}' alt="..." class=""> -->
+				<a href="javascript:void(0);" id="" class="mdl-button mdl-js-button mdl-sm-button mdl-js-ripple-effect  white_border_color bg-opacity text-white  collapse-btn ">Change Cover Picture</a>
 			</div>
 		</div>
 	</div> <!-- /container -->
 </div>
 	
 	<div class="container">
-		<div class="padding_side_20 mt-sm--35 mt-0" >
-			<div class="ui-content white_bg border-tl-radius border-tr-radius px-sm-10 mb15" role="main">
+		<div class="padding_side_20 padding_side_xs_10 mt--35 bg-white border-tl-radius border-tr-radius margin_side_xs_15" >
+			<!-- <div class="ui-content white_bg border-tl-radius border-tr-radius px-sm-10 mb15" role="main">
 				<p class="mt10 mb10 font14 font_weight_bolder">Select an occasion</p>
 				<div class="event_select_wrapper mb15">
 					<div class="create_lifafa_bg_wrap">
@@ -82,7 +83,211 @@
 						</div>
 					</div>
 				</div>
-			</div>	<!-- /ui-content -->
+			</div> -->	<!-- /ui-content -->
+
+			<!-- <a href="javascript:void(0);" class="collapse primary_text_color  as-block font14 mb15 ">
+				select an occasion
+			</a> -->
+			
+			<div class="collapse-cover pt15">
+				<div class="text_align_right">
+					<a href="javascript:void(0);" id="" class="mdl-button mdl-js-button mdl-sm-button mdl-js-ripple-effect  primary_border_color bg-transparent primary_text_color  collapse-btn "><i class="material-icons font_size16">border_color</i> Edit</a>
+				</div>
+				
+
+				<div class="content-info mt15">
+					<p class="font14 font_weight_bolder mb20">My Occasion: <span class="primary_text_color">Wedding</span></p>
+					<p class="font14 font_weight_bolder mb20">Lifafa will be redeemed for: <span class="primary_text_color">Travel</span></p>
+					<p class="font14 font_weight_bolder mb20">The Lifafa is for: <span class="primary_text_color">Yourself</span></p>
+					<p class="font14 font_weight_bolder mb15">How much would you like to collect?: <span class="primary_text_color">&#x20B9; 50,000</span></p>
+				</div>
+			</div>
+			
+
+			
+			<div class="collapse-content">
+				<div class="ui-content white_bg border-tl-radius border-tr-radius  mb15" role="main">
+					<p class="mt10 mb10 font14 font_weight_bolder">Select an occasion</p>
+					<div class="event_select_wrapper mb15">
+						<div class="create_lifafa_bg_wrap">
+							<div class="">
+							
+								<span class="name_error mdl-textfield__error"></span>
+								<div id="category_events" class="category_event pb15 square-variant">
+									<div class="select_event_bg color_wedding selected display_flex align_items_center justify_content_center">
+										<div>
+											<div class="img-holder m-auto"></div>
+											<p class="font_size14 color_black mt5" id="">Wedding</p>
+										</div>
+									</div>
+									<div class="select_event_bg color_farewell  display_flex align_items_center justify_content_center">
+										<div>
+											<div class="img-holder  m-auto"></div>
+											<p class="font_size14 color_black mt5" id="">Farewell</p>
+										</div>
+									</div>
+									<div class="select_event_bg color_babyshower display_flex align_items_center justify_content_center">
+										<div>
+											<div class="img-holder  m-auto"></div>
+											<p class="font_size14 color_black mt5" id="">BabyShower</p>
+										</div>
+									</div>
+
+									<div class="select_event_bg color_honeymoon display_flex align_items_center justify_content_center">
+										<div>
+											<div class="img-holder  m-auto"></div>
+											<p class="font_size14 color_black mt5" id="">Honeymoon</p>
+										</div>
+									</div>
+
+									
+
+									<div class="select_event_bg color_birthday display_flex align_items_center justify_content_center">
+										<div>
+											<div class="img-holder  m-auto"></div>
+											<p class="font_size14 color_black mt5" id="">Birthday</p>
+										</div>
+									</div>
+
+									<div class="select_event_bg color_anniversary display_flex align_items_center justify_content_center">
+										<div>
+											<div class="img-holder  m-auto"></div>
+											<p class="font_size14 color_black mt5" id="">Anniversary</p>
+										</div>							
+									</div>
+
+									<div class="select_event_bg color_housewarming display_flex align_items_center justify_content_center">
+										<div>
+											<div class="img-holder  m-auto"></div>
+											<p class="font_size14 color_black mt5" id="">Housewarming</p>
+										</div>
+									</div>
+
+									<div class="select_event_bg color_custom display_flex align_items_center justify_content_center">
+										<div>
+											<div class="img-holder  m-auto"></div>
+											<p class="font_size14 color_black mt5" id="">Custom</p>
+										</div>
+									</div>
+																			
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- checkboxes -->
+				<div class="your_lifafa_wrap mb30">
+					<div class="width_100 white_bg">
+						<div class="spending_lifafa_wrap">
+							
+							
+							<p class="font14 font_weight_bolder mb10">Lifafa will be redeemed for</p>
+							
+							<label for=""></label>
+							<div class="checkbox-btn-group">
+								<div class="dream_gift_wrap checkbox-btn">
+			                        <div class="category_list">
+			                        	<div class="categorycheckbox--">
+				                          <input type="checkbox" data-role="none" name="selected_category[1]" class="filled_in category_selection styled_checkbox categorycheckbox" id="category_check_1" value="travel" checked/>
+				                          <label for="category_check_1">Travel</label>
+			                      		</div>
+			                          
+			                        </div>
+			                    </div>
+
+			                    <div class="dream_gift_wrap checkbox-btn">
+			                        <div class="category_list">
+			                        	<div class="categorycheckbox--">
+				                          <input type="checkbox" data-role="none" name="selected_category[2]" class="filled_in category_selection styled_checkbox categorycheckbox" id="category_check_2" value="experiences" />
+				                          <label for="category_check_2">Experiences</label>
+			                      		</div>
+			                          
+			                        </div>
+			                    </div>
+
+			                    <div class="dream_gift_wrap checkbox-btn">
+			                        <div class="category_list">
+			                        	<div class="categorycheckbox--">
+				                          <input type="checkbox" data-role="none" name="selected_category[3]" class="filled_in category_selection styled_checkbox categorycheckbox" id="category_check_3" value="products" />
+				                          <label for="category_check_3">Products</label>
+			                      		</div>
+			                          
+			                        </div>
+			                    </div>
+
+			                    <div class="dream_gift_wrap checkbox-btn">
+			                        <div class="category_list">
+			                        	<div class="categorycheckbox--">
+				                          <input type="checkbox" data-role="none" name="selected_category[12]" class="filled_in category_selection styled_checkbox categorycheckbox" id="category_check_12" value="charity" />
+				                          <label for="category_check_12">Charity</label>
+			                      		</div>
+			                          
+			                        </div>
+			                    </div>
+
+			                    <div class="dream_gift_wrap checkbox-btn">
+			                        <div class=" category_list ">
+			                        	<div class="categorycheckbox--">
+				                          <input type="checkbox" data-role="none" name="selected_category[13]" class="filled_in category_selection styled_checkbox categorycheckbox" id="category_check_13" value="others" />
+				                          <label for="category_check_13">I haven't decided</label>
+			                      		</div>
+			                          
+			                        </div>
+			                    </div>
+			                    <span class="selected_category_error mdl-textfield__error"></span>
+							</div>
+
+							<p class="font_size12 font_weight_normal">(*You can change your mind later)</p>
+					
+						</div>
+					</div>
+				</div>
+				<!-- /checkboxes -->
+
+				<!-- radio btns -->
+				<div class="mb30">
+					<!-- <h4 class="my-3">The Lifafa is for</h4> -->
+					
+					<p class="font14 font_weight_bolder mb10">This Lifafa is for</p>
+					<div class="radio-btn-group mb-3">
+						<div class="radio-btn">
+						<input id="yourself" name="isfor" type="radio" value="Option 1" checked="checked">
+						<label for="yourself" class="font_size13">Yourself</label>
+						</div>
+
+						<div class="radio-btn">
+						<input id="someone" name="isfor" type="radio" value="Option 2" >
+						<label for="someone" class="font_size13">Someone else</label>
+						</div>
+					</div>
+				</div>
+				<!-- /radio-btns -->
+
+				<div id="hidden-div" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label is-upgraded width_100 pt-0 mb15" style="display: none;">
+					<p class="mb10 font14 font_weight_bolder">Who is it for?</p>
+					<input class="mdl-textfield__input font_weight_normal" type="text" name="title" id="" ng-model="" value="" data-role="none" placeholder="">
+				</div>
+
+				<div class="form_group mb30">
+					
+					<p class="font14 font_weight_bolder mb10">How much would you like to collect?</p>
+					<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label rupee_symbol is-upgraded width_100 pt0 pb0 left-addon">
+						<input class="mdl-textfield__input font_weight_normal font_size24" data-role="none" type="tel" name="lifafa_amount" id="lifafa_amount" value="50000" onkeypress="return isNumber(event)">
+						<!-- <label class="mdl-textfield__label" for="lifafa_amount">Your Lifafa goal amount</label> -->
+						<span class="lifafa_amount_error mdl-textfield__error"></span>
+					</div>
+				</div>
+				
+				<div class="mb30">
+					<label class = "mdl-checkbox mdl-js-checkbox" for = "checkbox11">
+		              <input type = "checkbox" id = "checkbox11" 
+		                 class = "mdl-checkbox__input" >
+		              <span class = "mdl-checkbox__label  font14 pl5">No specific amount, happy to see it soar!</span>
+		           </label>
+		           <p class="font_size12 font_weight_normal">(* The Lifafa goal amount will be displayed to all contributors)</p>
+				</div>
+			</div>
 
 			<form method="POST" action="https://www.lifafa.com/lifafa/edit/jonnn" accept-charset="UTF-8" id="edit_lifafa_second_form" class="mb30" rel="external">
 				<input name="_token" type="hidden" value="8SoTQXDOVnQOsYbPiyD8N4MS7DwNUlRozLIX79jT">
@@ -188,12 +393,12 @@
 						</div>
 
 						<!-- checkboxes -->
-						<div class="your_lifafa_wrap mb30">
+						<!-- <div class="your_lifafa_wrap mb30">
 							<div class="width_100 white_bg">
 								<div class="spending_lifafa_wrap">
-									<!-- <h3 class="font_size16 primary_text_color font_weight_semi padding_bottom_20 padding_top_20">The Lifafa will be redeemed for</h3> -->
 									
-									<p class="font14 font_weight_bolder mb10">The Lifafa will be redeemed for</p>
+									
+									<p class="font14 font_weight_bolder mb10">Lifafa will be redeemed for</p>
 									
 									<label for=""></label>
 									<div class="checkbox-btn-group">
@@ -253,12 +458,12 @@
 							
 								</div>
 							</div>
-						</div>
+						</div> -->
 						<!-- /checkboxes -->
 
 						<!-- radio btns -->
-						<div class="mb30">
-							<!-- <h4 class="my-3">The Lifafa is for</h4> -->
+						<!-- <div class="mb30">
+							
 							
 							<p class="font14 font_weight_bolder mb10">This Lifafa is for</p>
 							<div class="radio-btn-group mb-3">
@@ -272,10 +477,10 @@
 								<label for="someone" class="font_size13">Someone else</label>
 								</div>
 							</div>
-						</div>
+						</div> -->
 						<!-- /radio-btns -->
 
-						<div id="hidden-div" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label is-upgraded width_100 pt-0 mb15" style="display: none;">
+						<!-- <div id="hidden-div" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label is-upgraded width_100 pt-0 mb15" style="display: none;">
 							<p class="mb10 font14 font_weight_bolder">Who is it for?</p>
 							<input class="mdl-textfield__input font_weight_normal" type="text" name="title" id="" ng-model="" value="" data-role="none" placeholder="">
 						</div>
@@ -285,7 +490,7 @@
 							<p class="font14 font_weight_bolder mb10">How much would you like to collect?</p>
 							<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label rupee_symbol is-upgraded width_100 pt0 pb0 left-addon">
 								<input class="mdl-textfield__input font_weight_normal font_size24" data-role="none" type="tel" name="lifafa_amount" id="lifafa_amount" value="50000" onkeypress="return isNumber(event)">
-								<!-- <label class="mdl-textfield__label" for="lifafa_amount">Your Lifafa goal amount</label> -->
+								
 								<span class="lifafa_amount_error mdl-textfield__error"></span>
 							</div>
 						</div>
@@ -297,7 +502,7 @@
 				              <span class = "mdl-checkbox__label  font14 pl5">No specific amount, happy to see it soar!</span>
 				           </label>
 				           <p class="font_size12 font_weight_normal">(* The Lifafa goal amount will be displayed to all contributors)</p>
-						</div>
+						</div> -->
 						
 						
 						
