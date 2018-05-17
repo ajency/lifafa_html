@@ -25,6 +25,13 @@
           });
         }
 
+        if($('.forgot-pwd').length){
+          $( ".forgot-pwd-trigger" ).click(function() {
+            $('.forgot-pwd').addClass( "is-shown" );
+            $( ".content-wrapper" ).addClass( "show-overlay" );
+          });
+        }
+
         $("input[name='noSpecific']").click(function() {
          if ($("#checkbox11").is(":checked")) {
            $("#lifafa_amount").addClass("disabled");
@@ -82,9 +89,9 @@
 
       $(document).mouseup(function(e) {
        var Click_todo;
-       Click_todo = $('.lifafa-open-contributions,.payment-summary,.custom-modal');
+       Click_todo = $('.lifafa-open-contributions,.payment-summary,.custom-modal, .forgot-pwd');
        if (!Click_todo.is(e.target) && Click_todo.has(e.target).length === 0) {
-         $('.lifafa-open-contributions,.payment-summary,.custom-modal').removeClass('is-shown');
+         $('.lifafa-open-contributions,.payment-summary,.custom-modal,.forgot-pwd').removeClass('is-shown');
          $( ".content-wrapper" ).removeClass( "show-overlay" );
        }
       });

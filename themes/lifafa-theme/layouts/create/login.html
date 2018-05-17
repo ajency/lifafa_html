@@ -58,12 +58,12 @@
 
 						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label width_100 pb10">
 							<input class="mdl-textfield__input " type="password" id="password" name="password" data-role="none">
-							<label class="mdl-textfield__label" for="login_password">Enter your password</label>
+							<label class="mdl-textfield__label label-fix" for="login_password">Enter your password</label>
 							<span id="password_error" class="mdl-textfield__error"></span>
 						</div>
 
 						<div class="text_align_right">
-							<a href="" data-role="none" class="forget_pass primary_text_color" data-modal-open="forgetModal_entermobile_open">Forgot password?</a>
+							<a href="javascript:void(0);" data-role="none" class="forget_pass primary_text_color forgot-pwd-trigger" data-modal-open="forgetModal_entermobile_open">Forgot password?</a>
 						</div>
 
 
@@ -83,6 +83,28 @@
 
 
 	</div>
+
+	<!-- modal -->
+	<div class="forgot-pwd bg-white padding_20">
+		<h5 class="font_weight_bold font_size18 mb15">Forgot Password</h5>
+		<p class="font_weight_normal font_size14">To retrive your password please enter your mobile number.</p>
+		<form method="POST" action="https://www.lifafa.com" accept-charset="UTF-8" id="form_data_forget"><input name="_token" type="hidden" value="x2yBt323enNmvbn3ZNu9K2GVZmmREvrsDS7VKXXw">	<div class="resetPassword_field">
+				<div class="mdl-textfield input__field floatL mdl-js-textfield mdl-textfield--floating-label width_100 pb10">
+					<input class="mdl-textfield__input mobile1" id="mobile" maxlength="10" name="mobile" type="text">
+					<label class="mdl-textfield__label label-fix" for="mobile">Mobile</label>
+					<span id="mobile_error" class="  mdl-textfield__error"></span>
+				</div>
+				<div class="resetPassword_btn w-sm-50 m-sm-auto">
+					<button id="forgot_btn" class="mdl-button mdl-js-button mdl-button--raised primary_color width_100">Submit</button>
+				</div>
+				<div class="clearfix"></div>
+
+				
+
+			</div>
+		</form>
+	</div>
+	<!-- /modal -->
 </div>
 
 {{ end }}
