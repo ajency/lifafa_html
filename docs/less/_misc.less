@@ -360,7 +360,10 @@ a.collapsible {
 	}
 }
 
-.custom-modal{
+
+
+.custom-modal,
+.forgot-pwd {
 	position: fixed;
     // height: 70vh;
     bottom: 0;
@@ -377,6 +380,14 @@ a.collapsible {
 		margin: 0 auto;
 		&.is-shown{
 			transform: translateY(-50%);	
+		}
+	}
+}
+
+.forgot-pwd {
+	@media screen and (min-width: 650px){
+		&.is-shown{
+			transform: translateY(-150%);	
 		}
 	}
 }
@@ -792,6 +803,20 @@ a.collapsible {
 	.mdl-checkbox__focus-helper {
 		box-shadow: none;
 		background: none;
+	}
+}
+
+.resetPassword_btn {
+	.mdl-button {
+		width: 100%;
+	}
+}
+
+.mdl-textfield__label {
+	&.label-fix {
+		&:after {
+			bottom: 10px;
+		}
 	}
 }
 
