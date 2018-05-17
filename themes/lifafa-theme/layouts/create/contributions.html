@@ -52,7 +52,7 @@
                                                                     {{ if $.Params.withoutAmount }}
                                                                         <input class="mdl-textfield__input amount-field" id="amount" name="amount" onkeypress="return isNumber(event)" placeholder="₹" type="text" value="" readonly>
                                                                     {{ else }}
-                                                                        <input class="mdl-textfield__input amount-field" id="amount" name="amount" onkeypress="return isNumber(event)" placeholder="₹" type="text" value="1,000" readonly>
+                                                                        <input class="mdl-textfield__input amount-field" id="amount" name="amount" onkeypress="return isNumber(event)" placeholder="₹" type="text" value="₹1,000" readonly>
                                                                     {{ end }}
                                                                     
                                                                         <span class="mdl-textfield__error" id="amount_error">
