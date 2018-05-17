@@ -42,7 +42,7 @@
                             </div>
 
                             <div class="text-sm-center pl-xs-3">
-                                <p class="font_weight_normal">Lifafa will be redeemed for: <span class="font_weight_bold">Travel</span></p>
+                                <p class="font_weight_normal">Lifafa will be redeemed for: <span class="font_weight_bold d-sm-inline d-block">Travel</span></p>
                             </div>
                         </div>
 
@@ -104,24 +104,30 @@
                 {{ end }}
 
                 {{ if $.Params.afteraccept }}
-                <div class="display_flex mt30 border-sm-bottom-dashed border-gray border-xs-0 align_items_center pb15">
-                    <div class="col-1">
-                        <div class="img-icon-holder">
-                            <img src='{{"images/contribute.png" | absURL}}' alt="..." class="">
+                <a href="/lifafa_html/create/all-contributors/" class="display_block">
+                    <div class="display_flex mt30 border-sm-bottom-dashed border-gray border-xs-0 align_items_center pb15">
+                        <div class="col-1">
+                            <div class="img-icon-holder">
+                                <img src='{{"images/contribute.png" | absURL}}' alt="..." class="">
+                            </div>
+                        </div>
+
+                        <div class="pl15 col-10">
+                            <div class="font_size14">
+
+                                
+
+                                <p class="font_weight_bolder text-darker">Trupti Rao, Amit Adav, Rajesh <span class="font_weight_normal text-grey d-sm-inline d-block">+4 Others have contributed</span></p>
+                                <p class="font_weight_bolder primary_text_color">See all contributors.</p>
+                                
+                            </div>
+                        </div>
+
+                        <div class="col-1">
+                            <i class="material-icons primary_text_color angle-right">chevron_right</i>
                         </div>
                     </div>
-
-                    <div class="pl15 col-10">
-                        <div class="font_size14">
-                            <p class="font_weight_bolder text-darker">Trupti Rao, Amit Adav, Rajesh</p>
-                            <p class="font_weight_normal text-grey">+4 Others have contributed</p>
-                        </div>
-                    </div>
-
-                    <div class="col-1">
-                        <i class="material-icons primary_text_color angle-right">chevron_right</i>
-                    </div>
-                </div>
+                </a>
 
                 {{ else }}
                 <div class="display_flex mt30 border-sm-bottom-dashed border-gray border-xs-0 align_items_center pb15">
