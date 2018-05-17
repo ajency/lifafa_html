@@ -679,6 +679,10 @@
   .mdl-mobile .px-sm-10 {
     padding: 0 10px;
   }
+  .mdl-mobile .px-sm-20 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .mdl-mobile .px-sm-30px {
     padding: 0 30px;
   }
