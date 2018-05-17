@@ -373,6 +373,9 @@
 .mdl-mobile .d-block {
   display: block !important;
 }
+.mdl-mobile .d-inline-block {
+  display: inline-block !important;
+}
 .mdl-mobile .rounded-circle {
   border-radius: 50% !important;
 }
@@ -1259,6 +1262,10 @@
   .mdl-mobile .page-banner.stars-bg {
     background-size: cover;
   }
+}
+.mdl-mobile .page-banner.mh-175px {
+  min-height: 175px;
+  height: 175px;
 }
 .mdl-mobile .page-banner.mh-200px {
   min-height: 200px;
