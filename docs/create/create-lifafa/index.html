@@ -264,22 +264,30 @@
 						<div class="form_group mb15 lifafa_amount_cover">
 
 							<p class="mb10 font14 font_weight_bolder">How much would you like to collect through contributions?</p>
-							<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label rupee_symbol is-upgraded width_100 pt0 pb0 left-addon">
-								<input class="mdl-textfield__input font_weight_normal font_size24" data-role="none" type="tel" name="lifafa_amount" id="lifafa_amount" value="" onkeypress="return isNumber(event)">
-								
-								<span class="lifafa_amount_error mdl-textfield__error"></span>
+
+							<div class="">
+								<div class="radio_btn mb20 mt15">
+									<input type="radio" data-role="none" id="yes" name="contribute1" value=""  checked >
+				          			<label for="yes" class="w-100 display_flex">
+				          				An amount of 
+      				          			<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label rupee_symbol is-upgraded pt0 pb0 left-addon ml15">
+      										<input class="mdl-textfield__input font_weight_normal font_size24 pt-0 m-t--5" data-role="none" type="tel" name="lifafa_amount" id="lifafa_amount" value="" onkeypress="return isNumber(event)">
+      										<span class="lifafa_amount_error mdl-textfield__error"></span>
+      									</div>
+				          			</label>
+								</div>
+
+								<div class="radio_btn ">
+									<input type="radio" data-role="none" id="no" name="contribute1" value=""   >
+				        			<label for="no" class="font_size14 font_weight_bold">No specific amount, happy to see it soar!</label>
+				        			
+								</div>
 							</div>
+
+							
 						</div>
 
-						<div class="">
-							<label class = "mdl-checkbox mdl-js-checkbox" for = "checkbox11">
-				              <input type = "checkbox" id = "checkbox11"
-				                 class = "mdl-checkbox__input" name="noSpecific" >
-				              <span class = "mdl-checkbox__label  font14 mb10 pl15">No specific amount, happy to see it soar!</span>
-				           </label>
-				           <p class="font_size12 font_weight_normal mt5">(This is your Lifafa goal amount; it will be displayed on the Lifafa)</p>
-
-						</div>
+						
 					</div>
 
 					
