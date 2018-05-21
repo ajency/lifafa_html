@@ -200,11 +200,42 @@
 
         </div>
 
-        <div class="ui-footer ui-footer-fixed display_flex primary_text_color padding_20 primary_color align_items_center justify_content">
+        <div class="ui-footer ui-footer-fixed  primary_text_color padding_20 primary_color ">
+            <div class="container display_flex align_items_center justify_content">
                 <div><p class="font_weight_normal font_size14">Add a personal touch to your Lifafa with images, videos and a message.</p></div>
                 <div class="redeem_edit_btn">
                     <a href="/lifafa_html/create/edit-lifafa/" rel="external" data-ajax="false" class="edit_lifafa mdl-button mdl-js-button mdl-button--raised mdl-sm-button bg-grey primary_text_color" data-role="none"><i class="material-icons font_size16">border_color</i> Edit Lifafa</a>
                 </div>
+            </div>
+                
         </div>
+        
+        {{ if $.Params.lifafaview }}
+        <!-- modal -->
+        <div class="lifafa-view">
+            <div class="padding_10 container  text_align_center bg-white lifafa-view-icon ">
+                
+                <div class="img-holder display_flex align_items_center justify_content">
+                    <img src='{{"images/present.png" | absURL}}' alt="..." class="">
+                </div>
+                
+
+                <p class="font_size16 font_weight_bolder mt30 mb15">Congratulations, you have created a Lifafa!</p>
+
+                <p class="font_size14 font_weight_normal mb15">Go ahead and personalise it. Make it about this beautiful occasion with photos, video and a message.</p>
+
+                <div class="mt30 mb30 ml20 mr20">
+                    <a href="/lifafa_html/create/edit-lifafa/" id="login_btn" type="submit" data-role="none" data-ajax="false" rel="external" class="mdl-button mdl-js-button mdl-button--raised width_100 primary_color">Edit Lifafa</a>
+                </div>
+
+                <p class="font_size14 font_weight_normal mb15">Remember to Open for contributions, so that when you share this with your friends and family, they can all contribute to the Lifafa.</p>
+
+                <div class="mt30 mb30 ml20 mr20">
+                    <a href="/lifafa_html/create/lifafa-view/" id="login_btn" type="submit" data-role="none" data-ajax="false" rel="external" class="mdl-button mdl-js-button primary_text_color width_100 primary_border_color bg-transparent">View Lifafa</a>
+                </div>
+            </div>
+        </div>
+        <!-- /modal -->
+        {{ end }}
 
     {{ end }}

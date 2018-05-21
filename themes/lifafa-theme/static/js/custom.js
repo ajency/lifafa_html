@@ -1,9 +1,9 @@
   $( document ).ready(function() {
       // $( ".open-contributions" ).click(function() {
 
-        if($('.lifafa-open-contributions').length){
+        if($('.lifafa-open-contributions, .lifafa-view').length){
           // $( ".open-contributions" ).click(function() {
-            $( ".lifafa-open-contributions" ).addClass( "is-shown" );
+            $( ".lifafa-open-contributions, .lifafa-view" ).addClass( "is-shown" );
             $( ".content-wrapper" ).addClass( "show-overlay" );
           // });
           // $('.open-contributions').trigger('click');  
@@ -89,9 +89,9 @@
 
       $(document).mouseup(function(e) {
        var Click_todo;
-       Click_todo = $('.lifafa-open-contributions,.payment-summary,.custom-modal, .forgot-pwd');
+       Click_todo = $('.lifafa-open-contributions,.payment-summary,.custom-modal, .forgot-pwd, .lifafa-view');
        if (!Click_todo.is(e.target) && Click_todo.has(e.target).length === 0) {
-         $('.lifafa-open-contributions,.payment-summary,.custom-modal,.forgot-pwd').removeClass('is-shown');
+         $('.lifafa-open-contributions,.payment-summary,.custom-modal,.forgot-pwd, .lifafa-view').removeClass('is-shown');
          $( ".content-wrapper" ).removeClass( "show-overlay" );
        }
       });
