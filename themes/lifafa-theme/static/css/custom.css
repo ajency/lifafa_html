@@ -480,6 +480,9 @@
 .mdl-mobile .p-1 {
   padding: 0.25rem !important;
 }
+.mdl-mobile .m-t--5 {
+  margin-top: -5px;
+}
 @media (min-width: 576px) {
   .mdl-mobile .container {
     max-width: 540px;
@@ -780,6 +783,9 @@
   }
   .mdl-mobile .padding_side_xs_10 {
     padding: 0 10px;
+  }
+  .mdl-mobile .bg-xs-white {
+    background: #fff;
   }
 }
 .mdl-mobile header .header-logo {
@@ -2697,4 +2703,7 @@
 }
 .mdl-mobile .progress-loader .barr_progress {
   background-color: #7ed322;
+}
+.mdl-mobile .pl-28 {
+  padding-left: 28px;
 }
