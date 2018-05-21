@@ -10,6 +10,10 @@
   /*more-less*/
   /*override*/
 }
+.mdl-mobile.bg-confetti {
+  background: url('../images/bg-confetti.jpg') repeat bottom;
+  background-size: cover;
+}
 .mdl-mobile .card {
   position: relative;
   display: -webkit-box;
@@ -370,6 +374,9 @@
   left: 1.5em;
   margin-right: -50%;
 }
+.mdl-mobile .font_size30 {
+  font-size: 30px;
+}
 .mdl-mobile .d-block {
   display: block !important;
 }
@@ -467,6 +474,7 @@
   width: 100%;
   margin-right: auto;
   margin-left: auto;
+  position: relative;
 }
 @media (min-width: 576px) {
   .mdl-mobile .container {
@@ -2018,6 +2026,9 @@
     background-size: cover;
   }
 }
+.mdl-mobile .page-banner.header-confettis {
+  background: url('../images/header-confettis.jpg') repeat bottom;
+}
 .mdl-mobile .page-banner.mh-175px {
   min-height: 175px;
   height: 175px;
@@ -2278,6 +2289,56 @@
   }
   .mdl-mobile .lifafa-open-contributions.is-shown,
   .mdl-mobile .payment-summary.is-shown {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+}
+.mdl-mobile .lifafa-view {
+  position: fixed;
+  bottom: 0;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: translateY(120%);
+          transform: translateY(120%);
+  z-index: 9999;
+  left: 0;
+  right: 0;
+}
+.mdl-mobile .lifafa-view .lifafa-view-icon {
+  position: relative;
+}
+.mdl-mobile .lifafa-view .lifafa-view-icon .img-holder {
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  position: ABSOLUTE;
+  left: 0;
+  right: 0;
+  top: -30px;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: CENTER;
+      -ms-flex-pack: CENTER;
+          justify-content: CENTER;
+  border-radius: 50%;
+}
+.mdl-mobile .lifafa-view .lifafa-view-icon .img-holder img {
+  max-width: 60%;
+}
+.mdl-mobile .lifafa-view.is-shown {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+@media screen and (min-width: 650px) {
+  .mdl-mobile .lifafa-view .container {
+    width: 40%;
+  }
+  .mdl-mobile .lifafa-view.is-shown {
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
   }
@@ -2706,4 +2767,14 @@
 }
 .mdl-mobile .pl-28 {
   padding-left: 28px;
+}
+.mdl-mobile .box-shadow {
+  -webkit-box-shadow: 0 0 10px #ccc;
+          box-shadow: 0 0 10px #ccc;
+}
+.mdl-mobile .create-lifafa-gift {
+  position: absolute;
+  bottom: 50px;
+  left: -140px;
+  z-index: -1;
 }

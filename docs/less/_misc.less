@@ -75,6 +75,9 @@ a.collapsible {
 			background-size: cover;
 		}
 	}
+	&.header-confettis {
+		background: url('../images/header-confettis.jpg') repeat bottom;
+	}
 	&.mh-175px {
 		min-height: 175px;
 		height: 175px;
@@ -86,6 +89,8 @@ a.collapsible {
 		min-height: 250px;
 	}
 }
+
+
 
 .header-spacer{
 	margin-top: 65px;
@@ -362,6 +367,61 @@ a.collapsible {
 		}
 		
 	}
+}
+
+.lifafa-view {
+	position: fixed;
+    // height: 70vh;
+    bottom: 0;
+    transition: 0.5s all;
+    transform: translateY(120%);
+    z-index: 9999;
+    left: 0;
+    right: 0;
+    .lifafa-view-icon {
+    	position: relative;
+   //  	&:before {
+			// content: "";
+			// background-image: url('../images/present.png');
+			// height: 65px;
+			// width: 65px;
+			// position: absolute;
+			// left: 0;
+			// right: 0;
+			// margin: 0 auto;
+			// top: -40px;
+			// background-repeat: no-repeat;
+   //  	}
+   .img-holder {
+   	width: 60px;
+   	height: 60px;
+   	background: #fff;
+   	position: ABSOLUTE;
+    left: 0;
+    right: 0;
+    top: -30px;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    justify-content: CENTER;
+    border-radius: 50%;
+    img {
+    	max-width: 60%;
+    }
+   }
+    }
+    &.is-shown {
+    	transform: translateY(0%);
+    }
+    @media screen and (min-width: 650px){
+    	.container{
+    		width: 40%;
+    	}
+    	&.is-shown{
+    		transform: translateY(-50%);	
+    	}
+    	
+    }
 }
 
 
@@ -860,4 +920,15 @@ a.collapsible {
 
 .pl-28 {
 	padding-left: 28px;
+}
+
+.box-shadow {
+	box-shadow: 0 0 10px #ccc;
+}
+
+.create-lifafa-gift {
+	position: absolute;
+	bottom: 50px;
+	left: -140px;
+	z-index: -1;
 }
