@@ -1,7 +1,7 @@
 {{ define "main" }}
 	
 
-	<div class="powered-by">
+	<div class="powered-by bg-none">
 
 		<header class="mdl-shadow--2dp white_bg mobile_header ui-header ui-bar-inherit ui-header-fixed slidedown" data-role="header" data-position="fixed" data-tap-toggle="false" role="banner">
 			<div class="display_flex justify_content align_items_center padding_left10 padding_right10">
@@ -24,7 +24,7 @@
 			</div>
 		</div>
 
-		<div class="padding_20 ml20 mr20 container w-sm-480px powered-by-child otp-verification">
+		<div class="padding_20 ml20 mr20 container w-sm-480px powered-by-child otp-verification bg-none">
 			<div class="text_align_center pt-sm-30">
 				<div class="font_size16 font_weight_bold text_align_center">Enter the 6 digit OTP </div>
 
@@ -44,17 +44,17 @@
 									</div> -->
 
 									<div class="otp-holder pt5 mt20"> 
-					                    <input type="text"  maxlength="1"> 
-						                <input type="text"  maxlength="1"> 
-						                <input type="text"  maxlength="1"> 
-						                <input type="text" maxlength="1"> 
-						                <input type="text" maxlength="1"> 
-						                <input type="text" maxlength="1"> 
+					                    <input type="number"  maxlength="1"> 
+						                <input type="number"  maxlength="1"> 
+						                <input type="number"  maxlength="1"> 
+						                <input type="number" maxlength="1"> 
+						                <input type="number" maxlength="1"> 
+						                <input type="number" maxlength="1"> 
 					                </div> 
 									
 									
 									<div class="resetPass_verify_btn w-sm-50 m-sm-auto otp-continue mb20 ">
-										<a href="/lifafa_html/create/lifafa-view-contribution-verified/" id="forgot_otp_btn" class="mdl-button mdl-js-button mdl-js-ripple-effect verify_button primary_border_color bg-transparent primary_text_color w-100 disabled">Continue</a>
+										<a href="/lifafa_html/create/lifafa-view-contribution-verified/" id="forgot_otp_btn" class="mdl-button mdl-js-button mdl-js-ripple-effect verify_button primary_border_color bg-transparent primary_text_color w-100 disabled">Verify</a>
 									</div>
 	
 									<p class="font_weight_bold font14 text-darker"> Didn't receive the OTP?</p>
@@ -64,22 +64,30 @@
 										<div id="otp-resend-countdown" class="otp-countdown font14 font_weight_bold"></div>
 									</div>
 									
-									
-									<div class="mt-sm-5 mb-sm-5">
-										<p class="font_weight_bold font14 text-darker text_align_left mt10">Want to proceed without Aadhaar KYC? Sure!</p>
+									<div class="pl20 pr20 ml--20px mr--20px pt10 pb30 mt15" style="background-color: #e3f1f4;">
+										<div class="">
+											<p class="font_weight_bold font14 text-darker text_align_left mt10">Want to proceed without Aadhaar KYC? Sure!</p>
 
-										<div class="alert alert-warning mb5 mt5">
-											<!-- <p class="font_size13 gray_color text_align_left">You can create a Lifafa with a limit of <span class="primary_text_color">Rs.8238/-</span></p> -->
-											<p class="font_size13 gray_color text_align_left">You can accept contributions only up to the mentioned amount.</p>
+											<div class="alert alert-warning mb5 mt15">
+												
+												<p class="font_size13 gray_color text_align_left font_weight_normal">Sure! You can open the Lifafa for contributions even without the Aadhar OTP. However, the Liafa will have a limit of <span class="primary_text_color font_weight_bold">Rs.8238/-<sup>*</sup></span> on the total amount collected.</p>
+											</div>
+
+											
+											<p class="font_weight_normal font14 text_align_left font_size12 mb10"><sup>*</sup>There are other pre-paid wallets linked with this Aadhaar number. The sum across all such wallets cannot exceed Rs.10,000/-</p>
+										</div>
+										
+										<div class="w-100 w-sm-50 m-sm-auto otp-continue mt30">
+											<a href="/lifafa_html/create/lifafa-view-after-open-contribution/" id="signup_form_submit" type="submit" class="mdl-button mdl-js-button mdl-button--raised primary_color width_100">Skip KYC to Create Lifafa</a>
 										</div>
 
-										<!-- <p class="font_weight_normal font14 text_align_left font_size12 mb10">This is because there is an exisiting balance in other pre-paid wallet linked with this Aadhaar number.</p> -->
-										<p class="font_weight_normal font14 text_align_left font_size12 mb10">This is because pre-paid wallets linked with this Aadhaar number have an existing balance. The sum across all such wallets cannot exceed Rs.10,000/-</p>
+										<div class="w-sm-30 w-40 mx-auto mt30">
+											<p class="font_weight_normal font14">Powered by</p>
+											<img src='{{"images/yesbank2.png" | absURL}}' alt="..." class="">
+										</div>
+										
 									</div>
 									
-									<div class="w-100 w-sm-50 m-sm-auto otp-continue">
-										<a href="/lifafa_html/create/lifafa-view-after-open-contribution/" id="signup_form_submit" type="submit" class="mdl-button mdl-js-button mdl-button--raised primary_color width_100">Skip KYC to Create Lifafa</a>
-									</div>
 
 								</div>
 							</form>
