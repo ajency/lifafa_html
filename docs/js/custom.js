@@ -40,7 +40,25 @@
            $("#lifafa_amount").removeClass("disabled");
            $(".lifafa_amount_cover").removeClass("disabled-icon");
          }
-        }); 
+        });
+
+        // owl carousel
+        $('.owl-carousel').owlCarousel({
+          loop:true,
+          margin:15,
+          nav:true,
+          responsive:{
+              0:{
+                  items:2
+              },
+              600:{
+                  items:4
+              },
+              1000:{
+                  items:4
+              }
+          }
+      }); 
       
       // Contribution field edit
 
