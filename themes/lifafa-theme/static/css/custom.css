@@ -14,6 +14,11 @@
   background: url('../images/bg-confetti.jpg') repeat bottom;
   background-size: cover;
 }
+@media (max-width: 768px) {
+  .mdl-mobile.bg-confetti {
+    background: none;
+  }
+}
 .mdl-mobile .card {
   position: relative;
   display: -webkit-box;
@@ -119,6 +124,25 @@
 .mdl-mobile .event_select_wrapper .category_event.round-variant .select_event_bg.color_custom .img-holder,
 .mdl-mobile .event_select_wrapper .category_event.square-variant .select_event_bg.color_custom .img-holder {
   background-position: -453px -28px;
+}
+.mdl-mobile .event_select_wrapper .category_event.owl-carousel {
+  width: 82%;
+  margin: 0 auto;
+  position: relative;
+  overflow-x: initial;
+}
+.mdl-mobile .event_select_wrapper .category_event.owl-carousel .owl-nav .owl-prev,
+.mdl-mobile .event_select_wrapper .category_event.owl-carousel .owl-nav .owl-next {
+  position: absolute;
+  top: 50px;
+  color: #1595ae;
+  font-size: 74px;
+}
+.mdl-mobile .event_select_wrapper .category_event.owl-carousel .owl-nav .owl-prev {
+  left: -45px;
+}
+.mdl-mobile .event_select_wrapper .category_event.owl-carousel .owl-nav .owl-next {
+  right: -45px;
 }
 .mdl-mobile .category_event.square-variant .select_event_bg {
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25), 0 0px 0px rgba(0, 0, 0, 0.22);
@@ -2771,6 +2795,12 @@
 .mdl-mobile .box-shadow {
   -webkit-box-shadow: 0 0 10px #ccc;
           box-shadow: 0 0 10px #ccc;
+}
+@media (max-width: 768px) {
+  .mdl-mobile .box-shadow {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
 }
 .mdl-mobile .create-lifafa-gift {
   position: absolute;

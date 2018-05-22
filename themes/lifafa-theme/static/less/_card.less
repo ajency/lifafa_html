@@ -104,6 +104,30 @@
 
 			}
 		}
+		// owl carousel
+		&.owl-carousel {
+			width: 82%;
+			margin: 0 auto;
+			position: relative;
+			overflow-x: initial;
+			.owl-stage-outer {
+			}
+			.owl-nav {
+				.owl-prev,
+				.owl-next {
+					position: absolute;
+					top: 50px;
+					color: @brand-color;
+					font-size: 74px;
+				}
+				.owl-prev {
+					left: -45px;
+				}
+				.owl-next {
+					right: -45px;
+				}
+			}
+		}
 	}
 }
 

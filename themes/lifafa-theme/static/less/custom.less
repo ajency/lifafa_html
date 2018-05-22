@@ -5,6 +5,9 @@
     &.bg-confetti {
 		background: url('../images/bg-confetti.jpg') repeat bottom;
 		background-size: cover;
+		@media (max-width: 768px) {
+			background: none;
+		}
 	}
 	@import "_card";
 	@import "_buttons";
