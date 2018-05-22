@@ -24,8 +24,72 @@
 			</div>
 		</div>
 
-		<div class="padding_20 ml20 mr20 container w-sm-480px powered-by-child otp-verification bg-none">
-			<div class="text_align_center pt-sm-30">
+		<div class="pl20 pr20 pt20 ml20 mr20 container w-sm-480px powered-by-child otp-verification bg-none display_flex flex_column">
+
+			<div>
+				<div class="font_size16 font_weight_bold text_align_center pt-sm-30">Enter the 6 digit OTP </div>
+
+				<div class="modal_wrap verfiy_mobile_modal " id="mobile_top_verification" data-popup="verifyMobile_modal">
+					<div class="verify_mobile_modal_sec modal_inner">
+						<button onclick="closeModel()" class="close li li_cancel" id="mobile_top_verification_var"></button>
+						
+						<div class="resetPassword_field">
+							<form id="otp_form">
+								<div class="">
+									
+
+									<div class="otp-holder pt5 mt20"> 
+					                    <input type="number"  maxlength="1"> 
+						                <input type="number"  maxlength="1"> 
+						                <input type="number"  maxlength="1"> 
+						                <input type="number" maxlength="1"> 
+						                <input type="number" maxlength="1"> 
+						                <input type="number" maxlength="1"> 
+					                </div> 
+									
+									
+									<div class="resetPass_verify_btn w-sm-50 m-sm-auto otp-continue mb20 ">
+										<a href="/lifafa_html/create/lifafa-view-contribution-verified/" id="forgot_otp_btn" class="mdl-button mdl-js-button mdl-js-ripple-effect verify_button primary_border_color bg-transparent primary_text_color w-100 disabled">Verify</a>
+									</div>
+				
+									<p class="font_weight_bold font14 text-darker text_align_center"> Didn't receive the OTP?</p>
+									
+									<div class="display_flex align_items_center justify_content_center mt5">
+										<div id="txt_msg" class=" font_weight_bold font14 text-darker mr5">Please Wait: </div>
+										<div id="otp-resend-countdown" class="otp-countdown font14 font_weight_bold"></div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="pl20 pr20 ml--20px mr--20px pt10 pb30 mt15 flex-1" style="background-color: #e3f1f4;">
+				<div class="">
+					<p class="font_weight_bold font14 text-darker text_align_left mt10">Want to proceed without Aadhaar KYC? Sure!</p>
+
+					<div class="alert alert-warning mb5 mt15">
+						
+						<p class="font_size13 gray_color text_align_left font_weight_normal">Sure! You can open the Lifafa for contributions even without the Aadhar OTP. However, the Liafa will have a limit of <span class="primary_text_color font_weight_bold">Rs.8238/-<sup>*</sup></span> on the total amount collected.</p>
+					</div>
+
+					
+					<p class="font_weight_normal font14 text_align_left font_size12 mb10"><sup>*</sup>There are other pre-paid wallets linked with this Aadhaar number. The sum across all such wallets cannot exceed Rs.10,000/-</p>
+				</div>
+				
+				<div class="w-100 w-sm-50 m-sm-auto otp-continue mt30">
+					<a href="/lifafa_html/create/lifafa-view-after-open-contribution/" id="signup_form_submit" type="submit" class="mdl-button mdl-js-button mdl-button--raised primary_color width_100">Skip KYC to Create Lifafa</a>
+				</div>
+
+				<div class="w-sm-30 w-40 mx-auto mt30">
+					<p class="font_weight_normal font14 text_align_center">Powered by</p>
+					<img src='{{"images/yesbank2.png" | absURL}}' alt="..." class="">
+				</div>
+				
+			</div>
+
+			<!-- <div class="text_align_center pt-sm-30">
 				<div class="font_size16 font_weight_bold text_align_center">Enter the 6 digit OTP </div>
 
 				<div class="modal_wrap verfiy_mobile_modal " id="mobile_top_verification" data-popup="verifyMobile_modal">
@@ -35,13 +99,7 @@
 						<div class="resetPassword_field">
 							<form id="otp_form">
 								<div class="">
-									<!-- <div class="valid_tick mdl-textfield input__field mdl-js-textfield mdl-textfield--floating-label w-100 otp-group text_align_center pt5 mt20">
-										<input class="mdl-textfield__input otp-textbox m-auto" type="text" id="verify_mobile_otp" name="verify_mobile_otp" maxlength="6">
-										
-										<input type="hidden" id="verify_mobile" name="verify_mobile">
-										<span id="verify_mobile_otp_error" class="  mdl-textfield__error"></span>
-										<span class="is_success" id="temp_otp"></span>
-									</div> -->
+									
 
 									<div class="otp-holder pt5 mt20"> 
 					                    <input type="number"  maxlength="1"> 
@@ -96,7 +154,7 @@
 					</div>
 				</div>
 				
-			</div>
+			</div> -->
 		</div>
 	</div>
 
