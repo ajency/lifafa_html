@@ -769,6 +769,9 @@
   .mdl-mobile .w-sm-50 {
     width: 50% !important;
   }
+  .mdl-mobile .w-sm-60 {
+    width: 60% !important;
+  }
   .mdl-mobile .mt-sm-5,
   .mdl-mobile .my-sm-5 {
     margin-top: 3rem !important;
