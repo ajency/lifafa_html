@@ -676,13 +676,16 @@
 .mdl-mobile .bg-lightgrey {
   background: #f8f6f7;
 }
-.mdl-mobile .col-9 {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 75%;
-  flex: 0 0 75%;
-  max-width: 75%;
-}
 @media (min-width: 576px) {
+  .mdl-mobile .text-sm-right {
+    text-align: right;
+  }
+  .mdl-mobile .col-sm-9 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
   .mdl-mobile .ml-sm--20px {
     margin-left: -20px;
   }
