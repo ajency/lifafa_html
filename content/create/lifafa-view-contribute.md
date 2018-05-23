@@ -5,5 +5,6 @@ draft: false
 layout: lifafa-view-after-open-contribution
 
 contribute: true
+occasionbg: true
 
 ---

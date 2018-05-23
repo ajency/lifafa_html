@@ -6,5 +6,6 @@ url: 'create/lifafa-view-contribution-verified'
 layout: lifafa-view-after-open-contribution
 
 verified: true
+occasionbg: true
 
 ---

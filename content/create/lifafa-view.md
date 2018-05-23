@@ -5,5 +5,6 @@ draft: false
 layout: lifafa-view
 
 lifafaview: true
+occasionbg: true
 
 ---

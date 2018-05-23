@@ -241,11 +241,14 @@
 	&.contribution-details {
 		position: relative;
 		// background: @brand-color;
-		background: url('../images/lifafa-view-flower.png') no-repeat center;
+		// background: url('../images/lifafa-view-flower.png') no-repeat center;
+		background-color: #f4f8f9;
 		background-size: cover;
+		border: 1px solid @brand-color;
 		@media (max-width: 767px) {
 			background: #f4f8f9;
 			// color: #fff;
+			border: 0;
 		}
 		&:before {
 			position: absolute;
@@ -270,14 +273,15 @@
 		    }
 		}
 		&:after {
-			content: "";
-			position: absolute;
-			top: 0;
-			right: 0;
-			background: url('../images/ribbon.png') no-repeat;
-			background-size: contain;
-			height: 100px;
-			width: 100px;
+			// content: "";
+			// position: absolute;
+			// top: 0;
+			// right: 0;
+			// background: url('../images/ribbon.png') no-repeat;
+			// background-size: contain;
+			// height: 100px;
+			// width: 100px;
+			display: none;
 			@media (max-width: 767px) {
 				width: 50px;
 				height: 50px; 	

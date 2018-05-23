@@ -6,5 +6,6 @@ layout: lifafa-view-after-open-contribution
 
 afteraccept: true
 contribute: true
+occasionbg: true
 
 ---
