@@ -2,12 +2,18 @@
 	display: flex;
     flex-direction: column;
     height: 100%;
-    &.bg-confetti {
-		background: url('../images/bg-confetti.jpg') repeat bottom;
+    &.bg-confetti,
+    &.bg-confetti2 {
 		background-size: cover;
 		@media (max-width: 768px) {
 			background: none;
 		}
+	}
+	&.bg-confetti {
+		background: url('../images/bg-confetti.jpg') repeat bottom;
+	}
+	&.bg-confetti2 {
+		background: url('../images/bg-confetti2.jpg') repeat bottom;
 	}
 	@import "_card";
 	@import "_buttons";
