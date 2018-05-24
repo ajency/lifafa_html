@@ -55,7 +55,7 @@
                   items:4
               },
               1000:{
-                  items:4
+                  items:5
               }
           }
       }); 
@@ -138,8 +138,12 @@
       });
 
       $( ".collapse-cover .collapse-btn" ).click(function() {
+        $(this).text(function(i, v){
+            return v === 'Edit' ? 'View Less' : 'Edit'
+          });
         $(".content-info").toggleClass('d-none');
         $( ".collapse-content" ).slideToggle( "slow" );
+        $(this).toggleClass("edit");
       });
 
       // autocomplete tags

@@ -22,73 +22,70 @@
 
 				<div class="event_select_wrapper">
 					<div class="create_lifafa_bg_wrap">
-					<!-- <div class="padding_20 min_height"> -->
-						<!-- <p class="black_color font16 font_weight_bold text_align_center">Select an occasion</p> -->
 
 						<p class="mt20 mb10 font14 font_weight_bolder">Select an occasion</p>
 						<span class="name_error mdl-textfield__error"></span>
-						<div id="category_events" class="category_event round-variant pb20 owl-carousel" style="height: 160px;">
+						<div id="category_events" class="category_event round-variant pb20 owl-carousel" style="">
 							<div class="select_event_bg color_wedding selected display_flex align_items_center justify_content_center rounded-circle">
-								<div>
+								<!-- <div>
 									<div class="text_align_center img-holder m-auto"></div>
-									<!-- <p class="font_size14 color_black mt5" id="wedding">Wedding</p> -->
-								</div>
+								</div> -->
+								<img src='{{"images/wedding.png" | absURL}}' alt="..." class="">
 							</div>
 
 							<div class="select_event_bg color_farewell display_flex align_items_center justify_content_center rounded-circle">								
-								<div>
+								<!-- <div>
 									<div class="text_align_center img-holder m-auto"></div>
-									<!-- <p class="font_size14 color_black mt5" id="farewell-party">Farewell</p> -->
-								</div>
+								</div> -->
+								<img src='{{"images/farewell.png" | absURL}}' alt="..." class="">
 							</div>
 
 							<div class="select_event_bg color_babyshower display_flex align_items_center justify_content_center rounded-circle">
-								<div>
+								<!-- <div>
 									<div class="text_align_center img-holder m-auto"></div>
-									<!-- <p class="font_size14 color_black mt5" id="baby-shower">Baby shower</p> -->
-								</div>
+								</div> -->
+								<img src='{{"images/babyshower.png" | absURL}}' alt="..." class="">
 							</div>
 
 							<div class="select_event_bg color_honeymoon display_flex align_items_center justify_content_center rounded-circle">
-								<div>
+								<!-- <div>
 									<div class="text_align_center img-holder m-auto"></div>
-									<!-- <p class="font_size14 color_black mt5" id="honeymoon">Honeymoon</p> -->
-								</div>
+								</div> -->
+								<img src='{{"images/honeymoon.png" | absURL}}' alt="..." class="">
 							</div>
 
 							
 
 							<div class="select_event_bg color_birthday display_flex align_items_center justify_content_center rounded-circle">
-								<div>
+								<!-- <div>
 									<div class="text_align_center img-holder m-auto"></div>
-									<!-- <p class="font_size14 color_black mt5" id="birthday">Birthday</p> -->
-								</div>
+								</div> -->
+								<img src='{{"images/birthday.png" | absURL}}' alt="..." class="">
 							</div>
 
 							<div class="select_event_bg color_anniversary display_flex align_items_center justify_content_center rounded-circle">
-								<div>
+								<!-- <div>
 									<div class="text_align_center img-holder m-auto"></div>
-									<!-- <p class="font_size14 color_black mt5" id="anniversary">Anniversary</p> -->
-								</div>
+								</div> -->
+								<img src='{{"images/anniversary.png" | absURL}}' alt="..." class="">
 							</div>
 
 							<div class="select_event_bg color_housewarming display_flex align_items_center justify_content_center rounded-circle">
-								
-								<div>
+								<!-- <div>
 									<div class="text_align_center img-holder m-auto"></div>
-									<!-- <p class="font_size14 color_black mt5" id="house-warming">Housewarming</p> -->
-								</div>
+								</div> -->
+								<img src='{{"images/house-warming.png" | absURL}}' alt="..." class="">
 							</div>
 
 							<div class="select_event_bg color_custom display_flex align_items_center justify_content_center rounded-circle">
-								<div>
+								<!-- <div>
 									<div class="text_align_center img-holder m-auto"></div>
-									<!-- <p class="font_size14 color_black mt5" id="custom-event">Special Event</p> -->
-								</div>
+								</div> -->
+								<img src='{{"images/custom-event.png" | absURL}}' alt="..." class="">
 							</div>
 
 						</div>
-					<!-- </div> -->
+					
 					</div>
 				</div>
 
@@ -191,41 +188,25 @@
 
 										<p class="mb10 font14 font_weight_bolder">How much would you like to collect through contributions?</p>
 
-										<div class="">
-											<div class="radio_btn mb20 mt15">
-												<input type="radio" data-role="none" id="yes" name="contribute1" value=""  checked >
+										<div class="mb20 mt15">
+											
+												
 							          			<label for="yes" class="w-100 d-sm-flex">
-							          				<span class="font_size14 font_weight_bold">An amount of </span>
-			      				          			<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label rupee_symbol is-upgraded pt0 pb0 left-addon ml-sm-15px">
+							          				<span class="font_size14 font_weight_bold">An amount of</span>
+			      				          			<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label rupee_symbol is-upgraded pt0 pb0 left-addon ml-sm-15px mt-sm-0 mt5">
 			      										<input class="mdl-textfield__input font_weight_normal font_size24 pt-0 m-t--5" data-role="none" type="tel" name="lifafa_amount" id="lifafa_amount" value="" onkeypress="return isNumber(event)">
 			      										<span class="lifafa_amount_error mdl-textfield__error"></span>
 			      									</div>
 							          			</label>
-											</div>
+											
 
-											<div class="radio_btn ">
-												<input type="radio" data-role="none" id="no" name="contribute1" value=""   >
-							        			<label for="no" class="font_size14 font_weight_bold">No specific amount, happy to see it soar!</label>
-							        			<!-- <p class="font_size12 font_weight_normal mt5 pl-28" style="">(This is your Lifafa goal amount; it will be displayed on the Lifafa)</p> -->
-											</div>
+											
 										</div>
 
-										<!-- <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label rupee_symbol is-upgraded width_100 pt0 pb0 left-addon">
-											<input class="mdl-textfield__input font_weight_normal font_size24" data-role="none" type="tel" name="lifafa_amount" id="lifafa_amount" value="" onkeypress="return isNumber(event)">
-											
-											<span class="lifafa_amount_error mdl-textfield__error"></span>
-										</div> -->
+										
 									</div>
 
-									<!-- <div class="">
-										<label class = "mdl-checkbox mdl-js-checkbox" for = "checkbox11">
-							              <input type = "checkbox" id = "checkbox11"
-							                 class = "mdl-checkbox__input" name="noSpecific" >
-							              <span class = "mdl-checkbox__label  font14 mb10 pl15">No specific amount, happy to see it soar!</span>
-							           </label>
-							           <p class="font_size12 font_weight_normal mt5">(This is your Lifafa goal amount; it will be displayed on the Lifafa)</p>
-
-									</div> -->
+									
 								</div>
 
 								<!-- <div class="width_100 primary_color" data-role="footer" data-position="fixed" data-tap-toggle="false"> -->
