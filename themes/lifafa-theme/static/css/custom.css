@@ -2094,6 +2094,7 @@
   min-width: 100px;
   height: 36px;
   line-height: 36px;
+  white-space: nowrap;
 }
 .mdl-mobile .collapse-cover .collapse-btn:before {
   font-family: 'Material Icons';

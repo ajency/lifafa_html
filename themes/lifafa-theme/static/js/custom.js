@@ -42,6 +42,11 @@
          }
         });
 
+        $( ".close-modal" ).click(function() {
+            $('.lifafa-view').removeClass( "is-shown" );
+            $( ".content-wrapper" ).removeClass( "show-overlay" );
+          });
+
         // owl carousel
         $('.owl-carousel').owlCarousel({
           loop:true,
