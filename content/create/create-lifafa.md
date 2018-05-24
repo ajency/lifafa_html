@@ -5,5 +5,6 @@ draft: false
 layout: create-lifafa
 
 createlifafa: true
+bgconfetti: true
 
 ---
