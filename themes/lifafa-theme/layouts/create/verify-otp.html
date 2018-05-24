@@ -1,7 +1,7 @@
 {{ define "main" }}
 	
 
-	<div class="powered-by">
+	<div class="powered-by gradient">
 
 		<header class="mdl-shadow--2dp white_bg mobile_header ui-header ui-bar-inherit ui-header-fixed slidedown" data-role="header" data-position="fixed" data-tap-toggle="false" role="banner">
 			<div class="display_flex justify_content align_items_center padding_left10 padding_right10">
@@ -24,7 +24,7 @@
 			</div>
 		</div>
 
-		<div class="padding_20 ml20 mr20 container w-sm-480px powered-by-child">
+		<div class="padding_20 ml20 mr20 container w-sm-480px powered-by-child bg-white display_flex flex_column">
 			<div class="text_align_center pt-sm-30">
 				<div class="font_size16 font_weight_bold text_align_center">Enter the 6 digit OTP <p class="font_size16 mt10">sent to +91 9878222328</p></div>
 
@@ -71,7 +71,13 @@
 						</div>
 					</div>
 				</div>
-				
+			</div>
+
+			<div class="flex-1 display_flex align-items-end">
+				<div class="w-sm-30 w-40 mx-auto mt30 mb10">
+					<p class="font_weight_normal font14 text_align_center">Powered by</p>
+					<img src='{{"images/yesbank2.png" | absURL}}' alt="..." class="">
+				</div>
 			</div>
 		</div>
 	</div>

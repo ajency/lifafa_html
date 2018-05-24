@@ -676,6 +676,11 @@
 .mdl-mobile .bg-lightgrey {
   background: #f8f6f7;
 }
+.mdl-mobile .align-items-end {
+  -webkit-box-align: end !important;
+      -ms-flex-align: end !important;
+          align-items: flex-end !important;
+}
 @media (min-width: 576px) {
   .mdl-mobile .text-sm-right {
     text-align: right;
@@ -2318,30 +2323,13 @@
   font-size: 20px;
   bottom: 8px;
 }
-.mdl-mobile .powered-by {
-  background: url(../images/powered-by2.png) no-repeat bottom;
-  background-size: contain;
-}
-@media (min-width: 576px) {
-  .mdl-mobile .powered-by {
-    background: none;
-  }
-}
-.mdl-mobile .powered-by.bg-none {
-  background: none;
-}
 .mdl-mobile .powered-by .powered-by-child {
-  background: url(../images/powered-by2.png) no-repeat bottom;
-  background-size: contain;
   height: calc(100vh - 90px);
 }
 @media (max-width: 767px) {
   .mdl-mobile .powered-by .powered-by-child.otp-verification {
     height: calc(100vh - 10px);
   }
-}
-.mdl-mobile .powered-by .powered-by-child.bg-none {
-  background: none;
 }
 .mdl-mobile .gradient {
   background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#e5e5e5));
