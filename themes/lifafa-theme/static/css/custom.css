@@ -2884,6 +2884,9 @@
 .mdl-mobile .mdl-textfield__label.label-fix:after {
   bottom: 10px;
 }
+.mdl-mobile .li_cancel:before {
+  display: none;
+}
 .mdl-mobile .otp-holder {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2956,4 +2959,24 @@
   .mdl-mobile .image-holder .owl-carousel .owl-nav {
     display: none;
   }
+}
+.mdl-mobile .without-aadhaar-otp {
+  position: relative;
+  background-color: #e3f1f4;
+  border-top: 2px solid #a9bfc4;
+}
+.mdl-mobile .without-aadhaar-otp:before {
+  content: "or";
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background: #fff;
+  border: 1px solid #000;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: -20px;
 }

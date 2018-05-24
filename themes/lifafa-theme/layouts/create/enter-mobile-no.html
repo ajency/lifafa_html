@@ -1,7 +1,7 @@
 {{ define "main" }}
 	
 
-	<div class="powered-by">
+	<div class="">
 
 		<header class="mdl-shadow--2dp white_bg mobile_header ui-header ui-bar-inherit ui-header-fixed slidedown" data-role="header" data-position="fixed" data-tap-toggle="false" role="banner">
 			<div class="display_flex justify_content align_items_center padding_left10 padding_right10">
@@ -24,7 +24,7 @@
 			</div>
 		</div>
 
-		<div class="padding_20 ml20 mr20 container w-sm-480px powered-by-child">
+		<div class="padding_20 ml20 mr20 container w-sm-480px display_flex flex_column">
 			<div class="">
 				<p class="font14 font_weight_bolder">Enter mobile number</p>
 				
@@ -56,7 +56,13 @@
 				<p class="font_weight_normal font14 mt50 box-starter">
 					Lifafa.com secures all your incoming cash contributions in digital wallets held with our partner YES bank. In order to provide you with seamless experience and to comply with RBI regulations for digital wallets, we will need to validate your details through your mobile number and Aadhaar card.
 				</p>
+			</div>
 
+			<div class="flex-1">
+				<div class="w-sm-30 w-40 mx-auto mt60 mb60">
+					<p class="font_weight_normal font14 text_align_center">Powered by</p>
+					<img src='{{"images/yesbank2.png" | absURL}}' alt="..." class="">
+				</div>
 			</div>
 		</div>
 	</div>

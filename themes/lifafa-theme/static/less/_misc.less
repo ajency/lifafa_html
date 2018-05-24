@@ -922,6 +922,9 @@ a.collapsible {
 		}
 	}
 }
+.li_cancel:before {
+    display: none;
+}
 
 // otp
 .otp-holder { 
@@ -1002,5 +1005,26 @@ a.collapsible {
 				display: none;
 			}
 		}
+	}
+}
+
+.without-aadhaar-otp {
+	position: relative;
+	background-color: #e3f1f4;
+	border-top: 2px solid #a9bfc4;
+	&:before {
+		content: "or";
+		position: absolute;
+		height: 40px;
+		width: 40px;
+		background: #fff;
+		border: 1px solid #000;
+		border-radius: 50%;
+		text-align: center;
+		line-height: 40px;
+	    left: 0;
+	    right: 0;
+	    margin: 0 auto;
+	    top: -20px;
 	}
 }
