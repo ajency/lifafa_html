@@ -21,10 +21,10 @@
   }
 }
 .mdl-mobile.bg-confetti {
-  background: url('../images/bg-confetti.jpg') repeat bottom;
+  background: url('../images/bg-confetti.jpg') no-repeat bottom;
 }
 .mdl-mobile.bg-confetti2 {
-  background: url('../images/bg-confetti2.png') repeat bottom;
+  background: url('../images/bg-confetti2.png') no-repeat bottom;
 }
 .mdl-mobile .card {
   position: relative;
@@ -2097,6 +2097,7 @@
 }
 .mdl-mobile .collapse-cover .collapse-btn:before {
   font-family: 'Material Icons';
+  content: "\e22b";
   vertical-align: top;
   margin-right: 5px;
 }
@@ -2934,4 +2935,20 @@
 .mdl-mobile .border-bottom-shadow {
   -webkit-box-shadow: 0 8px 6px -6px #cccccc;
           box-shadow: 0 8px 6px -6px #cccccc;
+}
+.mdl-mobile .content-wrapper.bg-confetti,
+.mdl-mobile .content-wrapper.bg-confetti2 {
+  background-size: cover;
+}
+@media (max-width: 768px) {
+  .mdl-mobile .content-wrapper.bg-confetti,
+  .mdl-mobile .content-wrapper.bg-confetti2 {
+    background: none;
+  }
+}
+.mdl-mobile .content-wrapper.bg-confetti {
+  background: url('../images/bg-confetti.jpg') no-repeat bottom;
+}
+.mdl-mobile .content-wrapper.bg-confetti2 {
+  background: url('../images/bg-confetti2.png') no-repeat bottom;
 }

@@ -77,7 +77,7 @@ a.collapsible {
     	line-height: 36px;
     	&:before {
     		font-family: 'Material Icons';
-			// content: "\E8F6";
+			content: "\e22b";
 			vertical-align: top;
     		margin-right: 5px;
     	}
@@ -1055,4 +1055,22 @@ a.collapsible {
 
 .border-bottom-shadow {
 	box-shadow: 0 8px 6px -6px #ccc;
+}
+
+
+// BODY BACKGROUND
+.content-wrapper {
+	&.bg-confetti,
+	&.bg-confetti2 {
+		background-size: cover;
+		@media (max-width: 768px) {
+			background: none;
+		}
+	}
+	&.bg-confetti {
+		background: url('../images/bg-confetti.jpg') no-repeat bottom;
+	}
+	&.bg-confetti2 {
+		background: url('../images/bg-confetti2.png') no-repeat bottom;
+	}
 }
