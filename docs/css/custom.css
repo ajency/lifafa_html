@@ -858,6 +858,10 @@
   .mdl-mobile .mt-sm-0 {
     margin-top: 0 !important;
   }
+  .mdl-mobile .mx-sm-40px {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
 }
 @media (max-width: 575px) {
   .mdl-mobile .pl-xs-10 {
