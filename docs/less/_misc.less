@@ -65,6 +65,30 @@ a.collapsible {
   display: none;
 }
 
+.collapse-cover {
+	.collapse-btn {
+		border: 2px solid #1595ae;
+		padding: 0 16px;
+		border-radius: 4px;
+		display: inline-block;
+	    font-family: "Lato", "Arial", sans-serif;
+	    min-width: 100px;
+	    height: 36px;
+    	line-height: 36px;
+    	&:before {
+    		font-family: 'Material Icons';
+			// content: "\E8F6";
+			vertical-align: top;
+    		margin-right: 5px;
+    	}
+    	&.edit {
+    		&:before {
+    			display: none;
+    		}
+    	}
+	}
+}
+
 .page-banner {
 	min-height: 150px;
 	background: #1595ae;
@@ -1027,4 +1051,8 @@ a.collapsible {
 	    margin: 0 auto;
 	    top: -20px;
 	}
+}
+
+.border-bottom-shadow {
+	box-shadow: 0 8px 6px -6px #ccc;
 }
