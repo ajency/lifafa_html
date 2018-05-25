@@ -333,7 +333,7 @@
 }
 @media (max-width: 768px) {
   .mdl-mobile .h-100vh-140px {
-    height: calc(100vh - 130px);
+    height: calc(100vh - 90px);
   }
 }
 .mdl-mobile .text-divider {
