@@ -39,6 +39,14 @@
   width: 100px;
 }
 
+// replaced with powered-by-child
+.h-100vh-140px {
+  height: calc(~'100vh - 90px');
+    @media (max-width: 768px) {
+      height: calc(~'100vh - 130px');
+    }
+}
+
 .text-divider {
   overflow: hidden;
   text-align: center;
