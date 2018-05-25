@@ -422,10 +422,18 @@
   align-items: flex-end !important;
 }
 
+.h-sm-100vh {
+  @media (max-width: 768px) {
+    height: calc(~'100vh - 48px');
+  }
+}
 
 
 
 @media (min-width: 576px) {
+  .h-sm-100vh {
+    height: 100vh;
+  }
   .position-sm-absolute {
     position: absolute;
   }
