@@ -2961,3 +2961,10 @@
 .mdl-mobile .content-wrapper.bg-confetti2 {
   background: url('../images/bg-confetti2.png') no-repeat bottom;
 }
+.mdl-mobile input[type=number]::-webkit-inner-spin-button,
+.mdl-mobile input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
