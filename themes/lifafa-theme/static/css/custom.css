@@ -623,7 +623,15 @@
       -ms-flex-align: end !important;
           align-items: flex-end !important;
 }
+@media (max-width: 768px) {
+  .mdl-mobile .h-sm-100vh {
+    height: calc(100vh - 48px);
+  }
+}
 @media (min-width: 576px) {
+  .mdl-mobile .h-sm-100vh {
+    height: 100vh;
+  }
   .mdl-mobile .position-sm-absolute {
     position: absolute;
   }
