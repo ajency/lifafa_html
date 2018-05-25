@@ -328,6 +328,14 @@
 .mdl-mobile .w-100px {
   width: 100px;
 }
+.mdl-mobile .h-100vh-140px {
+  height: calc(100vh - 90px);
+}
+@media (max-width: 768px) {
+  .mdl-mobile .h-100vh-140px {
+    height: calc(100vh - 130px);
+  }
+}
 .mdl-mobile .text-divider {
   overflow: hidden;
   text-align: center;
